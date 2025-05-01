@@ -1,6 +1,6 @@
 from util import *
 
-# Add your import statements here
+import math
 
 
 
@@ -32,9 +32,12 @@ class Evaluation():
 
 		precision = -1
 
-		#Fill in code here
-
+		retrieved_k = query_doc_IDs_ordered[:k]
+		relevant_retrieved = [doc_id for doc_id in retrieved_k if doc_id in true_doc_IDs]
+		if k > 0:
+			precision = len(relevant_retrieved) / k
 		return precision
+
 
 
 	def meanPrecision(self, doc_IDs_ordered, query_ids, qrels, k):
@@ -62,11 +65,12 @@ class Evaluation():
 			The mean precision value as a number between 0 and 1
 		"""
 
-		meanPrecision = -1
-
-		#Fill in code here
-
-		return meanPrecision
+		precisions = []
+		for i, query_id in enumerate(query_ids):
+			true_doc_IDs = [rel['id'] for rel in qrels if rel['query_num'] == query_id]
+			p = self.queryPrecision(doc_IDs_ordered[i], query_id, true_doc_IDs, k)
+			precisions.append(p)
+		return sum(precisions) / len(precisions)
 
 	
 	def queryRecall(self, query_doc_IDs_ordered, query_id, true_doc_IDs, k):
@@ -92,10 +96,11 @@ class Evaluation():
 			The recall value as a number between 0 and 1
 		"""
 
-		recall = -1
-
-		#Fill in code here
-
+		recall = 0
+		retrieved_k = query_doc_IDs_ordered[:k]
+		relevant_retrieved = [doc_id for doc_id in retrieved_k if doc_id in true_doc_IDs]
+		if len(true_doc_IDs) > 0:
+			recall = len(relevant_retrieved) / len(true_doc_IDs)
 		return recall
 
 
@@ -123,12 +128,12 @@ class Evaluation():
 		float
 			The mean recall value as a number between 0 and 1
 		"""
-
-		meanRecall = -1
-
-		#Fill in code here
-
-		return meanRecall
+		recalls = []
+		for i, query_id in enumerate(query_ids):
+			true_doc_IDs = [rel['id'] for rel in qrels if rel['query_num'] == query_id]
+			r = self.queryRecall(doc_IDs_ordered[i], query_id, true_doc_IDs, k)
+			recalls.append(r)
+		return sum(recalls) / len(recalls)
 
 
 	def queryFscore(self, query_doc_IDs_ordered, query_id, true_doc_IDs, k):
@@ -154,12 +159,11 @@ class Evaluation():
 			The fscore value as a number between 0 and 1
 		"""
 
-		fscore = -1
-
-		#Fill in code here
-
-		return fscore
-
+		p = self.queryPrecision(query_doc_IDs_ordered, query_id, true_doc_IDs, k)
+		r = self.queryRecall(query_doc_IDs_ordered, query_id, true_doc_IDs, k)
+		if p + r == 0:
+			return 0
+		return 2 * p * r / (p + r)
 
 	def meanFscore(self, doc_IDs_ordered, query_ids, qrels, k):
 		"""
@@ -186,11 +190,12 @@ class Evaluation():
 			The mean fscore value as a number between 0 and 1
 		"""
 
-		meanFscore = -1
-
-		#Fill in code here
-
-		return meanFscore
+		fscores = []
+		for i, query_id in enumerate(query_ids):
+			true_doc_IDs = [rel['id'] for rel in qrels if rel['query_num'] == query_id]
+			f = self.queryFscore(doc_IDs_ordered[i], query_id, true_doc_IDs, k)
+			fscores.append(f)
+		return sum(fscores) / len(fscores)
 	
 
 	def queryNDCG(self, query_doc_IDs_ordered, query_id, true_doc_IDs, k):
@@ -216,11 +221,18 @@ class Evaluation():
 			The nDCG value as a number between 0 and 1
 		"""
 
-		nDCG = -1
+		def dcg(relevance_list):
+			return sum(rel / math.log2(idx + 2) for idx, rel in enumerate(relevance_list))
 
-		#Fill in code here
+		retrieved_k = query_doc_IDs_ordered[:k]
+		relevance_scores = [1 if doc_id in true_doc_IDs else 0 for doc_id in retrieved_k]
+		idcg_scores = sorted(relevance_scores, reverse=True)
 
-		return nDCG
+		dcg_val = dcg(relevance_scores)
+		idcg_val = dcg(idcg_scores)
+		if idcg_val == 0:
+			return 0
+		return dcg_val / idcg_val
 
 
 	def meanNDCG(self, doc_IDs_ordered, query_ids, qrels, k):
@@ -247,12 +259,12 @@ class Evaluation():
 		float
 			The mean nDCG value as a number between 0 and 1
 		"""
-
-		meanNDCG = -1
-
-		#Fill in code here
-
-		return meanNDCG
+		ndcgs = []
+		for i, query_id in enumerate(query_ids):
+			true_doc_IDs = [rel['id'] for rel in qrels if rel['query_num'] == query_id]
+			ndcg = self.queryNDCG(doc_IDs_ordered[i], query_id, true_doc_IDs, k)
+			ndcgs.append(ndcg)
+		return sum(ndcgs) / len(ndcgs)
 
 
 	def queryAveragePrecision(self, query_doc_IDs_ordered, query_id, true_doc_IDs, k):
@@ -279,11 +291,16 @@ class Evaluation():
 			The average precision value as a number between 0 and 1
 		"""
 
-		avgPrecision = -1
-
-		#Fill in code here
-
-		return avgPrecision
+		retrieved_k = query_doc_IDs_ordered[:k]
+		hits = 0
+		sum_precisions = 0
+		for i, doc_id in enumerate(retrieved_k):
+			if doc_id in true_doc_IDs:
+				hits += 1
+				sum_precisions += hits / (i + 1)
+		if hits == 0:
+			return 0
+		return sum_precisions / hits
 
 
 	def meanAveragePrecision(self, doc_IDs_ordered, query_ids, q_rels, k):
@@ -311,9 +328,10 @@ class Evaluation():
 			The MAP value as a number between 0 and 1
 		"""
 
-		meanAveragePrecision = -1
-
-		#Fill in code here
-
-		return meanAveragePrecision
+		avg_precisions = []
+		for i, query_id in enumerate(query_ids):
+			true_doc_IDs = [rel['id'] for rel in q_rels if rel['query_num'] == query_id]
+			avg_p = self.queryAveragePrecision(doc_IDs_ordered[i], query_id, true_doc_IDs, k)
+			avg_precisions.append(avg_p)
+		return sum(avg_precisions) / len(avg_precisions)
 

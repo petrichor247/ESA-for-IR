@@ -1,34 +1,27 @@
-from util import *
-
-# Add your import statements here
-
 from nltk.stem import PorterStemmer
 
-
-
 class InflectionReduction:
+    def reduce(self, text):
+        """
+        Apply stemming using PorterStemmer to reduce inflected words to their base/stem form.
 
-	def reduce(self, text):
-		"""
-		Stemming/Lemmatization
+        Parameters
+        ----------
+        text : list of list of str
+            A list of sentences, where each sentence is a list of word tokens.
 
-		Parameters
-		----------
-		arg1 : list
-			A list of lists where each sub-list a sequence of tokens
-			representing a sentence
+        Returns
+        -------
+        list of list of str
+            A list of sentences where each token is stemmed.
+        """
+        stemmer = PorterStemmer()
+        reducedText = []
 
-		Returns
-		-------
-		list
-			A list of lists where each sub-list is a sequence of
-			stemmed/lemmatized tokens representing a sentence
-		"""
-		stemmer = PorterStemmer()
+        # Iterate over each sentence in the input text
+        for sentence in text:
+            # Stem each token in the sentence
+            stemmed_sentence = [stemmer.stem(token) for token in sentence]
+            reducedText.append(stemmed_sentence)
 
-		reducedText = []
-
-		stemmed_tokens = [stemmer.stem(token) for token in text]
-		reducedText.append(stemmed_tokens)
-
-		return reducedText[0]
+        return reducedText

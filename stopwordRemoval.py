@@ -1,7 +1,3 @@
-from util import *
-
-# Add your import statements here
-
 import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords', quiet=True)
@@ -10,53 +6,76 @@ import json
 from nltk.tokenize.treebank import TreebankWordTokenizer
 import statistics
 
-class StopwordRemoval():
+class StopwordRemoval:
 
-	def fromList(self, text):
-		"""
-		Stop word removal using NLTK stopwords.
+    def fromList(self, text):
+        """
+        Stop word removal using NLTK stopwords.
 
-		Parameters
-		----------
-		arg1 : list
-			A list of lists where each sub-list is a sequence of tokens
-			representing a sentence
+        Parameters
+        ----------
+        text : list of list of str
+            A list of sentences, where each sentence is a list of word tokens.
 
-		Returns
-		-------
-		list
-			A list of lists where each sub-list is a sequence of tokens
-			representing a sentence with stopwords removed
-		"""
+        Returns
+        -------
+        list of list of str
+            A list of sentences where stopwords have been removed from each sentence.
+        """
+        stop_words = set(stopwords.words("english"))
+        stopwordRemovedText = []
 
-		stop_words = set(stopwords.words("english"))
+        # Iterate through each sentence in the text
+        for sentence in text:
+            # Filter out tokens that are stopwords
+            filtered_tokens = [token for token in sentence if token.lower() not in stop_words]
+            stopwordRemovedText.append(filtered_tokens)
 
-		stopwordRemovedText = []
-
-		filtered_tokens = [token for token in text if token not in stop_words]
-		stopwordRemovedText.append(filtered_tokens)
-
-		return stopwordRemovedText[0]
+        return stopwordRemovedText
 
 
-	def fromCorpus(self, text):
+    def fromCorpus(self, text):
+        """
+        Stop word removal based on corpus statistics (mean and standard deviation).
 
-		corpus = json.load(open("cranfield\cran_docs.json", 'r'))
-		docs = [item["body"] for item in corpus]
-		tokenizer = TreebankWordTokenizer()
-		tokenizedText = [tokenizer.tokenize(body) for body in docs]
-		flat_tokens = []
-		for tokenized in tokenizedText:
-			flat_tokens += tokenized
-		unique_tokens = set(flat_tokens)
-		counts = {token: flat_tokens.count(token) for token in unique_tokens}
-		mean_freq = statistics.mean(counts.values())
-		sd_freq = statistics.stdev(counts.values())
-		stop_words = {word for word, freq in counts.items() if freq >= mean_freq + sd_freq}
+        Parameters
+        ----------
+        text : list of list of str
+            A list of sentences, where each sentence is a list of word tokens.
 
-		stopwordRemovedText = []
+        Returns
+        -------
+        list of list of str
+            A list of sentences where stopwords (determined from corpus frequency) are removed from each sentence.
+        """
+        # Load corpus and extract tokenized documents
+        corpus = json.load(open("cranfield/cran_docs.json", 'r'))
+        docs = [item["body"] for item in corpus]
+        
+        # Tokenize the documents
+        tokenizer = TreebankWordTokenizer()
+        tokenizedText = [tokenizer.tokenize(body) for body in docs]
+        
+        # Flatten the list of tokenized text for analysis
+        flat_tokens = []
+        for tokenized in tokenizedText:
+            flat_tokens += tokenized
+        
+        # Get unique tokens and calculate frequency statistics
+        unique_tokens = set(flat_tokens)
+        counts = {token: flat_tokens.count(token) for token in unique_tokens}
+        mean_freq = statistics.mean(counts.values())
+        sd_freq = statistics.stdev(counts.values())
+        
+        # Determine stopwords based on frequency (tokens with frequency higher than mean + sd)
+        stop_words = {word for word, freq in counts.items() if freq >= mean_freq + sd_freq}
 
-		filtered_tokens = [token for token in text if token not in stop_words]
-		stopwordRemovedText.append(filtered_tokens)
+        stopwordRemovedText = []
 
-		return stopwordRemovedText[0]
+        # Iterate through each sentence in the text
+        for sentence in text:
+            # Filter out tokens that are in the stop words set
+            filtered_tokens = [token for token in sentence if token.lower() not in stop_words]
+            stopwordRemovedText.append(filtered_tokens)
+
+        return stopwordRemovedText

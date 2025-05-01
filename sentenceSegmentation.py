@@ -4,7 +4,7 @@ from util import *
 
 import nltk
 nltk.download('punkt_tab', quiet=True)
-from nltk.tokenize import PunktTokenizer
+from nltk.tokenize import PunktSentenceTokenizer
 
 
 class SentenceSegmentation():
@@ -74,7 +74,7 @@ class SentenceSegmentation():
 			A list of strings where each string is a single sentence
 		"""
 
-		tokenizer = PunktTokenizer()
+		tokenizer = PunktSentenceTokenizer()
 		segmentedText = tokenizer.tokenize(text.strip())
 
-		return segmentedText[0]
+		return segmentedText
