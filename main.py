@@ -9,6 +9,7 @@ from sys import version_info
 import argparse
 import json
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Input compatibility for Python 2 and Python 3
 if version_info.major == 3:
@@ -190,6 +191,8 @@ class SearchEngine:
 				str(k) + " : " + str(MAP) + ", " + str(nDCG))
 
 		# Plot the metrics and save plot 
+		plt.figure(figsize=(10, 6))
+		sns.set_style("whitegrid")
 		plt.plot(range(1, 11), precisions, label="Precision")
 		plt.plot(range(1, 11), recalls, label="Recall")
 		plt.plot(range(1, 11), fscores, label="F-Score")
