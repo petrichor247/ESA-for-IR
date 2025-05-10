@@ -1,0 +1,14 @@
+topics_top_50_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_50_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
+topics_top_10000_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
+topics_top_500_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
+topics_top_1000_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_10000_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_5_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
+topics_top_500_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_100_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_100_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
+topics_top_1000_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
+topics_top_5_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_10_docs_esa.json filter=lfs diff=lfs merge=lfs -text
+topics_top_10_lem_wiki.json filter=lfs diff=lfs merge=lfs -text
