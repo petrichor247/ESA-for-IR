@@ -145,27 +145,24 @@ def plot_distribution(metric_values, metric_name, model_name, filename):
     plt.ylabel('Query Frequency')
     plt.title(f'{metric_name} Distribution with KDE for {model_name} on Cranfield Dataset')
 
-    # Check if all values are identical
     if len(np.unique(values)) == 1:
-        plt.axvline(x=values[0], color='darkblue', linestyle='--', label=f'All values = {values[0]:.4f}')
+        plt.axvline(x=values[0], color='darkgreen', linestyle='--', label=f'All values = {values[0]:.4f}')
         plt.legend()
         save_plot(plt, filename, model_name)
         return
 
-    # If values are not identical, proceed with KDE
     try:
         kde = gaussian_kde(values)
         x_vals = np.linspace(min(values), max(values), 1000)
-        plt.plot(x_vals, kde(x_vals), color='darkblue', linewidth=3, label='KDE Curve')
+        plt.plot(x_vals, kde(x_vals), color='darkgreen', linewidth=3, label='KDE Curve')
     except np.linalg.LinAlgError:
-        # If KDE fails, just plot histogram
         print(f"Warning: Could not compute KDE for {metric_name} - values may be too similar")
-        plt.hist(values, bins=20, density=True, alpha=0.3, color='lightblue', edgecolor='black', linewidth=1)
+        plt.hist(values, bins=20, density=True, alpha=0.4, color='orange', edgecolor='black', linewidth=1.2)
         plt.legend(['Histogram only (KDE failed)'])
         save_plot(plt, filename, model_name)
         return
 
-    plt.hist(values, bins=20, density=True, alpha=0.3, color='lightblue', edgecolor='black', linewidth=1)
+    plt.hist(values, bins=20, density=True, alpha=0.4, color='orange', edgecolor='black', linewidth=1.2)
     plt.legend()
     save_plot(plt, filename, model_name)
 
@@ -185,22 +182,21 @@ def plot_comparison(metric1, metric2, metric_name, model1_name, model2_name, fil
     plt.title(f'{metric_name} Comparison: {model1_name} vs {model2_name} (Cranfield Dataset)')
 
     all_values = np.concatenate([metric1, metric2])
-    bins = np.linspace(min(all_values), max(all_values), 20)  # Shared bins
+    bins = np.linspace(min(all_values), max(all_values), 20)
 
     try:
         kde1 = gaussian_kde(metric1)
         kde2 = gaussian_kde(metric2)
         x_vals = np.linspace(min(all_values), max(all_values), 1000)
-        plt.plot(x_vals, kde1(x_vals), color='red', label=f'{model1_name} KDE')
-        plt.plot(x_vals, kde2(x_vals), color='darkblue', label=f'{model2_name} KDE')
+        plt.plot(x_vals, kde1(x_vals), color='darkred', linewidth=2.5, label=f'{model1_name} KDE')
+        plt.plot(x_vals, kde2(x_vals), color='navy', linewidth=2.5, label=f'{model2_name} KDE')
     except np.linalg.LinAlgError:
         print(f"Warning: Could not compute KDE for {metric_name} comparison - values may be too similar")
 
-    # Use shared bins for overlapping histograms
-    plt.hist(metric1, bins=bins, density=True, alpha=0.4, color='lightcoral',
-             edgecolor='black', linewidth=1.5, label=model1_name)
-    plt.hist(metric2, bins=bins, density=True, alpha=0.4, color='lightblue',
-             edgecolor='black', linewidth=1.5, label=model2_name)
+    plt.hist(metric1, bins=bins, density=True, alpha=0.5, color='lightcoral',
+             edgecolor='black', linewidth=1.2, label=model1_name)
+    plt.hist(metric2, bins=bins, density=True, alpha=0.5, color='teal',
+             edgecolor='black', linewidth=1.2, label=model2_name)
 
     plt.legend()
     save_plot(plt, filename)

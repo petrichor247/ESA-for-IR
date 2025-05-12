@@ -96,7 +96,7 @@
 #             ranking_similarities.append(similarity)
     
 #     print(f"Average Jaccard similarity between top-{k} rankings: {np.mean(ranking_similarities):.4f}")
-#     print(f"Std dev of Jaccard similarities: {np.std(ranking_similarities):.4f}")
+#     print(f"Std dev of Jaccard simi larities: {np.std(ranking_similarities):.4f}")
     
 #     # Analyze ranking diversity
 #     unique_docs_in_top_k = set()
@@ -282,23 +282,42 @@ def evaluate_model(model, query_texts, query_ids, doc_texts, doc_ids, qrels, nam
     plot(qrels, ranked_docs, query_texts, k, name)
     return metrics, ranked_docs
 
-def compare_models(metrics1, metrics2, name1, name2):
-    print(f"\nComparing {name1} vs {name2}:")
-
-    plot_comp(metrics1['Precision'], metrics2['Precision'],
-              metrics1['Recall'], metrics2['Recall'],
-              metrics1['F-score'], metrics2['F-score'],
-              metrics1['nDCG'], metrics2['nDCG'],
-              10, name1, name2)
-
+def compare_models(model1_metrics, model2_metrics, model1_name, model2_name):
+    """Compare two models using hypothesis testing and plotting"""
+    print(f"\nComparing {model1_name} vs {model2_name}:")
+    
+    # Plot comparison
+    plot_comp(
+        model1_metrics['Precision'], model2_metrics['Precision'],
+        model1_metrics['Recall'], model2_metrics['Recall'],
+        model1_metrics['F-score'], model2_metrics['F-score'],
+        model1_metrics['nDCG'], model2_metrics['nDCG'],
+        10, model1_name, model2_name
+    )
+    
+    # Hypothesis testing with one-tailed t-test
     for metric in ['Precision', 'Recall', 'F-score', 'nDCG']:
-        t_stat, p_val = hypothesis_test(metrics1[metric], metrics2[metric])
-        print(f"\n{metric}: t={t_stat:.4f}, p={p_val:.4f}")
-        if p_val < 0.05:
-            better = name1 if np.mean(metrics1[metric]) > np.mean(metrics2[metric]) else name2
-            print(f"Significant difference: {better} is better")
+        # Perform one-tailed t-test using hypothesis_test function
+        t_stat, p_value = hypothesis_test(model1_metrics[metric], model2_metrics[metric])
+        print(f"\n{metric}:")
+        print(f"t-statistic: {t_stat:.4f}")
+        print(f"p-value (one-tailed): {p_value:.4f}")
+        
+        # For one-tailed test with alternative='greater':
+        # H0: model1 <= model2
+        # H1: model1 > model2
+        if p_value < 0.05:
+            # If p-value is significant, we reject H0 and conclude model1 > model2
+            print(f"Significant difference! {model1_name} performs better than {model2_name}.")
         else:
-            print("No significant difference")
+            # If p-value is not significant, we fail to reject H0
+            # This means we can't conclude model1 is better than model2
+            print("No significant difference in performance (cannot conclude model1 is better than model2).")
+        
+        # Print mean values for context
+        mean1 = np.mean(model1_metrics[metric])
+        mean2 = np.mean(model2_metrics[metric])
+        print(f"Mean {metric}: {model1_name}={mean1:.4f}, {model2_name}={mean2:.4f}")
 
 def main():
     print("Loading Cranfield dataset...")
