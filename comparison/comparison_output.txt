@@ -1,0 +1,4187 @@
+Loading Cranfield dataset...
+
+Evaluating VSM model:
+Precision: mean=0.2924, std=0.1857
+Recall: mean=0.4235, std=0.2672
+F-score: mean=0.3204, std=0.1815
+nDCG: mean=0.7813, std=0.2559
+
+Evaluating VSM model:
+
+Analyzing document rankings:
+
+Query 1:
+Metrics: Precision=0.6000, Recall=0.2069, F-score=0.3077, nDCG=0.9446
+Top 10 documents: [51, 184, 12, 359, 746, 486, 879, 878, 13, 665]
+Relevant documents: [184, 29, 31, 12, 51, 102, 13, 14, 15, 57, 378, 859, 185, 30, 37, 52, 142, 195, 875, 56, 66, 95, 462, 497, 858, 876, 879, 880, 486]
+Relevant docs in top 10: [51, 184, 12, 486, 879, 13]
+
+Query 2:
+Metrics: Precision=0.4000, Recall=0.1600, F-score=0.2286, nDCG=0.9709
+Top 10 documents: [12, 51, 746, 1169, 884, 184, 100, 253, 429, 792]
+Relevant documents: [12, 15, 184, 858, 51, 102, 202, 14, 52, 380, 746, 859, 948, 285, 390, 391, 442, 497, 643, 856, 857, 877, 864, 658, 486]
+Relevant docs in top 10: [12, 51, 746, 184]
+
+Query 3:
+Metrics: Precision=0.8000, Recall=0.8889, F-score=0.8421, nDCG=0.9918
+Top 10 documents: [485, 5, 144, 90, 91, 399, 582, 181, 6, 579]
+Relevant documents: [5, 6, 90, 91, 119, 144, 181, 399, 485]
+Relevant docs in top 10: [485, 5, 144, 90, 91, 399, 181, 6]
+
+Query 4:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=1.0000
+Top 10 documents: [166, 488, 410, 1061, 167, 1275, 1374, 185, 1189, 575]
+Relevant documents: [236, 166, 488]
+Relevant docs in top 10: [166, 488]
+
+Query 5:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.4556
+Top 10 documents: [103, 1032, 367, 410, 552, 401, 943, 368, 1374, 1379]
+Relevant documents: [552, 401, 1297, 1296, 488]
+Relevant docs in top 10: [552, 401]
+
+Query 6:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8385
+Top 10 documents: [491, 386, 151, 257, 1273, 99, 385, 883, 1282, 558]
+Relevant documents: [99, 115, 257, 258, 491]
+Relevant docs in top 10: [491, 257, 99]
+
+Query 7:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.8603
+Top 10 documents: [492, 434, 57, 1231, 1040, 233, 56, 354, 1307, 124]
+Relevant documents: [20, 56, 57, 58, 19, 492]
+Relevant docs in top 10: [492, 57, 56]
+
+Query 8:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.9134
+Top 10 documents: [492, 122, 1231, 569, 1083, 234, 907, 354, 1307, 443]
+Relevant documents: [48, 122, 20, 58, 196, 354, 360, 197, 999, 1112, 1005, 492]
+Relevant docs in top 10: [492, 122, 354]
+
+Query 9:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=1.0000
+Top 10 documents: [21, 22, 550, 306, 102, 571, 326, 45, 1215, 398]
+Relevant documents: [21, 22, 550, 534]
+Relevant docs in top 10: [21, 22, 550]
+
+Query 10:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.9066
+Top 10 documents: [493, 302, 1143, 949, 1199, 524, 691, 1286, 405, 1009]
+Relevant documents: [259, 405, 302, 436, 437, 438, 998, 1011, 493]
+Relevant docs in top 10: [493, 302, 405]
+
+Query 11:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=0.8452
+Top 10 documents: [495, 556, 654, 1327, 738, 1356, 472, 1186, 28, 540]
+Relevant documents: [27, 28, 262, 160, 20, 263, 654, 495]
+Relevant docs in top 10: [495, 654, 28]
+
+Query 12:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.6788
+Top 10 documents: [941, 650, 624, 1221, 1223, 270, 966, 649, 1094, 543]
+Relevant documents: [86, 194, 650, 649, 652, 624]
+Relevant docs in top 10: [650, 624, 649]
+
+Query 13:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [496, 643, 903, 199, 313, 660, 468, 1268, 38, 801]
+Relevant documents: [64, 265, 65, 311, 496]
+Relevant docs in top 10: [496]
+
+Query 14:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.7977
+Top 10 documents: [64, 170, 132, 1364, 256, 402, 345, 335, 65, 190]
+Relevant documents: [64, 65, 496]
+Relevant docs in top 10: [64, 65]
+
+Query 15:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8503
+Top 10 documents: [462, 1097, 761, 866, 463, 1025, 1096, 1117, 1099, 553]
+Relevant documents: [463, 462, 497]
+Relevant docs in top 10: [462, 463]
+
+Query 16:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=1.0000
+Top 10 documents: [498, 106, 231, 1328, 248, 1255, 1112, 1301, 814, 803]
+Relevant documents: [266, 106, 196, 498]
+Relevant docs in top 10: [498, 106]
+
+Query 17:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.4825
+Top 10 documents: [1281, 700, 1301, 106, 445, 498, 1108, 987, 336, 527]
+Relevant documents: [106, 196, 498]
+Relevant docs in top 10: [106, 498]
+
+Query 18:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.5706
+Top 10 documents: [492, 248, 197, 498, 1231, 354, 1307, 122, 106, 56]
+Relevant documents: [196, 197, 198, 498]
+Relevant docs in top 10: [197, 498]
+
+Query 19:
+Metrics: Precision=0.1000, Recall=0.1000, F-score=0.1000, nDCG=0.4307
+Top 10 documents: [554, 82, 1346, 164, 803, 660, 1217, 1219, 706, 286]
+Relevant documents: [32, 67, 164, 639, 715, 716, 719, 1379, 717, 499]
+Relevant docs in top 10: [164]
+
+Query 20:
+Metrics: Precision=0.6000, Recall=0.6000, F-score=0.6000, nDCG=1.0000
+Top 10 documents: [500, 88, 268, 87, 407, 270, 450, 120, 584, 963]
+Relevant documents: [87, 88, 104, 267, 268, 269, 270, 407, 408, 500]
+Relevant docs in top 10: [500, 88, 268, 87, 407, 270]
+
+Query 21:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.9197
+Top 10 documents: [502, 68, 16, 377, 17, 628, 460, 421, 1007, 302]
+Relevant documents: [271, 16, 413, 414, 502]
+Relevant docs in top 10: [502, 16]
+
+Query 22:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [125, 254, 560, 413, 140, 120, 346, 348, 207, 1147]
+Relevant documents: [68, 502]
+Relevant docs in top 10: []
+
+Query 23:
+Metrics: Precision=0.6000, Recall=0.1818, F-score=0.2791, nDCG=0.9838
+Top 10 documents: [892, 899, 1109, 1259, 586, 903, 902, 14, 753, 116]
+Relevant documents: [900, 902, 200, 201, 601, 899, 903, 593, 199, 594, 901, 544, 597, 749, 917, 919, 1333, 634, 687, 698, 1290, 700, 704, 705, 1109, 1112, 1141, 1197, 1256, 1259, 1272, 1289, 892]
+Relevant docs in top 10: [892, 899, 1109, 1259, 903, 902]
+
+Query 24:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.9325
+Top 10 documents: [46, 756, 612, 12, 1034, 47, 833, 834, 51, 1361]
+Relevant documents: [46, 47, 92, 756]
+Relevant docs in top 10: [46, 756, 47]
+
+Query 25:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.9073
+Top 10 documents: [277, 214, 990, 772, 215, 216, 987, 540, 213, 170]
+Relevant documents: [213, 212, 214, 215, 216, 276, 277, 426, 427, 511]
+Relevant docs in top 10: [277, 214, 215, 216, 213]
+
+Query 26:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.5518
+Top 10 documents: [382, 307, 145, 4, 611, 568, 148, 348, 629, 1076]
+Relevant documents: [145, 611, 376, 406, 565, 1076, 511]
+Relevant docs in top 10: [145, 611, 1076]
+
+Query 27:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=0.3010
+Top 10 documents: [1176, 1031, 888, 1178, 1129, 838, 1133, 1293, 512, 680]
+Relevant documents: [224, 278, 428, 512]
+Relevant docs in top 10: [512]
+
+Query 28:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1051, 1075, 680, 923, 921, 920, 762, 247, 674, 470]
+Relevant documents: [224, 279, 512]
+Relevant docs in top 10: []
+
+Query 29:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.9060
+Top 10 documents: [465, 420, 250, 612, 900, 683, 211, 222, 200, 601]
+Relevant documents: [250, 514, 609, 225, 793, 464, 465, 612, 466, 513]
+Relevant docs in top 10: [465, 250, 612]
+
+Query 30:
+Metrics: Precision=0.1000, Recall=0.1250, F-score=0.1111, nDCG=0.5000
+Top 10 documents: [633, 683, 513, 1197, 1058, 921, 602, 247, 222, 420]
+Relevant documents: [225, 464, 514, 466, 609, 612, 793, 513]
+Relevant docs in top 10: [513]
+
+Query 31:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=1.0000
+Top 10 documents: [751, 247, 68, 916, 918, 1341, 1245, 1153, 749, 919]
+Relevant documents: [776, 751]
+Relevant docs in top 10: [751]
+
+Query 32:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=1.0000
+Top 10 documents: [752, 738, 382, 1112, 801, 1259, 802, 27, 242, 606]
+Relevant documents: [465, 249, 777, 778, 247, 250, 752]
+Relevant docs in top 10: [752]
+
+Query 33:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.8768
+Top 10 documents: [516, 714, 431, 141, 594, 800, 808, 252, 598, 672]
+Relevant documents: [252, 431, 141, 516]
+Relevant docs in top 10: [516, 431, 141, 252]
+
+Query 34:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.6534
+Top 10 documents: [1153, 610, 516, 252, 431, 799, 1062, 795, 1074, 594]
+Relevant documents: [252, 431, 672, 714, 799, 800, 516]
+Relevant docs in top 10: [516, 252, 431, 799]
+
+Query 35:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1244, 724, 1208, 65, 1203, 75, 1327, 654, 1389, 1314]
+Relevant documents: [166, 167, 132, 517]
+Relevant docs in top 10: []
+
+Query 36:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.6309
+Top 10 documents: [398, 168, 623, 123, 120, 666, 554, 661, 872, 5]
+Relevant documents: [169, 168, 518]
+Relevant docs in top 10: [168]
+
+Query 37:
+Metrics: Precision=0.2000, Recall=0.2000, F-score=0.2000, nDCG=0.4685
+Top 10 documents: [186, 176, 234, 519, 979, 1311, 173, 196, 1386, 179]
+Relevant documents: [173, 188, 172, 97, 121, 187, 242, 409, 487, 519]
+Relevant docs in top 10: [519, 173]
+
+Query 38:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.8175
+Top 10 documents: [536, 295, 976, 1141, 979, 1264, 272, 294, 154, 1205]
+Relevant documents: [24, 283, 552, 272, 557, 558, 553, 554, 555, 556, 536]
+Relevant docs in top 10: [536, 272]
+
+Query 39:
+Metrics: Precision=0.1000, Recall=0.0714, F-score=0.0833, nDCG=1.0000
+Top 10 documents: [272, 1205, 1264, 37, 295, 9, 1278, 315, 959, 337]
+Relevant documents: [272, 555, 24, 283, 552, 79, 207, 418, 557, 554, 556, 505, 1257, 536]
+Relevant docs in top 10: [272]
+
+Query 40:
+Metrics: Precision=0.3000, Recall=0.2308, F-score=0.2609, nDCG=0.7989
+Top 10 documents: [536, 37, 1141, 295, 272, 1205, 979, 976, 1368, 294]
+Relevant documents: [24, 283, 552, 272, 85, 976, 557, 558, 553, 554, 555, 556, 536]
+Relevant docs in top 10: [536, 272, 976]
+
+Query 41:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.9066
+Top 10 documents: [289, 433, 432, 927, 1141, 549, 1152, 229, 288, 126]
+Relevant documents: [288, 289, 433, 520]
+Relevant docs in top 10: [289, 433, 288]
+
+Query 42:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=0.8106
+Top 10 documents: [521, 526, 440, 503, 468, 469, 467, 496, 404, 801]
+Relevant documents: [468, 467, 469, 470, 775, 521]
+Relevant docs in top 10: [521, 468, 469, 467]
+
+Query 43:
+Metrics: Precision=0.5000, Recall=0.7143, F-score=0.5882, nDCG=0.9428
+Top 10 documents: [467, 503, 469, 194, 404, 440, 468, 39, 526, 312]
+Relevant documents: [467, 468, 39, 503, 775, 469, 521]
+Relevant docs in top 10: [467, 503, 469, 468, 39]
+
+Query 44:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1190, 820, 1148, 1031, 583, 103, 385, 862, 593, 27]
+Relevant documents: [302, 436, 437, 524]
+Relevant docs in top 10: []
+
+Query 45:
+Metrics: Precision=0.3000, Recall=0.2308, F-score=0.2609, nDCG=0.9675
+Top 10 documents: [305, 525, 540, 1185, 123, 84, 37, 573, 310, 1311]
+Relevant documents: [305, 570, 308, 481, 338, 1226, 1355, 1185, 629, 663, 798, 572, 525]
+Relevant docs in top 10: [305, 525, 1185]
+
+Query 46:
+Metrics: Precision=0.6000, Recall=0.3750, F-score=0.4615, nDCG=0.9877
+Top 10 documents: [525, 1185, 123, 305, 84, 37, 655, 623, 353, 803]
+Relevant documents: [305, 338, 344, 481, 84, 123, 1185, 623, 570, 798, 1226, 629, 663, 572, 1355, 525]
+Relevant docs in top 10: [525, 1185, 123, 305, 84, 623]
+
+Query 47:
+Metrics: Precision=0.6000, Recall=0.4000, F-score=0.4800, nDCG=0.7633
+Top 10 documents: [568, 525, 305, 570, 540, 310, 1200, 304, 327, 663]
+Relevant documents: [304, 306, 307, 305, 629, 663, 308, 309, 310, 570, 798, 1185, 1355, 572, 525]
+Relevant docs in top 10: [525, 305, 570, 310, 304, 663]
+
+Query 48:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.9469
+Top 10 documents: [526, 797, 1228, 334, 440, 26, 707, 683, 638, 902]
+Relevant documents: [439, 311, 316, 440, 187, 314, 315, 797, 798, 794, 265, 526]
+Relevant docs in top 10: [526, 797, 440]
+
+Query 49:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.9197
+Top 10 documents: [527, 321, 320, 322, 349, 377, 150, 16, 1087, 1235]
+Relevant documents: [320, 478, 527]
+Relevant docs in top 10: [527, 320]
+
+Query 50:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=0.3869
+Top 10 documents: [1112, 192, 1301, 801, 326, 337, 494, 273, 498, 27]
+Relevant documents: [326, 629, 21, 94, 22, 306, 528]
+Relevant docs in top 10: [326]
+
+Query 51:
+Metrics: Precision=0.7000, Recall=0.6364, F-score=0.6667, nDCG=0.9136
+Top 10 documents: [494, 326, 1112, 1301, 23, 192, 94, 528, 105, 498]
+Relevant documents: [94, 23, 105, 381, 192, 326, 63, 494, 629, 261, 528]
+Relevant docs in top 10: [494, 326, 23, 192, 94, 528, 105]
+
+Query 52:
+Metrics: Precision=0.5000, Recall=1.0000, F-score=0.6667, nDCG=0.8677
+Top 10 documents: [326, 550, 22, 1215, 21, 306, 629, 528, 798, 4]
+Relevant documents: [21, 22, 306, 326, 528]
+Relevant docs in top 10: [326, 22, 21, 306, 528]
+
+Query 53:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.9197
+Top 10 documents: [208, 437, 298, 1297, 1139, 1221, 456, 1253, 1273, 318]
+Relevant documents: [296, 33, 446, 447, 448, 449, 208, 297, 298, 299, 531]
+Relevant docs in top 10: [208, 298]
+
+Query 54:
+Metrics: Precision=0.2000, Recall=0.2000, F-score=0.2000, nDCG=0.9197
+Top 10 documents: [123, 1185, 84, 525, 666, 623, 305, 784, 44, 559]
+Relevant documents: [84, 24, 101, 294, 628, 661, 364, 365, 560, 123]
+Relevant docs in top 10: [123, 84]
+
+Query 55:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.9197
+Top 10 documents: [376, 4, 460, 1301, 1383, 1154, 798, 899, 458, 406]
+Relevant documents: [16, 375, 460, 378, 255, 271, 376, 377, 562, 502, 538]
+Relevant docs in top 10: [376, 460]
+
+Query 56:
+Metrics: Precision=0.3000, Recall=0.2727, F-score=0.2857, nDCG=0.8072
+Top 10 documents: [753, 783, 878, 202, 14, 391, 1339, 1290, 1331, 1111]
+Relevant documents: [380, 749, 1339, 14, 705, 779, 780, 379, 643, 686, 753]
+Relevant docs in top 10: [753, 14, 1339]
+
+Query 57:
+Metrics: Precision=0.2000, Recall=0.1333, F-score=0.1600, nDCG=0.8316
+Top 10 documents: [753, 1275, 878, 202, 3, 380, 916, 1111, 444, 391]
+Relevant documents: [380, 593, 746, 914, 14, 379, 705, 779, 780, 704, 12, 15, 857, 859, 753]
+Relevant docs in top 10: [753, 380]
+
+Query 58:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.8159
+Top 10 documents: [788, 120, 754, 963, 269, 873, 398, 786, 787, 784]
+Relevant documents: [788, 785, 786, 787, 23, 381, 382, 784, 789, 754]
+Relevant docs in top 10: [788, 754, 786, 787, 784]
+
+Query 59:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.5803
+Top 10 documents: [382, 785, 1154, 105, 1055, 1084, 629, 786, 789, 23]
+Relevant documents: [788, 785, 786, 787, 754]
+Relevant docs in top 10: [785, 786]
+
+Query 60:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=0.9223
+Top 10 documents: [527, 320, 321, 322, 107, 350, 730, 11, 476, 365]
+Relevant documents: [475, 476, 527, 320, 478, 322]
+Relevant docs in top 10: [527, 320, 322, 476]
+
+Query 61:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=0.9349
+Top 10 documents: [564, 566, 1213, 539, 333, 435, 565, 1258, 784, 907]
+Relevant documents: [565, 566, 564, 1159, 661, 539]
+Relevant docs in top 10: [564, 566, 539, 565]
+
+Query 62:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [785, 483, 787, 381, 105, 1383, 659, 459, 1046, 452]
+Relevant documents: [566, 567, 1084, 1078, 1081, 539]
+Relevant docs in top 10: []
+
+Query 63:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [738, 1045, 839, 843, 1046, 678, 891, 491, 1051, 1121]
+Relevant documents: [567, 564, 566, 539]
+Relevant docs in top 10: []
+
+Query 64:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8503
+Top 10 documents: [390, 52, 878, 482, 391, 202, 593, 719, 1111, 914]
+Relevant documents: [390, 391, 627]
+Relevant docs in top 10: [390, 391]
+
+Query 65:
+Metrics: Precision=0.6000, Recall=0.3750, F-score=0.4615, nDCG=0.9838
+Top 10 documents: [3, 388, 393, 4, 569, 664, 180, 1355, 1382, 1386]
+Relevant documents: [2, 3, 128, 180, 323, 324, 418, 664, 629, 393, 394, 659, 4, 384, 1302, 388]
+Relevant docs in top 10: [3, 388, 393, 4, 664, 180]
+
+Query 66:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.4030
+Top 10 documents: [128, 1182, 305, 191, 310, 664, 97, 590, 629, 1251]
+Relevant documents: [664, 629, 180, 659, 660, 388]
+Relevant docs in top 10: [664, 629]
+
+Query 67:
+Metrics: Precision=0.7000, Recall=0.4667, F-score=0.5600, nDCG=0.9888
+Top 10 documents: [393, 4, 3, 180, 664, 458, 389, 629, 1107, 1398]
+Relevant documents: [2, 3, 664, 629, 323, 324, 393, 128, 180, 394, 659, 389, 4, 1302, 388]
+Relevant docs in top 10: [393, 4, 3, 180, 664, 389, 629]
+
+Query 68:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.9197
+Top 10 documents: [628, 343, 662, 338, 337, 364, 1237, 974, 480, 125]
+Relevant documents: [662, 101, 460, 661, 62, 628]
+Relevant docs in top 10: [628, 662]
+
+Query 69:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.4030
+Top 10 documents: [1383, 264, 4, 664, 105, 540, 1382, 1182, 458, 1154]
+Relevant documents: [458, 570, 977, 62, 336, 540]
+Relevant docs in top 10: [540, 458]
+
+Query 70:
+Metrics: Precision=0.1000, Recall=0.0909, F-score=0.0952, nDCG=0.6309
+Top 10 documents: [1149, 540, 300, 180, 320, 192, 4, 1383, 1382, 349]
+Relevant documents: [333, 568, 570, 62, 101, 283, 565, 24, 977, 307, 540]
+Relevant docs in top 10: [540]
+
+Query 71:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=1.0000
+Top 10 documents: [540, 305, 573, 170, 570, 310, 525, 63, 537, 1253]
+Relevant documents: [569, 571, 1355, 101, 655, 1213, 798, 572, 540]
+Relevant docs in top 10: [540]
+
+Query 72:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1078, 540, 63, 666, 668, 139, 310, 1229, 1381, 504]
+Relevant documents: [21, 324, 630, 94, 664, 304, 128, 323, 663, 570, 494, 305, 309, 571, 655, 388, 62, 629]
+Relevant docs in top 10: []
+
+Query 73:
+Metrics: Precision=0.5000, Recall=0.2381, F-score=0.3226, nDCG=0.9278
+Top 10 documents: [332, 573, 541, 517, 488, 1112, 359, 401, 410, 572]
+Relevant documents: [332, 572, 578, 573, 574, 421, 25, 317, 577, 401, 625, 160, 1213, 1304, 1198, 655, 1355, 68, 571, 1252, 541]
+Relevant docs in top 10: [332, 573, 541, 401, 572]
+
+Query 74:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=0.3333
+Top 10 documents: [1153, 625, 876, 68, 1143, 493, 656, 26, 372, 1295]
+Relevant documents: [576, 656, 575, 317, 574, 578, 541]
+Relevant docs in top 10: [656]
+
+Query 75:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.5706
+Top 10 documents: [565, 584, 324, 630, 55, 629, 645, 366, 872, 1146]
+Relevant documents: [667, 324, 378, 666, 670, 630]
+Relevant docs in top 10: [324, 630]
+
+Query 76:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=0.9060
+Top 10 documents: [630, 565, 666, 667, 50, 1157, 1264, 9, 1076, 537]
+Relevant documents: [378, 667, 324, 666, 670, 1391, 329, 630]
+Relevant docs in top 10: [630, 666, 667]
+
+Query 77:
+Metrics: Precision=0.5000, Recall=0.7143, F-score=0.5882, nDCG=0.7251
+Top 10 documents: [1395, 667, 1264, 329, 630, 668, 1391, 170, 504, 134]
+Relevant documents: [668, 666, 667, 670, 329, 1391, 630]
+Relevant docs in top 10: [667, 329, 630, 668, 1391]
+
+Query 78:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.8396
+Top 10 documents: [589, 216, 543, 591, 237, 935, 138, 592, 578, 590]
+Relevant documents: [588, 589, 590, 543]
+Relevant docs in top 10: [589, 543, 590]
+
+Query 79:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.6309
+Top 10 documents: [567, 544, 196, 199, 748, 19, 689, 1066, 604, 56]
+Relevant documents: [597, 598, 688, 708, 713, 544]
+Relevant docs in top 10: [544]
+
+Query 80:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [544, 604, 546, 251, 602, 875, 790, 301, 917, 878]
+Relevant documents: [594, 597, 596, 598, 544]
+Relevant docs in top 10: [544]
+
+Query 81:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.4860
+Top 10 documents: [714, 1153, 203, 594, 672, 652, 799, 631, 755, 876]
+Relevant documents: [672, 799, 631]
+Relevant docs in top 10: [672, 799, 631]
+
+Query 82:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.8070
+Top 10 documents: [678, 1334, 1339, 676, 698, 699, 247, 465, 1332, 632]
+Relevant documents: [676, 677, 678, 679, 205, 632]
+Relevant docs in top 10: [678, 676, 632]
+
+Query 83:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.4307
+Top 10 documents: [1275, 753, 428, 680, 224, 512, 232, 593, 380, 1053]
+Relevant documents: [680, 681, 682, 683, 633]
+Relevant docs in top 10: [680]
+
+Query 84:
+Metrics: Precision=0.4000, Recall=0.3333, F-score=0.3636, nDCG=0.8285
+Top 10 documents: [294, 21, 522, 398, 872, 554, 873, 688, 378, 142]
+Relevant documents: [606, 406, 608, 142, 294, 354, 522, 962, 1192, 1213, 873, 546]
+Relevant docs in top 10: [294, 522, 873, 142]
+
+Query 85:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [294, 418, 315, 295, 1155, 272, 522, 1153, 431, 207]
+Relevant documents: [608, 406, 606, 710, 546]
+Relevant docs in top 10: []
+
+Query 86:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.9469
+Top 10 documents: [755, 594, 431, 188, 790, 179, 1155, 516, 716, 598]
+Relevant documents: [594, 790, 755]
+Relevant docs in top 10: [755, 594, 790]
+
+Query 87:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=1.0000
+Top 10 documents: [547, 439, 26, 334, 569, 1198, 1364, 903, 667, 1228]
+Relevant documents: [606, 611, 562, 50, 236, 609, 612, 406, 547]
+Relevant docs in top 10: [547]
+
+Query 88:
+Metrics: Precision=0.7000, Recall=1.0000, F-score=0.8235, nDCG=0.9493
+Top 10 documents: [613, 548, 622, 615, 616, 617, 614, 618, 619, 162]
+Relevant documents: [613, 614, 615, 616, 617, 618, 548]
+Relevant docs in top 10: [613, 548, 615, 616, 617, 614, 618]
+
+Query 89:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.4413
+Top 10 documents: [200, 632, 924, 420, 52, 464, 250, 699, 879, 793]
+Relevant documents: [793, 794, 797, 795, 796, 420, 757]
+Relevant docs in top 10: [420, 793]
+
+Query 90:
+Metrics: Precision=0.4000, Recall=0.2857, F-score=0.3333, nDCG=0.5660
+Top 10 documents: [358, 265, 311, 457, 187, 304, 1364, 291, 757, 134]
+Relevant documents: [794, 797, 798, 793, 796, 291, 800, 1187, 256, 311, 335, 1364, 1367, 757]
+Relevant docs in top 10: [311, 1364, 291, 757]
+
+Query 91:
+Metrics: Precision=0.4000, Recall=0.4000, F-score=0.4000, nDCG=0.7107
+Top 10 documents: [610, 252, 799, 526, 468, 672, 801, 879, 1062, 431]
+Relevant documents: [252, 801, 797, 799, 800, 793, 794, 1154, 672, 757]
+Relevant docs in top 10: [252, 799, 672, 801]
+
+Query 92:
+Metrics: Precision=0.8000, Recall=0.5714, F-score=0.6667, nDCG=0.9888
+Top 10 documents: [810, 758, 809, 806, 1247, 804, 1331, 807, 1252, 808]
+Relevant documents: [802, 803, 808, 809, 811, 804, 805, 806, 253, 1247, 807, 810, 1243, 758]
+Relevant docs in top 10: [810, 758, 809, 806, 1247, 804, 807, 808]
+
+Query 93:
+Metrics: Precision=0.2000, Recall=1.0000, F-score=0.3333, nDCG=1.0000
+Top 10 documents: [635, 691, 68, 355, 302, 1336, 1072, 1314, 144, 1241]
+Relevant documents: [691, 635]
+Relevant docs in top 10: [635, 691]
+
+Query 94:
+Metrics: Precision=0.6000, Recall=0.4615, F-score=0.5217, nDCG=0.9705
+Top 10 documents: [559, 1393, 283, 983, 1161, 101, 1104, 366, 365, 438]
+Relevant documents: [24, 283, 294, 559, 689, 690, 101, 1393, 354, 1104, 1161, 1395, 635]
+Relevant docs in top 10: [559, 1393, 283, 1161, 101, 1104]
+
+Query 95:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [662, 554, 1258, 123, 535, 398, 553, 872, 1104, 145]
+Relevant documents: [283, 662, 635]
+Relevant docs in top 10: [662]
+
+Query 96:
+Metrics: Precision=0.4000, Recall=0.2857, F-score=0.3333, nDCG=0.9709
+Top 10 documents: [698, 637, 699, 899, 680, 779, 465, 803, 892, 712]
+Relevant documents: [703, 704, 705, 698, 699, 700, 1289, 779, 701, 702, 706, 792, 1339, 637]
+Relevant docs in top 10: [698, 637, 699, 779]
+
+Query 97:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.5438
+Top 10 documents: [1331, 882, 1289, 781, 779, 495, 783, 1270, 1391, 556]
+Relevant documents: [699, 700, 701, 698, 1289, 702, 703, 779, 1339, 681, 637]
+Relevant docs in top 10: [1289, 779]
+
+Query 98:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.6309
+Top 10 documents: [673, 638, 1343, 792, 1163, 1091, 189, 368, 1393, 1265]
+Relevant documents: [713, 708, 709, 711, 712, 638]
+Relevant docs in top 10: [638]
+
+Query 99:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.9469
+Top 10 documents: [639, 719, 715, 716, 717, 944, 164, 1348, 67, 958]
+Relevant documents: [717, 719, 1001, 1379, 639]
+Relevant docs in top 10: [639, 719, 717]
+
+Query 100:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=1.0000
+Top 10 documents: [760, 1122, 822, 1126, 897, 1172, 739, 1013, 1171, 740]
+Relevant documents: [821, 822, 824, 820, 823, 825, 1122, 1051, 1121, 760]
+Relevant docs in top 10: [760, 1122, 822]
+
+Query 101:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9877
+Top 10 documents: [820, 817, 819, 818, 825, 823, 1119, 760, 837, 826]
+Relevant documents: [817, 818, 819, 820, 825, 824, 760]
+Relevant docs in top 10: [820, 817, 819, 818, 825, 760]
+
+Query 102:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8278
+Top 10 documents: [910, 660, 1092, 728, 516, 1001, 729, 1339, 286, 287]
+Relevant documents: [728, 913, 910, 911, 729]
+Relevant docs in top 10: [910, 728, 729]
+
+Query 103:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [761, 1048, 720, 1214, 1049, 770, 1050, 1127, 956, 1126]
+Relevant documents: [826, 828, 761]
+Relevant docs in top 10: [761]
+
+Query 104:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [762, 1177, 462, 644, 29, 910, 1024, 1316, 1055, 913]
+Relevant documents: [833, 834, 835, 836, 837, 762]
+Relevant docs in top 10: [762]
+
+Query 105:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=1.0000
+Top 10 documents: [848, 764, 847, 846, 743, 953, 763, 1071, 1019, 739]
+Relevant documents: [848, 844, 845, 846, 847, 764]
+Relevant docs in top 10: [848, 764, 847, 846]
+
+Query 106:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.7845
+Top 10 documents: [847, 848, 930, 908, 1036, 844, 890, 764, 1044, 886]
+Relevant documents: [847, 846, 849, 844, 845, 764]
+Relevant docs in top 10: [847, 844, 764]
+
+Query 107:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=1.0000
+Top 10 documents: [640, 725, 909, 883, 51, 12, 137, 220, 884, 811]
+Relevant documents: [725, 728, 729, 911, 720, 75, 909, 640]
+Relevant docs in top 10: [640, 725, 909]
+
+Query 108:
+Metrics: Precision=0.6000, Recall=0.7500, F-score=0.6667, nDCG=0.9243
+Top 10 documents: [75, 724, 726, 884, 768, 883, 720, 1244, 640, 909]
+Relevant documents: [724, 726, 727, 75, 909, 720, 723, 640]
+Relevant docs in top 10: [75, 724, 726, 720, 640, 909]
+
+Query 109:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.3155
+Top 10 documents: [859, 658, 1008, 857, 856, 391, 627, 766, 858, 864]
+Relevant documents: [860, 861, 606, 980, 12, 766]
+Relevant docs in top 10: [766]
+
+Query 110:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [862, 642, 957, 1177, 1131, 1013, 400, 888, 739, 915]
+Relevant documents: [862, 863, 31, 1174, 766]
+Relevant docs in top 10: [862]
+
+Query 111:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=0.7737
+Top 10 documents: [894, 856, 1008, 857, 766, 859, 391, 627, 858, 948]
+Relevant documents: [15, 391, 864, 914, 392, 627, 658, 894]
+Relevant docs in top 10: [894, 391, 627]
+
+Query 112:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=1.0000
+Top 10 documents: [641, 730, 733, 735, 955, 736, 1045, 840, 734, 422]
+Relevant documents: [731, 730, 641]
+Relevant docs in top 10: [641, 730]
+
+Query 113:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.8175
+Top 10 documents: [748, 716, 638, 1272, 467, 801, 265, 815, 368, 197]
+Relevant documents: [746, 748, 749, 265, 643]
+Relevant docs in top 10: [748, 265]
+
+Query 114:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.8503
+Top 10 documents: [895, 712, 1290, 632, 919, 1289, 1266, 676, 917, 465]
+Relevant documents: [919, 916, 920, 921, 895]
+Relevant docs in top 10: [895, 919]
+
+Query 115:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.6309
+Top 10 documents: [746, 184, 540, 422, 320, 435, 102, 875, 13, 81]
+Relevant documents: [51, 185, 878, 874, 184]
+Relevant docs in top 10: [184]
+
+Query 116:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.5000
+Top 10 documents: [225, 48, 605, 1038, 1303, 384, 522, 423, 1106, 932]
+Relevant documents: [922, 360, 605, 927, 492, 896]
+Relevant docs in top 10: [605]
+
+Query 117:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [229, 230, 196, 60, 782, 924, 282, 242, 1304, 1285]
+Relevant documents: [360, 605, 896]
+Relevant docs in top 10: []
+
+Query 118:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=0.5000
+Top 10 documents: [246, 803, 923, 545, 1239, 520, 1062, 360, 1243, 1074]
+Relevant documents: [923, 924, 925, 896]
+Relevant docs in top 10: [923]
+
+Query 119:
+Metrics: Precision=0.2000, Recall=1.0000, F-score=0.3333, nDCG=0.7904
+Top 10 documents: [926, 928, 1055, 1024, 533, 744, 1116, 1361, 830, 897]
+Relevant documents: [926, 897]
+Relevant docs in top 10: [926, 897]
+
+Query 120:
+Metrics: Precision=0.6000, Recall=0.6000, F-score=0.6000, nDCG=0.9538
+Top 10 documents: [769, 887, 1146, 739, 890, 897, 885, 741, 886, 740]
+Relevant documents: [829, 887, 890, 885, 886, 888, 889, 1146, 891, 769]
+Relevant docs in top 10: [769, 887, 1146, 890, 885, 886]
+
+Query 121:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=1.0000
+Top 10 documents: [1146, 887, 769, 888, 31, 1177, 1178, 957, 642, 739]
+Relevant documents: [885, 886, 1146, 887, 888, 890, 891, 769]
+Relevant docs in top 10: [1146, 887, 769, 888]
+
+Query 122:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.6751
+Top 10 documents: [1070, 898, 930, 1071, 931, 938, 1059, 935, 934, 1171]
+Relevant documents: [931, 932, 934, 935, 936, 937, 938, 957, 1131, 898]
+Relevant docs in top 10: [898, 931, 938, 935, 934]
+
+Query 123:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8066
+Top 10 documents: [941, 1360, 1221, 270, 775, 112, 740, 966, 34, 196]
+Relevant documents: [966, 967, 941]
+Relevant docs in top 10: [941, 966]
+
+Query 124:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [941, 1070, 898, 930, 934, 1171, 938, 1222, 1153, 516]
+Relevant documents: [967, 968, 964, 965, 941]
+Relevant docs in top 10: [941]
+
+Query 125:
+Metrics: Precision=0.2000, Recall=0.1111, F-score=0.1429, nDCG=0.8503
+Top 10 documents: [997, 610, 1195, 993, 176, 695, 697, 1352, 131, 519]
+Relevant documents: [969, 970, 971, 187, 973, 173, 974, 177, 972, 174, 997, 176, 409, 946, 992, 994, 995, 942]
+Relevant docs in top 10: [997, 176]
+
+Query 126:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.9197
+Top 10 documents: [1326, 1288, 974, 1095, 397, 1265, 773, 1083, 1237, 628]
+Relevant documents: [974, 1326, 187, 969, 970, 971, 972, 973, 942]
+Relevant docs in top 10: [1326, 974]
+
+Query 127:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.5110
+Top 10 documents: [5, 6, 981, 158, 869, 1073, 944, 395, 1207, 399]
+Relevant documents: [101, 164, 981, 982, 983, 944]
+Relevant docs in top 10: [981, 944]
+
+Query 128:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [945, 1063, 745, 92, 1219, 988, 1087, 248, 12, 111]
+Relevant documents: [985, 990, 945]
+Relevant docs in top 10: [945]
+
+Query 129:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.9620
+Top 10 documents: [945, 988, 987, 527, 637, 1281, 989, 507, 3, 4]
+Relevant documents: [985, 987, 984, 988, 989, 986, 990, 945]
+Relevant docs in top 10: [945, 988, 987, 989]
+
+Query 130:
+Metrics: Precision=0.5000, Recall=0.8333, F-score=0.6250, nDCG=0.9566
+Top 10 documents: [948, 859, 766, 391, 856, 1008, 858, 857, 658, 627]
+Relevant documents: [766, 858, 859, 1008, 12, 948]
+Relevant docs in top 10: [948, 859, 766, 1008, 858]
+
+Query 131:
+Metrics: Precision=0.4000, Recall=0.4444, F-score=0.4211, nDCG=0.5660
+Top 10 documents: [1021, 1023, 950, 1025, 1026, 952, 1012, 1017, 1020, 1024]
+Relevant documents: [1014, 1020, 1013, 1016, 1017, 1012, 1018, 1019, 950]
+Relevant docs in top 10: [950, 1012, 1017, 1020]
+
+Query 132:
+Metrics: Precision=0.8000, Recall=0.5000, F-score=0.6154, nDCG=0.9385
+Top 10 documents: [1026, 1013, 1021, 1015, 1023, 1020, 1028, 1014, 951, 1017]
+Relevant documents: [1014, 1013, 1015, 1016, 1012, 1018, 1019, 1017, 951, 1023, 1020, 952, 1024, 1025, 1026, 950]
+Relevant docs in top 10: [1026, 1013, 1015, 1023, 1020, 1014, 951, 1017]
+
+Query 133:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.4144
+Top 10 documents: [1026, 1013, 1015, 1023, 1020, 1028, 1014, 951, 1021, 1012]
+Relevant documents: [1020, 1018, 1019, 1024, 1012, 1016, 1022, 950]
+Relevant docs in top 10: [1020, 1012]
+
+Query 134:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.9197
+Top 10 documents: [951, 1015, 1028, 1013, 1026, 1014, 1012, 1023, 1020, 866]
+Relevant documents: [1027, 1028, 951]
+Relevant docs in top 10: [951, 1028]
+
+Query 135:
+Metrics: Precision=0.4000, Recall=0.4444, F-score=0.4211, nDCG=0.9494
+Top 10 documents: [1026, 1017, 1023, 1020, 1015, 1013, 1012, 1029, 951, 1014]
+Relevant documents: [1018, 1017, 1023, 1024, 1025, 1026, 950, 1016, 951]
+Relevant docs in top 10: [1026, 1017, 1023, 951]
+
+Query 136:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.8316
+Top 10 documents: [951, 1026, 1013, 1033, 1015, 1021, 1020, 1023, 1014, 1028]
+Relevant documents: [1021, 1022, 1034, 951]
+Relevant docs in top 10: [951, 1021]
+
+Query 137:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8194
+Top 10 documents: [952, 1023, 1026, 1021, 1028, 1015, 1024, 1034, 1013, 1020]
+Relevant documents: [1029, 1034, 951, 1021, 952]
+Relevant docs in top 10: [952, 1021, 1034]
+
+Query 138:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8316
+Top 10 documents: [953, 847, 897, 848, 844, 846, 887, 740, 841, 764]
+Relevant documents: [846, 1036, 953]
+Relevant docs in top 10: [953, 846]
+
+Query 139:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.3869
+Top 10 documents: [847, 897, 826, 848, 953, 846, 844, 887, 764, 1068]
+Relevant documents: [1031, 1032, 1035, 1037, 953]
+Relevant docs in top 10: [953]
+
+Query 140:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.8520
+Top 10 documents: [954, 922, 1038, 887, 870, 890, 726, 1039, 837, 729]
+Relevant documents: [1038, 1039, 1041, 1042, 1043, 1044, 954]
+Relevant docs in top 10: [954, 1038, 1039]
+
+Query 141:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.6340
+Top 10 documents: [930, 1043, 889, 890, 1038, 732, 1044, 926, 887, 826]
+Relevant documents: [1038, 1041, 1043, 1044, 1039, 1042, 954]
+Relevant docs in top 10: [1043, 1038, 1044]
+
+Query 142:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=1.0000
+Top 10 documents: [954, 827, 887, 1136, 1134, 922, 885, 1125, 1135, 741]
+Relevant documents: [1042, 954]
+Relevant docs in top 10: [954]
+
+Query 143:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.6509
+Top 10 documents: [930, 1043, 890, 1044, 889, 1071, 1129, 826, 953, 887]
+Relevant documents: [1043, 1044, 954]
+Relevant docs in top 10: [1043, 1044]
+
+Query 144:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9838
+Top 10 documents: [1045, 955, 763, 839, 1340, 840, 838, 1046, 1126, 846]
+Relevant documents: [840, 1045, 763, 838, 839, 841, 955]
+Relevant docs in top 10: [1045, 955, 763, 839, 840, 838]
+
+Query 145:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.9558
+Top 10 documents: [1045, 839, 1051, 763, 838, 1046, 928, 1126, 1118, 1121]
+Relevant documents: [763, 838, 839, 1045, 743, 852, 841, 955]
+Relevant docs in top 10: [1045, 839, 763, 838]
+
+Query 146:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [1045, 955, 840, 641, 854, 730, 839, 763, 1175, 1046]
+Relevant documents: [840, 1045, 955]
+Relevant docs in top 10: [1045, 955, 840]
+
+Query 147:
+Metrics: Precision=0.4000, Recall=0.3636, F-score=0.3810, nDCG=0.9620
+Top 10 documents: [956, 1049, 1050, 1358, 1128, 1171, 843, 1172, 1145, 1069]
+Relevant documents: [889, 1046, 1048, 1047, 1049, 1051, 1050, 843, 926, 822, 956]
+Relevant docs in top 10: [956, 1049, 1050, 843]
+
+Query 148:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.9223
+Top 10 documents: [1048, 956, 1126, 1050, 761, 720, 888, 928, 1049, 642]
+Relevant documents: [889, 1048, 1050, 1046, 1049, 843, 956]
+Relevant docs in top 10: [1048, 956, 1050, 1049]
+
+Query 149:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.8711
+Top 10 documents: [930, 1070, 1058, 926, 1068, 1059, 1044, 898, 633, 1361]
+Relevant documents: [1057, 1058, 1059, 1052, 930, 931, 934, 936, 937, 938, 1131, 957]
+Relevant docs in top 10: [930, 1058, 1059]
+
+Query 150:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [1074, 1062, 1075, 1108, 1259, 1243, 124, 1239, 923, 1202]
+Relevant documents: [1074, 1075, 1062]
+Relevant docs in top 10: [1074, 1062, 1075]
+
+Query 151:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [1062, 678, 433, 1246, 924, 676, 52, 247, 250, 222]
+Relevant documents: [687, 1076, 1074, 1075, 1077, 1062]
+Relevant docs in top 10: [1062]
+
+Query 152:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=0.2891
+Top 10 documents: [671, 1225, 333, 336, 678, 794, 3, 924, 250, 1062]
+Relevant documents: [1076, 1077, 569, 572, 687, 655, 1062]
+Relevant docs in top 10: [1062]
+
+Query 153:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.9620
+Top 10 documents: [1063, 1085, 1081, 393, 394, 323, 1082, 117, 300, 666]
+Relevant documents: [1078, 1083, 1084, 1080, 1081, 1082, 1085, 1063]
+Relevant docs in top 10: [1063, 1085, 1081, 1082]
+
+Query 154:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.6788
+Top 10 documents: [832, 1087, 1088, 1054, 1262, 1055, 111, 1063, 1086, 1053]
+Relevant documents: [1087, 1088, 1063]
+Relevant docs in top 10: [1087, 1088, 1063]
+
+Query 155:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.7107
+Top 10 documents: [553, 1099, 1100, 1097, 810, 1065, 1101, 1241, 805, 804]
+Relevant documents: [1103, 1100, 983, 1101, 1104, 1099, 1065]
+Relevant docs in top 10: [1099, 1100, 1065, 1101]
+
+Query 156:
+Metrics: Precision=0.7000, Recall=0.4667, F-score=0.5600, nDCG=1.0000
+Top 10 documents: [553, 1097, 1099, 1096, 1100, 1098, 1065, 761, 1117, 1279]
+Relevant documents: [983, 1102, 1097, 1100, 274, 1096, 1098, 1099, 1103, 982, 1104, 553, 1101, 82, 1065]
+Relevant docs in top 10: [553, 1097, 1099, 1096, 1100, 1098, 1065]
+
+Query 157:
+Metrics: Precision=0.6000, Recall=0.1500, F-score=0.2400, nDCG=0.9671
+Top 10 documents: [1006, 318, 160, 25, 498, 1393, 626, 688, 372, 1112]
+Relevant documents: [273, 1105, 1106, 93, 161, 302, 122, 666, 1107, 556, 25, 1011, 19, 35, 1355, 372, 410, 456, 36, 44, 215, 626, 1151, 354, 369, 370, 421, 557, 605, 655, 657, 689, 1307, 318, 423, 1304, 160, 482, 572, 1006]
+Relevant docs in top 10: [1006, 318, 160, 25, 626, 372]
+
+Query 158:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.8772
+Top 10 documents: [302, 691, 949, 552, 1199, 328, 1157, 586, 405, 59]
+Relevant documents: [302, 1011, 552, 998, 1009, 1010, 273, 556, 1006]
+Relevant docs in top 10: [302, 552]
+
+Query 159:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.8603
+Top 10 documents: [1066, 1197, 1112, 801, 958, 1287, 1115, 723, 1339, 844]
+Relevant documents: [234, 1108, 1110, 1114, 1115, 1111, 1112, 231, 1066]
+Relevant docs in top 10: [1066, 1112, 1115]
+
+Query 160:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [1071, 885, 887, 890, 739, 741, 769, 1172, 1052, 740]
+Relevant documents: [1134, 1137, 1138, 1135, 1136, 1071]
+Relevant docs in top 10: [1071]
+
+Query 161:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.8520
+Top 10 documents: [1386, 1192, 55, 460, 461, 145, 959, 54, 1185, 1366]
+Relevant documents: [54, 1386, 562, 336, 55, 996, 489]
+Relevant docs in top 10: [1386, 55, 54]
+
+Query 162:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=0.5000
+Top 10 documents: [55, 959, 460, 559, 145, 366, 1383, 1182, 376, 365]
+Relevant documents: [111, 155, 460, 461, 54, 562, 458, 459, 489]
+Relevant docs in top 10: [460]
+
+Query 163:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.9060
+Top 10 documents: [492, 1231, 57, 56, 434, 373, 232, 233, 1307, 354]
+Relevant documents: [20, 56, 57, 492]
+Relevant docs in top 10: [492, 57, 56]
+
+Query 164:
+Metrics: Precision=0.4000, Recall=0.4444, F-score=0.4211, nDCG=0.7328
+Top 10 documents: [358, 311, 503, 316, 265, 457, 187, 415, 72, 1225]
+Relevant documents: [311, 415, 416, 798, 316, 335, 1364, 1367, 503]
+Relevant docs in top 10: [311, 503, 316, 415]
+
+Query 165:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=1.0000
+Top 10 documents: [504, 71, 335, 569, 256, 1076, 64, 978, 1154, 376]
+Relevant documents: [71, 72, 504]
+Relevant docs in top 10: [504, 71]
+
+Query 166:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=1.0000
+Top 10 documents: [504, 256, 569, 71, 335, 1302, 1171, 55, 376, 1276]
+Relevant documents: [40, 41, 74, 207, 272, 418, 170, 1264, 504]
+Relevant docs in top 10: [504]
+
+Query 167:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.2891
+Top 10 documents: [553, 1279, 1099, 1097, 1100, 1241, 1096, 1098, 1065, 274]
+Relevant documents: [274, 82, 509]
+Relevant docs in top 10: [274]
+
+Query 168:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.9197
+Top 10 documents: [750, 965, 217, 136, 1187, 341, 118, 970, 221, 127]
+Relevant documents: [217, 774, 750]
+Relevant docs in top 10: [750, 217]
+
+Query 169:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.8772
+Top 10 documents: [750, 965, 217, 118, 136, 341, 1187, 127, 970, 213]
+Relevant documents: [118, 157, 774, 775, 750]
+Relevant docs in top 10: [750, 118]
+
+Query 170:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9362
+Top 10 documents: [893, 238, 905, 904, 239, 139, 1082, 140, 223, 906]
+Relevant documents: [139, 238, 239, 904, 906, 672, 893]
+Relevant docs in top 10: [893, 238, 904, 239, 139, 906]
+
+Query 171:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.8989
+Top 10 documents: [516, 431, 714, 594, 800, 141, 1155, 252, 672, 808]
+Relevant documents: [252, 431, 141, 516]
+Relevant docs in top 10: [516, 431, 141, 252]
+
+Query 172:
+Metrics: Precision=0.5000, Recall=1.0000, F-score=0.6667, nDCG=0.9896
+Top 10 documents: [527, 320, 322, 321, 478, 476, 1370, 107, 1281, 1235]
+Relevant documents: [320, 321, 322, 476, 527]
+Relevant docs in top 10: [527, 320, 322, 321, 476]
+
+Query 173:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [532, 367, 451, 1073, 917, 470, 777, 251, 1054, 931]
+Relevant documents: [367, 451, 532]
+Relevant docs in top 10: [532, 367, 451]
+
+Query 174:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.6309
+Top 10 documents: [483, 411, 1274, 1319, 1157, 523, 501, 1390, 1151, 35]
+Relevant documents: [58, 411, 36, 423, 482, 533]
+Relevant docs in top 10: [411]
+
+Query 175:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [941, 1221, 270, 139, 668, 1078, 666, 34, 491, 238]
+Relevant documents: [351, 966, 967, 964, 965, 941]
+Relevant docs in top 10: [941]
+
+Query 176:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.5641
+Top 10 documents: [963, 542, 5, 1073, 606, 869, 872, 981, 1221, 978]
+Relevant documents: [582, 583, 584, 585, 978, 586, 982, 542]
+Relevant docs in top 10: [542, 978]
+
+Query 177:
+Metrics: Precision=0.5000, Recall=0.8333, F-score=0.6250, nDCG=0.9374
+Top 10 documents: [589, 588, 576, 590, 543, 216, 578, 592, 138, 591]
+Relevant documents: [588, 589, 592, 772, 590, 543]
+Relevant docs in top 10: [589, 588, 590, 543, 592]
+
+Query 178:
+Metrics: Precision=0.4000, Recall=0.8000, F-score=0.5333, nDCG=0.8838
+Top 10 documents: [591, 216, 589, 543, 138, 592, 590, 214, 1153, 237]
+Relevant documents: [591, 590, 588, 589, 543]
+Relevant docs in top 10: [591, 589, 543, 590]
+
+Query 179:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.9675
+Top 10 documents: [633, 680, 224, 682, 227, 428, 918, 1080, 512, 706]
+Relevant documents: [680, 681, 682, 683, 633]
+Relevant docs in top 10: [633, 680, 682]
+
+Query 180:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.9709
+Top 10 documents: [548, 622, 616, 314, 218, 617, 1103, 613, 882, 806]
+Relevant documents: [622, 619, 620, 621, 617, 616, 1150, 548]
+Relevant docs in top 10: [548, 622, 616, 617]
+
+Query 181:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [997, 610, 1195, 993, 176, 695, 1062, 697, 131, 1352]
+Relevant documents: [973, 974, 409, 997, 1061, 942]
+Relevant docs in top 10: [997]
+
+Query 182:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [634, 685, 686, 593, 712, 70, 1300, 39, 797, 1290]
+Relevant documents: [685, 686, 634]
+Relevant docs in top 10: [634, 685, 686]
+
+Query 183:
+Metrics: Precision=0.8000, Recall=0.5714, F-score=0.6667, nDCG=0.9963
+Top 10 documents: [1247, 804, 758, 808, 1243, 809, 810, 88, 806, 268]
+Relevant documents: [803, 808, 802, 807, 811, 253, 804, 805, 806, 809, 810, 1243, 1247, 758]
+Relevant docs in top 10: [1247, 804, 758, 808, 1243, 809, 810, 806]
+
+Query 184:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.4825
+Top 10 documents: [554, 207, 82, 716, 509, 715, 687, 1217, 895, 1348]
+Relevant documents: [32, 67, 715, 717, 716, 499, 1379, 639]
+Relevant docs in top 10: [716, 715]
+
+Query 185:
+Metrics: Precision=0.7000, Recall=0.7000, F-score=0.7000, nDCG=0.9888
+Top 10 documents: [856, 1008, 766, 857, 859, 391, 858, 948, 658, 864]
+Relevant documents: [858, 859, 857, 1008, 856, 15, 285, 894, 766, 948]
+Relevant docs in top 10: [856, 1008, 766, 857, 859, 858, 948]
+
+Query 186:
+Metrics: Precision=0.5000, Recall=0.2941, F-score=0.3704, nDCG=0.8386
+Top 10 documents: [1062, 610, 1075, 1243, 1239, 1074, 803, 923, 924, 520]
+Relevant documents: [1309, 1378, 923, 161, 421, 1377, 924, 1062, 1074, 1379, 1380, 1075, 225, 1280, 1305, 1304, 1188]
+Relevant docs in top 10: [1062, 1075, 1074, 923, 924]
+
+Query 187:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.7586
+Top 10 documents: [763, 841, 1068, 897, 887, 740, 1126, 839, 743, 1071]
+Relevant documents: [838, 839, 840, 743, 842, 1045, 763]
+Relevant docs in top 10: [763, 839, 743]
+
+Query 188:
+Metrics: Precision=0.4000, Recall=0.3333, F-score=0.3636, nDCG=1.0000
+Top 10 documents: [725, 909, 640, 722, 720, 781, 1360, 209, 1331, 137]
+Relevant documents: [721, 722, 723, 75, 909, 724, 726, 725, 728, 729, 911, 640]
+Relevant docs in top 10: [725, 909, 640, 722]
+
+Query 189:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.7865
+Top 10 documents: [767, 768, 883, 726, 865, 640, 909, 75, 884, 870]
+Relevant documents: [395, 866, 869, 865, 868, 870, 867, 872, 873, 767]
+Relevant docs in top 10: [767, 865, 870]
+
+Query 190:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.5706
+Top 10 documents: [856, 1008, 391, 390, 766, 627, 948, 857, 859, 858]
+Relevant documents: [15, 391, 285, 390, 864, 894]
+Relevant docs in top 10: [391, 390]
+
+Query 191:
+Metrics: Precision=0.7000, Recall=0.5000, F-score=0.5833, nDCG=0.7810
+Top 10 documents: [766, 856, 1008, 857, 859, 391, 858, 627, 948, 658]
+Relevant documents: [914, 915, 285, 857, 858, 15, 391, 856, 390, 1008, 948, 864, 658, 894]
+Relevant docs in top 10: [856, 1008, 857, 391, 858, 948, 658]
+
+Query 192:
+Metrics: Precision=0.4000, Recall=0.8000, F-score=0.5333, nDCG=0.9829
+Top 10 documents: [641, 734, 735, 925, 733, 647, 1175, 1170, 875, 1084]
+Relevant documents: [733, 734, 735, 736, 641]
+Relevant docs in top 10: [641, 734, 735, 733]
+
+Query 193:
+Metrics: Precision=0.8000, Recall=0.8000, F-score=0.8000, nDCG=0.9963
+Top 10 documents: [730, 733, 641, 735, 736, 648, 422, 400, 734, 644]
+Relevant documents: [730, 422, 648, 731, 733, 734, 1392, 735, 736, 641]
+Relevant docs in top 10: [730, 733, 641, 735, 736, 648, 422, 734]
+
+Query 194:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.8066
+Top 10 documents: [642, 932, 888, 957, 1126, 1177, 1173, 744, 769, 1131]
+Relevant documents: [739, 740, 742, 744, 741, 743, 642]
+Relevant docs in top 10: [642, 744]
+
+Query 195:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.8175
+Top 10 documents: [642, 1055, 932, 888, 831, 744, 739, 1126, 777, 1054]
+Relevant documents: [739, 742, 743, 642]
+Relevant docs in top 10: [642, 739]
+
+Query 196:
+Metrics: Precision=0.4000, Recall=0.3077, F-score=0.3478, nDCG=0.8773
+Top 10 documents: [746, 184, 435, 540, 1237, 494, 102, 875, 13, 23]
+Relevant documents: [51, 185, 874, 878, 879, 880, 12, 875, 876, 202, 746, 13, 184]
+Relevant docs in top 10: [746, 184, 875, 13]
+
+Query 197:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.9550
+Top 10 documents: [884, 881, 768, 726, 1168, 723, 909, 883, 865, 746]
+Relevant documents: [881, 883, 884, 768]
+Relevant docs in top 10: [884, 881, 768, 883]
+
+Query 198:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.9197
+Top 10 documents: [889, 739, 887, 897, 886, 740, 1068, 743, 890, 1126]
+Relevant documents: [887, 888, 889, 843, 769]
+Relevant docs in top 10: [889, 887]
+
+Query 199:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=0.3869
+Top 10 documents: [930, 1070, 739, 1058, 1055, 1294, 1044, 1059, 931, 898]
+Relevant documents: [1052, 1053, 1054, 1055, 1056, 1060, 743, 744, 957]
+Relevant docs in top 10: [1055]
+
+Query 200:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.9197
+Top 10 documents: [1071, 885, 1134, 887, 889, 890, 1053, 739, 897, 400]
+Relevant documents: [1134, 1137, 1138, 1071]
+Relevant docs in top 10: [1071, 1134]
+
+Query 201:
+Metrics: Precision=0.3000, Recall=0.1765, F-score=0.2222, nDCG=0.8855
+Top 10 documents: [625, 554, 541, 410, 1295, 716, 1348, 24, 1297, 1217]
+Relevant documents: [552, 625, 1296, 93, 1151, 401, 110, 1391, 423, 541, 1295, 318, 1304, 160, 369, 482, 1140]
+Relevant docs in top 10: [625, 541, 1295]
+
+Query 202:
+Metrics: Precision=0.5000, Recall=0.3333, F-score=0.4000, nDCG=1.0000
+Top 10 documents: [1285, 605, 1310, 232, 1303, 19, 186, 1231, 1378, 1311]
+Relevant documents: [1303, 1304, 1309, 1306, 1308, 605, 602, 603, 604, 1110, 1305, 1310, 48, 232, 1285]
+Relevant docs in top 10: [1285, 605, 1310, 232, 1303]
+
+Query 203:
+Metrics: Precision=0.3000, Recall=0.2000, F-score=0.2400, nDCG=0.7123
+Top 10 documents: [38, 1285, 58, 48, 122, 225, 1303, 605, 423, 1308]
+Relevant documents: [58, 1305, 1306, 602, 603, 604, 1307, 1310, 19, 232, 323, 688, 122, 1188, 1285]
+Relevant docs in top 10: [1285, 58, 122]
+
+Query 204:
+Metrics: Precision=0.1000, Recall=0.0667, F-score=0.0800, nDCG=0.6309
+Top 10 documents: [147, 1311, 310, 971, 305, 443, 1080, 573, 1382, 1229]
+Relevant documents: [572, 1311, 63, 540, 602, 603, 604, 1305, 1188, 307, 1213, 655, 1355, 68, 1285]
+Relevant docs in top 10: [1311]
+
+Query 205:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.9325
+Top 10 documents: [1287, 1321, 55, 78, 337, 1322, 959, 1323, 1364, 406]
+Relevant documents: [1321, 1322, 1287]
+Relevant docs in top 10: [1287, 1321, 1322]
+
+Query 206:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.8066
+Top 10 documents: [1290, 879, 468, 876, 878, 526, 469, 1338, 801, 880]
+Relevant documents: [1338, 1341, 1340, 1290]
+Relevant docs in top 10: [1290, 1338]
+
+Query 207:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.4307
+Top 10 documents: [458, 365, 678, 1341, 699, 247, 1154, 441, 204, 1185]
+Relevant documents: [1338, 1339, 1340, 1341, 879, 1290]
+Relevant docs in top 10: [1341]
+
+Query 208:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9715
+Top 10 documents: [1291, 1344, 1345, 163, 1380, 566, 1347, 164, 1348, 982]
+Relevant documents: [163, 1344, 1345, 164, 1347, 1346, 1291]
+Relevant docs in top 10: [1291, 1344, 1345, 163, 1347, 164]
+
+Query 209:
+Metrics: Precision=0.3000, Recall=0.2308, F-score=0.2609, nDCG=0.4792
+Top 10 documents: [959, 358, 798, 996, 1383, 461, 187, 1364, 55, 240]
+Relevant documents: [1351, 1356, 1350, 187, 487, 45, 55, 316, 1383, 1385, 1106, 1228, 1292]
+Relevant docs in top 10: [1383, 187, 55]
+
+Query 210:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=1.0000
+Top 10 documents: [1172, 1145, 1171, 1126, 739, 938, 1071, 1068, 887, 740]
+Relevant documents: [1171, 891, 1172, 1173, 1030, 1174, 1145]
+Relevant docs in top 10: [1172, 1145, 1171]
+
+Query 211:
+Metrics: Precision=0.2000, Recall=0.1667, F-score=0.1818, nDCG=0.3890
+Top 10 documents: [739, 887, 897, 740, 743, 953, 1068, 890, 769, 889]
+Relevant documents: [891, 1172, 1173, 1174, 763, 769, 1030, 1031, 1033, 1052, 1068, 1145]
+Relevant docs in top 10: [1068, 769]
+
+Query 212:
+Metrics: Precision=0.6000, Recall=0.4000, F-score=0.4800, nDCG=0.9635
+Top 10 documents: [1178, 888, 1176, 1177, 838, 1293, 885, 642, 1359, 1146]
+Relevant documents: [888, 889, 1178, 885, 887, 886, 841, 1176, 1177, 890, 769, 891, 1173, 843, 1146]
+Relevant docs in top 10: [1178, 888, 1176, 1177, 885, 1146]
+
+Query 213:
+Metrics: Precision=0.7000, Recall=0.5833, F-score=0.6364, nDCG=0.9727
+Top 10 documents: [885, 888, 1146, 769, 1173, 741, 1116, 642, 1178, 887]
+Relevant documents: [888, 885, 887, 889, 1178, 769, 1173, 1177, 886, 890, 843, 1146]
+Relevant docs in top 10: [885, 888, 1146, 769, 1173, 1178, 887]
+
+Query 214:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.9197
+Top 10 documents: [1294, 828, 1362, 831, 930, 848, 756, 1044, 739, 47]
+Relevant documents: [833, 1361, 1362, 1363, 1294]
+Relevant docs in top 10: [1294, 1362]
+
+Query 215:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [535, 1253, 1234, 25, 666, 332, 1204, 68, 984, 357]
+Relevant documents: [37, 35, 535]
+Relevant docs in top 10: [535]
+
+Query 216:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [958, 175, 764, 1156, 407, 971, 367, 64, 1225, 1220]
+Relevant documents: [156, 506]
+Relevant docs in top 10: []
+
+Query 217:
+Metrics: Precision=0.2000, Recall=0.1250, F-score=0.1538, nDCG=0.6241
+Top 10 documents: [323, 559, 1274, 655, 666, 1319, 44, 629, 1393, 369]
+Relevant documents: [666, 667, 1258, 1394, 668, 670, 1204, 1391, 1395, 1300, 37, 559, 630, 1107, 1213, 1191]
+Relevant docs in top 10: [559, 666]
+
+Query 218:
+Metrics: Precision=0.3000, Recall=0.1875, F-score=0.2308, nDCG=0.8385
+Top 10 documents: [559, 323, 655, 666, 629, 1393, 180, 44, 670, 983]
+Relevant documents: [24, 101, 666, 667, 93, 1258, 1393, 559, 630, 662, 1104, 1107, 1204, 1213, 1300, 1191]
+Relevant docs in top 10: [559, 666, 1393]
+
+Query 219:
+Metrics: Precision=0.1000, Recall=0.0526, F-score=0.0690, nDCG=0.6309
+Top 10 documents: [1222, 1078, 668, 1221, 775, 197, 53, 579, 1082, 1273]
+Relevant documents: [1391, 666, 667, 1258, 1078, 1080, 1081, 1394, 1395, 1214, 1198, 1204, 1300, 559, 630, 662, 1107, 1213, 1191]
+Relevant docs in top 10: [1078]
+
+Query 220:
+Metrics: Precision=0.3000, Recall=0.1500, F-score=0.2000, nDCG=0.5051
+Top 10 documents: [4, 738, 382, 461, 376, 292, 458, 629, 242, 231]
+Relevant documents: [1383, 1385, 155, 241, 1382, 1370, 1386, 111, 1384, 150, 292, 458, 479, 977, 376, 459, 1365, 62, 1366, 1182]
+Relevant docs in top 10: [376, 292, 458]
+
+Query 221:
+Metrics: Precision=0.4000, Recall=0.2105, F-score=0.2759, nDCG=0.8597
+Top 10 documents: [1366, 3, 1386, 1225, 62, 55, 378, 292, 404, 435]
+Relevant documents: [155, 1383, 1385, 1382, 62, 292, 241, 1370, 1384, 458, 459, 461, 1386, 1365, 1366, 111, 150, 479, 1182]
+Relevant docs in top 10: [1366, 1386, 62, 292]
+
+Query 222:
+Metrics: Precision=0.6000, Recall=0.6000, F-score=0.6000, nDCG=0.9329
+Top 10 documents: [1400, 1398, 1130, 419, 1399, 1358, 400, 1357, 1397, 888]
+Relevant documents: [400, 419, 1387, 412, 1392, 1398, 1397, 1400, 1399, 1396]
+Relevant docs in top 10: [1400, 1398, 419, 1399, 400, 1397]
+
+Query 223:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.9197
+Top 10 documents: [400, 1399, 1398, 393, 1121, 484, 1400, 412, 659, 1037]
+Relevant documents: [400, 1387, 1392, 1398, 1396]
+Relevant docs in top 10: [400, 1398]
+
+Query 224:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=0.3562
+Top 10 documents: [1312, 236, 317, 175, 26, 1286, 1298, 1314, 110, 1315]
+Relevant documents: [656, 1313, 1317, 1316, 1318, 1319, 1157, 1274, 1286]
+Relevant docs in top 10: [1286]
+
+Query 225:
+Metrics: Precision=0.3000, Recall=0.1200, F-score=0.1714, nDCG=0.9675
+Top 10 documents: [1380, 1188, 226, 1124, 638, 1291, 279, 1256, 368, 701]
+Relevant documents: [1379, 1305, 1304, 40, 293, 1309, 161, 421, 1377, 1378, 1381, 225, 1380, 448, 449, 1124, 1280, 433, 923, 924, 1062, 1074, 1075, 1213, 1188]
+Relevant docs in top 10: [1380, 1188, 1124]
+
+Mean metrics for VSM:
+Precision: mean=0.2924, std=0.1857
+Recall: mean=0.4235, std=0.2672
+F-score: mean=0.3204, std=0.1815
+nDCG: mean=0.7813, std=0.2559
+
+Evaluating ESA model:
+Precision: mean=0.1649, std=0.1574
+Recall: mean=0.2478, std=0.2431
+F-score: mean=0.1836, std=0.1644
+nDCG: mean=0.5175, std=0.3836
+
+Evaluating ESA model:
+
+Analyzing document rankings:
+
+Query 1:
+Metrics: Precision=0.2000, Recall=0.0690, F-score=0.1026, nDCG=0.8503
+Top 10 documents: [51, 1169, 253, 1144, 486, 1163, 792, 747, 878, 1168]
+Relevant documents: [184, 29, 31, 12, 51, 102, 13, 14, 15, 57, 378, 859, 185, 30, 37, 52, 142, 195, 875, 56, 66, 95, 462, 497, 858, 876, 879, 880, 486]
+Relevant docs in top 10: [51, 486]
+
+Query 2:
+Metrics: Precision=0.2000, Recall=0.0800, F-score=0.1143, nDCG=0.9197
+Top 10 documents: [51, 1169, 12, 253, 1089, 792, 1163, 1168, 884, 1042]
+Relevant documents: [12, 15, 184, 858, 51, 102, 202, 14, 52, 380, 746, 859, 948, 285, 390, 391, 442, 497, 643, 856, 857, 877, 864, 658, 486]
+Relevant docs in top 10: [51, 12]
+
+Query 3:
+Metrics: Precision=0.5000, Recall=0.5556, F-score=0.5263, nDCG=0.9182
+Top 10 documents: [5, 181, 542, 585, 144, 399, 6, 963, 707, 145]
+Relevant documents: [5, 6, 90, 91, 119, 144, 181, 399, 485]
+Relevant docs in top 10: [5, 181, 144, 399, 6]
+
+Query 4:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.6934
+Top 10 documents: [167, 236, 166, 1374, 410, 541, 1180, 375, 575, 1312]
+Relevant documents: [236, 166, 488]
+Relevant docs in top 10: [236, 166]
+
+Query 5:
+Metrics: Precision=0.4000, Recall=0.8000, F-score=0.5333, nDCG=0.9447
+Top 10 documents: [1296, 552, 401, 641, 732, 320, 746, 1379, 350, 488]
+Relevant documents: [552, 401, 1297, 1296, 488]
+Relevant docs in top 10: [1296, 552, 401, 488]
+
+Query 6:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.2891
+Top 10 documents: [385, 386, 775, 1275, 1245, 526, 310, 487, 97, 491]
+Relevant documents: [99, 115, 257, 258, 491]
+Relevant docs in top 10: [491]
+
+Query 7:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.7989
+Top 10 documents: [492, 1231, 1307, 423, 57, 1352, 1114, 58, 282, 196]
+Relevant documents: [20, 56, 57, 58, 19, 492]
+Relevant docs in top 10: [492, 57, 58]
+
+Query 8:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.9010
+Top 10 documents: [492, 122, 1133, 234, 1352, 1231, 1114, 1262, 370, 196]
+Relevant documents: [48, 122, 20, 58, 196, 354, 360, 197, 999, 1112, 1005, 492]
+Relevant docs in top 10: [492, 122, 196]
+
+Query 9:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=0.3333
+Top 10 documents: [5, 396, 303, 120, 398, 623, 21, 436, 554, 145]
+Relevant documents: [21, 22, 550, 534]
+Relevant docs in top 10: [21]
+
+Query 10:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=1.0000
+Top 10 documents: [302, 949, 1335, 616, 1150, 524, 1199, 621, 691, 1103]
+Relevant documents: [259, 405, 302, 436, 437, 438, 998, 1011, 493]
+Relevant docs in top 10: [302]
+
+Query 11:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.6509
+Top 10 documents: [1327, 495, 777, 654, 93, 1389, 264, 641, 1108, 320]
+Relevant documents: [27, 28, 262, 160, 20, 263, 654, 495]
+Relevant docs in top 10: [495, 654]
+
+Query 12:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.3155
+Top 10 documents: [941, 34, 939, 1221, 270, 491, 629, 624, 526, 23]
+Relevant documents: [86, 194, 650, 649, 652, 624]
+Relevant docs in top 10: [624]
+
+Query 13:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [496, 468, 801, 313, 797, 903, 503, 469, 526, 757]
+Relevant documents: [64, 265, 65, 311, 496]
+Relevant docs in top 10: [496]
+
+Query 14:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.9197
+Top 10 documents: [64, 256, 65, 402, 291, 1364, 190, 132, 345, 178]
+Relevant documents: [64, 65, 496]
+Relevant docs in top 10: [64, 65]
+
+Query 15:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=1.0000
+Top 10 documents: [463, 462, 1097, 1099, 1025, 1096, 1117, 82, 866, 1043]
+Relevant documents: [463, 462, 497]
+Relevant docs in top 10: [463, 462]
+
+Query 16:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=1.0000
+Top 10 documents: [498, 106, 1301, 97, 1245, 1275, 494, 385, 468, 803]
+Relevant documents: [266, 106, 196, 498]
+Relevant docs in top 10: [498, 106]
+
+Query 17:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1108, 404, 1148, 266, 350, 607, 1283, 527, 2, 641]
+Relevant documents: [106, 196, 498]
+Relevant docs in top 10: []
+
+Query 18:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=0.6309
+Top 10 documents: [492, 196, 1352, 1231, 1307, 423, 57, 370, 1382, 248]
+Relevant documents: [196, 197, 198, 498]
+Relevant docs in top 10: [196]
+
+Query 19:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [44, 416, 799, 610, 753, 1215, 448, 520, 286, 823]
+Relevant documents: [32, 67, 164, 639, 715, 716, 719, 1379, 717, 499]
+Relevant docs in top 10: []
+
+Query 20:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.9134
+Top 10 documents: [270, 500, 84, 1245, 1391, 625, 45, 88, 332, 310]
+Relevant documents: [87, 88, 104, 267, 268, 269, 270, 407, 408, 500]
+Relevant docs in top 10: [270, 500, 88]
+
+Query 21:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.6309
+Top 10 documents: [1336, 502, 1290, 1161, 628, 302, 1011, 68, 524, 1199]
+Relevant documents: [271, 16, 413, 414, 502]
+Relevant docs in top 10: [502]
+
+Query 22:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [560, 1147, 260, 962, 606, 766, 66, 387, 1149, 982]
+Relevant documents: [68, 502]
+Relevant docs in top 10: []
+
+Query 23:
+Metrics: Precision=0.1000, Recall=0.0303, F-score=0.0465, nDCG=0.6309
+Top 10 documents: [1111, 892, 718, 955, 184, 141, 185, 1158, 804, 905]
+Relevant documents: [900, 902, 200, 201, 601, 899, 903, 593, 199, 594, 901, 544, 597, 749, 917, 919, 1333, 634, 687, 698, 1290, 700, 704, 705, 1109, 1112, 1141, 1197, 1256, 1259, 1272, 1289, 892]
+Relevant docs in top 10: [892]
+
+Query 24:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.9060
+Top 10 documents: [756, 1362, 47, 46, 1361, 1294, 1024, 1034, 1088, 1023]
+Relevant documents: [46, 47, 92, 756]
+Relevant docs in top 10: [756, 47, 46]
+
+Query 25:
+Metrics: Precision=0.1000, Recall=0.1000, F-score=0.1000, nDCG=0.5000
+Top 10 documents: [97, 487, 216, 775, 1245, 774, 439, 385, 121, 1228]
+Relevant documents: [213, 212, 214, 215, 216, 276, 277, 426, 427, 511]
+Relevant docs in top 10: [216]
+
+Query 26:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [393, 4, 629, 3, 310, 23, 386, 306, 148, 382]
+Relevant documents: [145, 611, 376, 406, 565, 1076, 511]
+Relevant docs in top 10: []
+
+Query 27:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [752, 195, 680, 14, 390, 1075, 1031, 758, 964, 451]
+Relevant documents: [224, 278, 428, 512]
+Relevant docs in top 10: []
+
+Query 28:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [752, 680, 14, 758, 195, 451, 390, 1075, 27, 964]
+Relevant documents: [224, 279, 512]
+Relevant docs in top 10: []
+
+Query 29:
+Metrics: Precision=0.1000, Recall=0.1000, F-score=0.1000, nDCG=0.6309
+Top 10 documents: [420, 465, 901, 900, 902, 779, 633, 211, 222, 683]
+Relevant documents: [250, 514, 609, 225, 793, 464, 465, 612, 466, 513]
+Relevant docs in top 10: [465]
+
+Query 30:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [602, 385, 779, 775, 386, 1245, 633, 222, 1275, 526]
+Relevant documents: [225, 464, 514, 466, 609, 612, 793, 513]
+Relevant docs in top 10: []
+
+Query 31:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=0.3155
+Top 10 documents: [1245, 918, 373, 193, 1184, 574, 160, 751, 97, 626]
+Relevant documents: [776, 751]
+Relevant docs in top 10: [751]
+
+Query 32:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=1.0000
+Top 10 documents: [752, 20, 820, 390, 1048, 223, 27, 195, 1014, 232]
+Relevant documents: [465, 249, 777, 778, 247, 250, 752]
+Relevant docs in top 10: [752]
+
+Query 33:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.6979
+Top 10 documents: [594, 516, 141, 598, 1155, 431, 1004, 808, 76, 346]
+Relevant documents: [252, 431, 141, 516]
+Relevant docs in top 10: [516, 141, 431]
+
+Query 34:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.5377
+Top 10 documents: [795, 594, 1153, 598, 516, 252, 431, 876, 672, 610]
+Relevant documents: [252, 431, 672, 714, 799, 800, 516]
+Relevant docs in top 10: [516, 252, 431, 672]
+
+Query 35:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1314, 319, 665, 169, 190, 1156, 64, 296, 65, 1319]
+Relevant documents: [166, 167, 132, 517]
+Relevant docs in top 10: []
+
+Query 36:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [623, 5, 21, 396, 144, 120, 303, 436, 145, 398]
+Relevant documents: [169, 168, 518]
+Relevant docs in top 10: []
+
+Query 37:
+Metrics: Precision=0.2000, Recall=0.2000, F-score=0.2000, nDCG=0.7977
+Top 10 documents: [173, 176, 1133, 186, 1352, 126, 282, 605, 188, 979]
+Relevant documents: [173, 188, 172, 97, 121, 187, 242, 409, 487, 519]
+Relevant docs in top 10: [173, 188]
+
+Query 38:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1247, 1239, 25, 976, 688, 279, 373, 523, 233, 1112]
+Relevant documents: [24, 283, 552, 272, 557, 558, 553, 554, 555, 556, 536]
+Relevant docs in top 10: []
+
+Query 39:
+Metrics: Precision=0.1000, Recall=0.0714, F-score=0.0833, nDCG=0.3155
+Top 10 documents: [1278, 1205, 337, 43, 899, 406, 40, 272, 293, 933]
+Relevant documents: [272, 555, 24, 283, 552, 79, 207, 418, 557, 554, 556, 505, 1257, 536]
+Relevant docs in top 10: [272]
+
+Query 40:
+Metrics: Precision=0.1000, Recall=0.0769, F-score=0.0870, nDCG=0.5000
+Top 10 documents: [1278, 1205, 272, 293, 43, 330, 79, 40, 1264, 37]
+Relevant documents: [24, 283, 552, 272, 85, 976, 557, 558, 553, 554, 555, 556, 536]
+Relevant docs in top 10: [272]
+
+Query 41:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.3618
+Top 10 documents: [879, 1340, 464, 1164, 874, 643, 686, 747, 289, 433]
+Relevant documents: [288, 289, 433, 520]
+Relevant docs in top 10: [289, 433]
+
+Query 42:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.5438
+Top 10 documents: [526, 440, 521, 404, 468, 439, 1267, 39, 900, 1275]
+Relevant documents: [468, 467, 469, 470, 775, 521]
+Relevant docs in top 10: [521, 468]
+
+Query 43:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.6197
+Top 10 documents: [440, 39, 404, 526, 1267, 503, 467, 70, 1233, 1210]
+Relevant documents: [467, 468, 39, 503, 775, 469, 521]
+Relevant docs in top 10: [39, 503, 467]
+
+Query 44:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [20, 820, 752, 1048, 390, 27, 223, 195, 1174, 232]
+Relevant documents: [302, 436, 437, 524]
+Relevant docs in top 10: []
+
+Query 45:
+Metrics: Precision=0.2000, Recall=0.1538, F-score=0.1739, nDCG=0.9197
+Top 10 documents: [525, 623, 1185, 123, 344, 1241, 577, 274, 353, 655]
+Relevant documents: [305, 570, 308, 481, 338, 1226, 1355, 1185, 629, 663, 798, 572, 525]
+Relevant docs in top 10: [525, 1185]
+
+Query 46:
+Metrics: Precision=0.3000, Recall=0.1875, F-score=0.2308, nDCG=0.9134
+Top 10 documents: [623, 84, 120, 21, 398, 240, 37, 123, 45, 303]
+Relevant documents: [305, 338, 344, 481, 84, 123, 1185, 623, 570, 798, 1226, 629, 663, 572, 1355, 525]
+Relevant docs in top 10: [623, 84, 123]
+
+Query 47:
+Metrics: Precision=0.2000, Recall=0.1333, F-score=0.1600, nDCG=0.5250
+Top 10 documents: [1370, 664, 305, 180, 736, 304, 425, 412, 1200, 28]
+Relevant documents: [304, 306, 307, 305, 629, 663, 308, 309, 310, 570, 798, 1185, 1355, 572, 525]
+Relevant docs in top 10: [305, 304]
+
+Query 48:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.5730
+Top 10 documents: [638, 526, 468, 969, 41, 792, 801, 252, 797, 265]
+Relevant documents: [439, 311, 316, 440, 187, 314, 315, 797, 798, 794, 265, 526]
+Relevant docs in top 10: [526, 797, 265]
+
+Query 49:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.7904
+Top 10 documents: [527, 734, 349, 832, 1370, 479, 377, 1108, 1240, 320]
+Relevant documents: [320, 478, 527]
+Relevant docs in top 10: [527, 320]
+
+Query 50:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1274, 337, 1319, 166, 169, 541, 975, 456, 110, 167]
+Relevant documents: [326, 629, 21, 94, 22, 306, 528]
+Relevant docs in top 10: []
+
+Query 51:
+Metrics: Precision=0.5000, Recall=0.4545, F-score=0.4762, nDCG=0.7629
+Top 10 documents: [1301, 326, 629, 494, 23, 498, 1245, 1302, 261, 306]
+Relevant documents: [94, 23, 105, 381, 192, 326, 63, 494, 629, 261, 528]
+Relevant docs in top 10: [326, 629, 494, 23, 261]
+
+Query 52:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [326, 26, 799, 610, 629, 899, 1215, 261, 324, 672]
+Relevant documents: [21, 22, 306, 326, 528]
+Relevant docs in top 10: [326]
+
+Query 53:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.5000
+Top 10 documents: [167, 541, 208, 332, 456, 375, 1139, 531, 166, 1249]
+Relevant documents: [296, 33, 446, 447, 448, 449, 208, 297, 298, 299, 531]
+Relevant docs in top 10: [208, 531]
+
+Query 54:
+Metrics: Precision=0.1000, Recall=0.1000, F-score=0.1000, nDCG=0.6309
+Top 10 documents: [623, 123, 1185, 303, 554, 21, 120, 145, 436, 396]
+Relevant documents: [84, 24, 101, 294, 628, 661, 364, 365, 560, 123]
+Relevant docs in top 10: [123]
+
+Query 55:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [899, 406, 458, 1301, 1383, 1154, 4, 798, 1260, 1281]
+Relevant documents: [16, 375, 460, 378, 255, 271, 376, 377, 562, 502, 538]
+Relevant docs in top 10: []
+
+Query 56:
+Metrics: Precision=0.1000, Recall=0.0909, F-score=0.0952, nDCG=0.2891
+Top 10 documents: [441, 866, 1121, 1290, 204, 96, 1336, 1051, 520, 753]
+Relevant documents: [380, 749, 1339, 14, 705, 779, 780, 379, 643, 686, 753]
+Relevant docs in top 10: [753]
+
+Query 57:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1245, 775, 1275, 386, 385, 310, 774, 526, 97, 23]
+Relevant documents: [380, 593, 746, 914, 14, 379, 705, 779, 780, 704, 12, 15, 857, 859, 753]
+Relevant docs in top 10: []
+
+Query 58:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [398, 45, 21, 310, 387, 872, 240, 1083, 269, 332]
+Relevant documents: [788, 785, 786, 787, 23, 381, 382, 784, 789, 754]
+Relevant docs in top 10: []
+
+Query 59:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [629, 23, 382, 310, 386, 4, 526, 385, 393, 775]
+Relevant documents: [788, 785, 786, 787, 754]
+Relevant docs in top 10: []
+
+Query 60:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.9134
+Top 10 documents: [320, 322, 641, 833, 730, 321, 648, 527, 336, 732]
+Relevant documents: [475, 476, 527, 320, 478, 322]
+Relevant docs in top 10: [320, 322, 527]
+
+Query 61:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [120, 5, 396, 623, 21, 789, 144, 145, 436, 398]
+Relevant documents: [565, 566, 564, 1159, 661, 539]
+Relevant docs in top 10: []
+
+Query 62:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [105, 116, 659, 785, 629, 23, 1383, 382, 148, 706]
+Relevant documents: [566, 567, 1084, 1078, 1081, 539]
+Relevant docs in top 10: []
+
+Query 63:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1171, 839, 1166, 605, 173, 692, 675, 186, 1198, 1051]
+Relevant documents: [567, 564, 566, 539]
+Relevant docs in top 10: []
+
+Query 64:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [428, 99, 1246, 1034, 798, 315, 1339, 206, 49, 1179]
+Relevant documents: [390, 391, 627]
+Relevant docs in top 10: []
+
+Query 65:
+Metrics: Precision=0.5000, Recall=0.3125, F-score=0.3846, nDCG=0.8991
+Top 10 documents: [3, 310, 388, 393, 629, 1371, 4, 308, 491, 242]
+Relevant documents: [2, 3, 128, 180, 323, 324, 418, 664, 629, 393, 394, 659, 4, 384, 1302, 388]
+Relevant docs in top 10: [3, 388, 393, 629, 4]
+
+Query 66:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [385, 4, 1083, 310, 1245, 775, 404, 306, 2, 386]
+Relevant documents: [664, 629, 180, 659, 660, 388]
+Relevant docs in top 10: []
+
+Query 67:
+Metrics: Precision=0.5000, Recall=0.3333, F-score=0.4000, nDCG=0.9818
+Top 10 documents: [393, 4, 3, 629, 310, 458, 2, 23, 386, 306]
+Relevant documents: [2, 3, 664, 629, 323, 324, 393, 128, 180, 394, 659, 389, 4, 1302, 388]
+Relevant docs in top 10: [393, 4, 3, 629, 2]
+
+Query 68:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.8772
+Top 10 documents: [628, 248, 581, 662, 512, 1261, 679, 1266, 1332, 1280]
+Relevant documents: [662, 101, 460, 661, 62, 628]
+Relevant docs in top 10: [628, 662]
+
+Query 69:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [155, 1370, 479, 300, 853, 349, 1193, 936, 1086, 180]
+Relevant documents: [458, 570, 977, 62, 336, 540]
+Relevant docs in top 10: []
+
+Query 70:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [180, 349, 853, 155, 300, 936, 1370, 479, 850, 1085]
+Relevant documents: [333, 568, 570, 62, 101, 283, 565, 24, 977, 307, 540]
+Relevant docs in top 10: []
+
+Query 71:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [170, 1288, 291, 935, 409, 973, 1397, 666, 1214, 455]
+Relevant documents: [569, 571, 1355, 101, 655, 1213, 798, 572, 540]
+Relevant docs in top 10: []
+
+Query 72:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [793, 690, 689, 53, 604, 996, 182, 1353, 1354, 9]
+Relevant documents: [21, 324, 630, 94, 664, 304, 128, 323, 663, 570, 494, 305, 309, 571, 655, 388, 62, 629]
+Relevant docs in top 10: []
+
+Query 73:
+Metrics: Precision=0.6000, Recall=0.2857, F-score=0.3871, nDCG=0.8707
+Top 10 documents: [401, 1296, 332, 1010, 541, 574, 625, 1254, 573, 410]
+Relevant documents: [332, 572, 578, 573, 574, 421, 25, 317, 577, 401, 625, 160, 1213, 1304, 1198, 655, 1355, 68, 571, 1252, 541]
+Relevant docs in top 10: [401, 332, 541, 574, 625, 573]
+
+Query 74:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [876, 904, 603, 431, 1153, 595, 1352, 213, 68, 1371]
+Relevant documents: [576, 656, 575, 317, 574, 578, 541]
+Relevant docs in top 10: []
+
+Query 75:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [623, 396, 1207, 120, 145, 21, 585, 303, 554, 395]
+Relevant documents: [667, 324, 378, 666, 670, 630]
+Relevant docs in top 10: []
+
+Query 76:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.3780
+Top 10 documents: [1078, 504, 1264, 54, 1082, 50, 9, 667, 630, 474]
+Relevant documents: [378, 667, 324, 666, 670, 1391, 329, 630]
+Relevant docs in top 10: [667, 630]
+
+Query 77:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.4825
+Top 10 documents: [1264, 469, 504, 668, 1076, 667, 593, 347, 124, 689]
+Relevant documents: [668, 666, 667, 670, 329, 1391, 630]
+Relevant docs in top 10: [668, 667]
+
+Query 78:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [341, 659, 157, 1343, 523, 349, 1194, 1206, 850, 561]
+Relevant documents: [588, 589, 590, 543]
+Relevant docs in top 10: []
+
+Query 79:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.6309
+Top 10 documents: [567, 597, 689, 1338, 806, 604, 1381, 608, 1353, 1341]
+Relevant documents: [597, 598, 688, 708, 713, 544]
+Relevant docs in top 10: [597]
+
+Query 80:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [544, 790, 202, 923, 1088, 704, 234, 287, 599, 60]
+Relevant documents: [594, 597, 596, 598, 544]
+Relevant docs in top 10: [544]
+
+Query 81:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.4307
+Top 10 documents: [429, 598, 876, 672, 795, 1158, 252, 714, 594, 1153]
+Relevant documents: [672, 799, 631]
+Relevant docs in top 10: [672]
+
+Query 82:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.8175
+Top 10 documents: [632, 1339, 652, 1332, 1334, 206, 678, 465, 193, 1080]
+Relevant documents: [676, 677, 678, 679, 205, 632]
+Relevant docs in top 10: [632, 678]
+
+Query 83:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1275, 487, 242, 121, 97, 278, 27, 468, 1259, 820]
+Relevant documents: [680, 681, 682, 683, 633]
+Relevant docs in top 10: []
+
+Query 84:
+Metrics: Precision=0.1000, Recall=0.0833, F-score=0.0909, nDCG=0.3869
+Top 10 documents: [21, 398, 45, 120, 522, 872, 145, 378, 306, 395]
+Relevant documents: [606, 406, 608, 142, 294, 354, 522, 962, 1192, 1213, 873, 546]
+Relevant docs in top 10: [522]
+
+Query 85:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1153, 487, 526, 84, 1275, 310, 385, 372, 1245, 97]
+Relevant documents: [608, 406, 606, 710, 546]
+Relevant docs in top 10: []
+
+Query 86:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.9469
+Top 10 documents: [594, 755, 876, 516, 790, 795, 1153, 431, 280, 598]
+Relevant documents: [594, 790, 755]
+Relevant docs in top 10: [594, 755, 790]
+
+Query 87:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [629, 526, 26, 439, 326, 23, 310, 900, 610, 306]
+Relevant documents: [606, 611, 562, 50, 236, 609, 612, 406, 547]
+Relevant docs in top 10: []
+
+Query 88:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.7983
+Top 10 documents: [622, 617, 616, 615, 613, 548, 614, 162, 619, 1161]
+Relevant documents: [613, 614, 615, 616, 617, 618, 548]
+Relevant docs in top 10: [617, 616, 615, 613, 548, 614]
+
+Query 89:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.6039
+Top 10 documents: [779, 465, 420, 797, 526, 757, 902, 464, 803, 901]
+Relevant documents: [793, 794, 797, 795, 796, 420, 757]
+Relevant docs in top 10: [420, 797, 757]
+
+Query 90:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1121, 866, 1051, 1290, 96, 204, 1196, 520, 839, 1336]
+Relevant documents: [794, 797, 798, 793, 796, 291, 800, 1187, 256, 311, 335, 1364, 1367, 757]
+Relevant docs in top 10: []
+
+Query 91:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.9675
+Top 10 documents: [252, 799, 610, 672, 1093, 316, 156, 41, 1350, 520]
+Relevant documents: [252, 801, 797, 799, 800, 793, 794, 1154, 672, 757]
+Relevant docs in top 10: [252, 799, 672]
+
+Query 92:
+Metrics: Precision=0.4000, Recall=0.2857, F-score=0.3333, nDCG=0.8768
+Top 10 documents: [1247, 868, 1243, 758, 985, 1293, 640, 810, 772, 221]
+Relevant documents: [802, 803, 808, 809, 811, 804, 805, 806, 253, 1247, 807, 810, 1243, 758]
+Relevant docs in top 10: [1247, 1243, 758, 810]
+
+Query 93:
+Metrics: Precision=0.2000, Recall=1.0000, F-score=0.3333, nDCG=0.9197
+Top 10 documents: [635, 276, 691, 804, 1336, 838, 1335, 1161, 1290, 302]
+Relevant documents: [691, 635]
+Relevant docs in top 10: [635, 691]
+
+Query 94:
+Metrics: Precision=0.2000, Recall=0.1538, F-score=0.1739, nDCG=1.0000
+Top 10 documents: [559, 1393, 5, 983, 303, 555, 623, 120, 396, 398]
+Relevant documents: [24, 283, 294, 559, 689, 690, 101, 1393, 354, 1104, 1161, 1395, 635]
+Relevant docs in top 10: [559, 1393]
+
+Query 95:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [5, 396, 554, 144, 623, 120, 303, 962, 21, 436]
+Relevant documents: [283, 662, 635]
+Relevant docs in top 10: []
+
+Query 96:
+Metrics: Precision=0.1000, Recall=0.0714, F-score=0.0833, nDCG=0.6309
+Top 10 documents: [632, 779, 465, 901, 1334, 683, 1332, 526, 1080, 363]
+Relevant documents: [703, 704, 705, 698, 699, 700, 1289, 779, 701, 702, 706, 792, 1339, 637]
+Relevant docs in top 10: [779]
+
+Query 97:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1331, 251, 36, 1214, 781, 906, 882, 824, 441, 790]
+Relevant documents: [699, 700, 701, 698, 1289, 702, 703, 779, 1339, 681, 637]
+Relevant docs in top 10: []
+
+Query 98:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [638, 792, 969, 757, 238, 1169, 1163, 1303, 1349, 416]
+Relevant documents: [713, 708, 709, 711, 712, 638]
+Relevant docs in top 10: [638]
+
+Query 99:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.8772
+Top 10 documents: [639, 716, 67, 717, 1345, 715, 77, 163, 1348, 958]
+Relevant documents: [717, 719, 1001, 1379, 639]
+Relevant docs in top 10: [639, 717]
+
+Query 100:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [897, 1172, 1126, 739, 890, 953, 886, 1070, 741, 1071]
+Relevant documents: [821, 822, 824, 820, 823, 825, 1122, 1051, 1121, 760]
+Relevant docs in top 10: []
+
+Query 101:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.7718
+Top 10 documents: [820, 20, 752, 195, 760, 1048, 390, 1119, 819, 825]
+Relevant documents: [817, 818, 819, 820, 825, 824, 760]
+Relevant docs in top 10: [820, 760, 819, 825]
+
+Query 102:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8711
+Top 10 documents: [728, 862, 729, 824, 92, 910, 640, 47, 1363, 1039]
+Relevant documents: [728, 913, 910, 911, 729]
+Relevant docs in top 10: [728, 729, 910]
+
+Query 103:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [761, 1214, 533, 1234, 720, 1048, 1038, 251, 925, 483]
+Relevant documents: [826, 828, 761]
+Relevant docs in top 10: [761]
+
+Query 104:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.4838
+Top 10 documents: [462, 29, 762, 1178, 1316, 888, 1177, 707, 1117, 836]
+Relevant documents: [833, 834, 835, 836, 837, 762]
+Relevant docs in top 10: [762, 836]
+
+Query 105:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=1.0000
+Top 10 documents: [764, 848, 1070, 890, 1071, 886, 897, 763, 739, 953]
+Relevant documents: [848, 844, 845, 846, 847, 764]
+Relevant docs in top 10: [764, 848]
+
+Query 106:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.8066
+Top 10 documents: [764, 1070, 1036, 886, 848, 890, 953, 847, 1052, 930]
+Relevant documents: [847, 846, 849, 844, 845, 764]
+Relevant docs in top 10: [764, 847]
+
+Query 107:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=1.0000
+Top 10 documents: [640, 909, 725, 415, 1169, 51, 12, 253, 811, 834]
+Relevant documents: [725, 728, 729, 911, 720, 75, 909, 640]
+Relevant docs in top 10: [640, 909, 725]
+
+Query 108:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.5438
+Top 10 documents: [866, 883, 726, 1121, 75, 768, 884, 881, 932, 1051]
+Relevant documents: [724, 726, 727, 75, 909, 720, 723, 640]
+Relevant docs in top 10: [726, 75]
+
+Query 109:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [859, 391, 1008, 877, 51, 5, 711, 142, 856, 1348]
+Relevant documents: [860, 861, 606, 980, 12, 766]
+Relevant docs in top 10: []
+
+Query 110:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [957, 827, 1131, 1387, 1013, 400, 1017, 1023, 424, 926]
+Relevant documents: [862, 863, 31, 1174, 766]
+Relevant docs in top 10: []
+
+Query 111:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.8772
+Top 10 documents: [894, 1251, 875, 392, 735, 856, 211, 933, 1387, 326]
+Relevant documents: [15, 391, 864, 914, 392, 627, 658, 894]
+Relevant docs in top 10: [894, 392]
+
+Query 112:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.9197
+Top 10 documents: [641, 320, 730, 1108, 551, 732, 1138, 422, 425, 648]
+Relevant documents: [731, 730, 641]
+Relevant docs in top 10: [641, 730]
+
+Query 113:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1212, 1381, 204, 1338, 567, 812, 947, 1188, 794, 708]
+Relevant documents: [746, 748, 749, 265, 643]
+Relevant docs in top 10: []
+
+Query 114:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [923, 193, 461, 206, 633, 470, 1248, 292, 917, 1224]
+Relevant documents: [919, 916, 920, 921, 895]
+Relevant docs in top 10: []
+
+Query 115:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [26, 404, 385, 892, 494, 1083, 1245, 306, 97, 2]
+Relevant documents: [51, 185, 878, 874, 184]
+Relevant docs in top 10: []
+
+Query 116:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1332, 1334, 632, 545, 679, 512, 225, 698, 194, 699]
+Relevant documents: [922, 360, 605, 927, 492, 896]
+Relevant docs in top 10: []
+
+Query 117:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [927, 434, 1255, 947, 1304, 688, 1005, 210, 788, 1112]
+Relevant documents: [360, 605, 896]
+Relevant docs in top 10: []
+
+Query 118:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [484, 698, 360, 1, 678, 1239, 803, 699, 811, 1124]
+Relevant documents: [923, 924, 925, 896]
+Relevant docs in top 10: []
+
+Query 119:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [763, 1145, 1133, 1352, 58, 1311, 94, 1033, 1003, 671]
+Relevant documents: [926, 897]
+Relevant docs in top 10: []
+
+Query 120:
+Metrics: Precision=0.4000, Recall=0.4000, F-score=0.4000, nDCG=0.9268
+Top 10 documents: [886, 887, 739, 897, 769, 890, 926, 1070, 740, 1052]
+Relevant documents: [829, 887, 890, 885, 886, 888, 889, 1146, 891, 769]
+Relevant docs in top 10: [886, 887, 769, 890]
+
+Query 121:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.5710
+Top 10 documents: [31, 1178, 1177, 885, 1146, 888, 1017, 739, 1023, 887]
+Relevant documents: [885, 886, 1146, 887, 888, 890, 891, 769]
+Relevant docs in top 10: [885, 1146, 888, 887]
+
+Query 122:
+Metrics: Precision=0.2000, Recall=0.2000, F-score=0.2000, nDCG=0.8066
+Top 10 documents: [898, 1070, 847, 1071, 1068, 828, 897, 935, 739, 1171]
+Relevant documents: [931, 932, 934, 935, 936, 937, 938, 957, 1131, 898]
+Relevant docs in top 10: [898, 935]
+
+Query 123:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [941, 34, 491, 270, 1221, 775, 1245, 385, 310, 939]
+Relevant documents: [966, 967, 941]
+Relevant docs in top 10: [941]
+
+Query 124:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [941, 385, 657, 1302, 34, 775, 1245, 1106, 1153, 97]
+Relevant documents: [967, 968, 964, 965, 941]
+Relevant docs in top 10: [941]
+
+Query 125:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [385, 775, 386, 1245, 774, 1195, 216, 97, 118, 310]
+Relevant documents: [969, 970, 971, 187, 973, 173, 974, 177, 972, 174, 997, 176, 409, 946, 992, 994, 995, 942]
+Relevant docs in top 10: []
+
+Query 126:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=0.3869
+Top 10 documents: [1083, 389, 397, 1288, 974, 308, 241, 310, 87, 152]
+Relevant documents: [974, 1326, 187, 969, 970, 971, 972, 973, 942]
+Relevant docs in top 10: [974]
+
+Query 127:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.3869
+Top 10 documents: [5, 6, 585, 399, 981, 542, 1207, 559, 587, 963]
+Relevant documents: [101, 164, 981, 982, 983, 944]
+Relevant docs in top 10: [981]
+
+Query 128:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.7977
+Top 10 documents: [945, 92, 1360, 834, 111, 1063, 1087, 1246, 985, 745]
+Relevant documents: [985, 990, 945]
+Relevant docs in top 10: [945, 985]
+
+Query 129:
+Metrics: Precision=0.1000, Recall=0.1250, F-score=0.1111, nDCG=0.6309
+Top 10 documents: [341, 987, 637, 377, 394, 1184, 117, 257, 507, 956]
+Relevant documents: [985, 987, 984, 988, 989, 986, 990, 945]
+Relevant docs in top 10: [987]
+
+Query 130:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.7614
+Top 10 documents: [766, 606, 1147, 66, 254, 560, 948, 140, 982, 858]
+Relevant documents: [766, 858, 859, 1008, 12, 948]
+Relevant docs in top 10: [766, 948, 858]
+
+Query 131:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.4457
+Top 10 documents: [1023, 1022, 1024, 1026, 1317, 1025, 950, 1017, 1012, 1015]
+Relevant documents: [1014, 1020, 1013, 1016, 1017, 1012, 1018, 1019, 950]
+Relevant docs in top 10: [950, 1017, 1012]
+
+Query 132:
+Metrics: Precision=0.8000, Recall=0.5000, F-score=0.6154, nDCG=0.9963
+Top 10 documents: [1013, 1023, 1015, 1026, 1017, 1014, 1012, 578, 951, 957]
+Relevant documents: [1014, 1013, 1015, 1016, 1012, 1018, 1019, 1017, 951, 1023, 1020, 952, 1024, 1025, 1026, 950]
+Relevant docs in top 10: [1013, 1023, 1015, 1026, 1017, 1014, 1012, 951]
+
+Query 133:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.4228
+Top 10 documents: [1013, 1023, 1026, 1015, 1017, 1012, 1024, 578, 957, 1014]
+Relevant documents: [1020, 1018, 1019, 1024, 1012, 1016, 1022, 950]
+Relevant docs in top 10: [1012, 1024]
+
+Query 134:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [951, 825, 1014, 760, 820, 195, 1015, 1013, 1012, 1031]
+Relevant documents: [1027, 1028, 951]
+Relevant docs in top 10: [951]
+
+Query 135:
+Metrics: Precision=0.5000, Recall=0.5556, F-score=0.5263, nDCG=0.9758
+Top 10 documents: [1017, 1026, 1023, 1024, 1013, 821, 1012, 1018, 1015, 1019]
+Relevant documents: [1018, 1017, 1023, 1024, 1025, 1026, 950, 1016, 951]
+Relevant docs in top 10: [1017, 1026, 1023, 1024, 1018]
+
+Query 136:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1145, 763, 10, 1125, 1133, 1352, 595, 891, 173, 508]
+Relevant documents: [1021, 1022, 1034, 951]
+Relevant docs in top 10: []
+
+Query 137:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [952, 1032, 1172, 1398, 1068, 897, 826, 1126, 953, 890]
+Relevant documents: [1029, 1034, 951, 1021, 952]
+Relevant docs in top 10: [952]
+
+Query 138:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.9197
+Top 10 documents: [953, 764, 846, 897, 847, 890, 844, 1038, 848, 845]
+Relevant documents: [846, 1036, 953]
+Relevant docs in top 10: [953, 846]
+
+Query 139:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.3155
+Top 10 documents: [846, 764, 1071, 897, 847, 1070, 763, 953, 848, 844]
+Relevant documents: [1031, 1032, 1035, 1037, 953]
+Relevant docs in top 10: [953]
+
+Query 140:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.4838
+Top 10 documents: [870, 885, 954, 400, 817, 837, 729, 412, 953, 1039]
+Relevant documents: [1038, 1039, 1041, 1042, 1043, 1044, 954]
+Relevant docs in top 10: [954, 1039]
+
+Query 141:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [890, 953, 889, 1070, 1071, 841, 843, 930, 765, 885]
+Relevant documents: [1038, 1041, 1043, 1044, 1039, 1042, 954]
+Relevant docs in top 10: []
+
+Query 142:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=1.0000
+Top 10 documents: [954, 1071, 720, 763, 1133, 1136, 1125, 1145, 605, 508]
+Relevant documents: [1042, 954]
+Relevant docs in top 10: [954]
+
+Query 143:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.3562
+Top 10 documents: [890, 953, 930, 889, 1070, 1044, 1071, 765, 828, 843]
+Relevant documents: [1043, 1044, 954]
+Relevant docs in top 10: [1044]
+
+Query 144:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.7737
+Top 10 documents: [763, 1145, 1116, 1130, 891, 1046, 955, 839, 846, 1126]
+Relevant documents: [840, 1045, 763, 838, 839, 841, 955]
+Relevant docs in top 10: [763, 955, 839]
+
+Query 145:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.6053
+Top 10 documents: [1051, 1045, 1121, 866, 1118, 839, 294, 390, 951, 928]
+Relevant documents: [763, 838, 839, 1045, 743, 852, 841, 955]
+Relevant docs in top 10: [1045, 839]
+
+Query 146:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [1045, 840, 955, 20, 820, 390, 1118, 752, 854, 1119]
+Relevant documents: [840, 1045, 955]
+Relevant docs in top 10: [1045, 840, 955]
+
+Query 147:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.8772
+Top 10 documents: [956, 850, 1116, 1050, 931, 842, 936, 1123, 851, 853]
+Relevant documents: [889, 1046, 1048, 1047, 1049, 1051, 1050, 843, 926, 822, 956]
+Relevant docs in top 10: [956, 1050]
+
+Query 148:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=1.0000
+Top 10 documents: [1048, 820, 1126, 951, 1174, 1119, 825, 928, 20, 390]
+Relevant documents: [889, 1048, 1050, 1046, 1049, 843, 956]
+Relevant docs in top 10: [1048]
+
+Query 149:
+Metrics: Precision=0.2000, Recall=0.1667, F-score=0.1818, nDCG=0.6934
+Top 10 documents: [1070, 1052, 930, 1360, 1068, 828, 890, 1071, 886, 1135]
+Relevant documents: [1057, 1058, 1059, 1052, 930, 931, 934, 936, 937, 938, 1131, 957]
+Relevant docs in top 10: [1052, 930]
+
+Query 150:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1300, 689, 604, 806, 996, 182, 608, 793, 1353, 1212]
+Relevant documents: [1074, 1075, 1062]
+Relevant docs in top 10: []
+
+Query 151:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1133, 1166, 1386, 675, 671, 1311, 605, 1246, 1352, 652]
+Relevant documents: [687, 1076, 1074, 1075, 1077, 1062]
+Relevant docs in top 10: []
+
+Query 152:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [671, 1352, 696, 993, 675, 636, 1371, 513, 282, 173]
+Relevant documents: [1076, 1077, 569, 572, 687, 655, 1062]
+Relevant docs in top 10: []
+
+Query 153:
+Metrics: Precision=0.1000, Recall=0.1250, F-score=0.1111, nDCG=0.3562
+Top 10 documents: [956, 936, 850, 853, 637, 1063, 851, 931, 349, 1086]
+Relevant documents: [1078, 1083, 1084, 1080, 1081, 1082, 1085, 1063]
+Relevant docs in top 10: [1063]
+
+Query 154:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.6546
+Top 10 documents: [111, 1087, 1086, 1088, 1054, 1073, 1063, 1375, 150, 155]
+Relevant documents: [1087, 1088, 1063]
+Relevant docs in top 10: [1087, 1088, 1063]
+
+Query 155:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.8772
+Top 10 documents: [1101, 76, 1004, 1065, 804, 141, 791, 594, 809, 1163]
+Relevant documents: [1103, 1100, 983, 1101, 1104, 1099, 1065]
+Relevant docs in top 10: [1101, 1065]
+
+Query 156:
+Metrics: Precision=0.5000, Recall=0.3333, F-score=0.4000, nDCG=0.8551
+Top 10 documents: [1097, 866, 1096, 462, 1099, 1111, 553, 1117, 1100, 1025]
+Relevant documents: [983, 1102, 1097, 1100, 274, 1096, 1098, 1099, 1103, 982, 1104, 553, 1101, 82, 1065]
+Relevant docs in top 10: [1097, 1096, 1099, 553, 1100]
+
+Query 157:
+Metrics: Precision=0.3000, Recall=0.0750, F-score=0.1200, nDCG=0.5508
+Top 10 documents: [1391, 531, 146, 25, 160, 456, 625, 992, 1239, 498]
+Relevant documents: [273, 1105, 1106, 93, 161, 302, 122, 666, 1107, 556, 25, 1011, 19, 35, 1355, 372, 410, 456, 36, 44, 215, 626, 1151, 354, 369, 370, 421, 557, 605, 655, 657, 689, 1307, 318, 423, 1304, 160, 482, 572, 1006]
+Relevant docs in top 10: [25, 160, 456]
+
+Query 158:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=1.0000
+Top 10 documents: [302, 355, 1199, 524, 691, 405, 1336, 949, 1335, 463]
+Relevant documents: [302, 1011, 552, 998, 1009, 1010, 273, 556, 1006]
+Relevant docs in top 10: [302]
+
+Query 159:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=1.0000
+Top 10 documents: [1066, 1112, 849, 77, 1239, 360, 384, 716, 100, 146]
+Relevant documents: [234, 1108, 1110, 1114, 1115, 1111, 1112, 231, 1066]
+Relevant docs in top 10: [1066, 1112]
+
+Query 160:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.6309
+Top 10 documents: [890, 1071, 885, 897, 953, 1070, 887, 741, 1172, 1173]
+Relevant documents: [1134, 1137, 1138, 1135, 1136, 1071]
+Relevant docs in top 10: [1071]
+
+Query 161:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.6797
+Top 10 documents: [1192, 1386, 522, 55, 54, 461, 1366, 399, 1185, 395]
+Relevant documents: [54, 1386, 562, 336, 55, 996, 489]
+Relevant docs in top 10: [1386, 55, 54]
+
+Query 162:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [559, 55, 366, 145, 784, 962, 872, 1366, 398, 661]
+Relevant documents: [111, 155, 460, 461, 54, 562, 458, 459, 489]
+Relevant docs in top 10: []
+
+Query 163:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.7977
+Top 10 documents: [492, 1231, 1166, 1311, 605, 1307, 626, 1114, 57, 692]
+Relevant documents: [20, 56, 57, 492]
+Relevant docs in top 10: [492, 57]
+
+Query 164:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.6113
+Top 10 documents: [358, 311, 1187, 773, 996, 316, 437, 1367, 457, 901]
+Relevant documents: [311, 415, 416, 798, 316, 335, 1364, 1367, 503]
+Relevant docs in top 10: [311, 316, 1367]
+
+Query 165:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.4416
+Top 10 documents: [256, 1220, 64, 335, 71, 1364, 72, 65, 296, 1321]
+Relevant documents: [71, 72, 504]
+Relevant docs in top 10: [71, 72]
+
+Query 166:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1220, 256, 1321, 335, 64, 334, 1364, 72, 65, 296]
+Relevant documents: [40, 41, 74, 207, 272, 418, 170, 1264, 504]
+Relevant docs in top 10: []
+
+Query 167:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.5000
+Top 10 documents: [980, 1185, 274, 1279, 1147, 480, 553, 1043, 292, 462]
+Relevant documents: [274, 82, 509]
+Relevant docs in top 10: [274]
+
+Query 168:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.4556
+Top 10 documents: [118, 404, 1245, 385, 774, 217, 97, 775, 310, 1083]
+Relevant documents: [217, 774, 750]
+Relevant docs in top 10: [774, 217]
+
+Query 169:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.4838
+Top 10 documents: [459, 1080, 750, 266, 989, 1382, 217, 97, 278, 118]
+Relevant documents: [118, 157, 774, 775, 750]
+Relevant docs in top 10: [750, 118]
+
+Query 170:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.8503
+Top 10 documents: [139, 1082, 1264, 165, 238, 668, 9, 1078, 1040, 1191]
+Relevant documents: [139, 238, 239, 904, 906, 672, 893]
+Relevant docs in top 10: [139, 238]
+
+Query 171:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.7328
+Top 10 documents: [594, 516, 141, 431, 1155, 598, 1004, 808, 904, 438]
+Relevant documents: [252, 431, 141, 516]
+Relevant docs in top 10: [516, 141, 431]
+
+Query 172:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8855
+Top 10 documents: [320, 478, 322, 732, 527, 641, 734, 551, 934, 425]
+Relevant documents: [320, 321, 322, 476, 527]
+Relevant docs in top 10: [320, 322, 527]
+
+Query 173:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8772
+Top 10 documents: [451, 1073, 155, 367, 1086, 111, 956, 851, 931, 936]
+Relevant documents: [367, 451, 532]
+Relevant docs in top 10: [451, 367]
+
+Query 174:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [411, 1121, 866, 1257, 501, 96, 1290, 1051, 520, 1336]
+Relevant documents: [58, 411, 36, 423, 482, 533]
+Relevant docs in top 10: [411]
+
+Query 175:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [941, 1221, 34, 491, 793, 690, 9, 534, 1354, 53]
+Relevant documents: [351, 966, 967, 964, 965, 941]
+Relevant docs in top 10: [941]
+
+Query 176:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=0.6340
+Top 10 documents: [6, 542, 963, 5, 585, 399, 586, 395, 1207, 145]
+Relevant documents: [582, 583, 584, 585, 978, 586, 982, 542]
+Relevant docs in top 10: [542, 585, 586]
+
+Query 177:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=0.9558
+Top 10 documents: [588, 589, 576, 590, 543, 968, 697, 1034, 895, 138]
+Relevant documents: [588, 589, 592, 772, 590, 543]
+Relevant docs in top 10: [588, 589, 590, 543]
+
+Query 178:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [341, 157, 659, 523, 349, 1343, 561, 1206, 1194, 873]
+Relevant documents: [591, 590, 588, 589, 543]
+Relevant docs in top 10: []
+
+Query 179:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [680, 27, 706, 820, 278, 20, 445, 514, 1259, 232]
+Relevant documents: [680, 681, 682, 683, 633]
+Relevant docs in top 10: [680]
+
+Query 180:
+Metrics: Precision=0.5000, Recall=0.6250, F-score=0.5556, nDCG=0.9818
+Top 10 documents: [622, 548, 616, 617, 1345, 1103, 620, 218, 1147, 912]
+Relevant documents: [622, 619, 620, 621, 617, 616, 1150, 548]
+Relevant docs in top 10: [622, 548, 616, 617, 620]
+
+Query 181:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [385, 775, 1245, 386, 774, 97, 1195, 118, 526, 310]
+Relevant documents: [973, 974, 409, 997, 1061, 942]
+Relevant docs in top 10: []
+
+Query 182:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.5000
+Top 10 documents: [70, 312, 685, 687, 1338, 205, 1341, 793, 204, 440]
+Relevant documents: [685, 686, 634]
+Relevant docs in top 10: [685]
+
+Query 183:
+Metrics: Precision=0.7000, Recall=0.5000, F-score=0.5833, nDCG=1.0000
+Top 10 documents: [1243, 1247, 805, 810, 811, 804, 808, 1128, 1034, 523]
+Relevant documents: [803, 808, 802, 807, 811, 253, 804, 805, 806, 809, 810, 1243, 1247, 758]
+Relevant docs in top 10: [1243, 1247, 805, 810, 811, 804, 808]
+
+Query 184:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=0.5582
+Top 10 documents: [153, 813, 639, 1333, 220, 716, 715, 902, 742, 1369]
+Relevant documents: [32, 67, 715, 717, 716, 499, 1379, 639]
+Relevant docs in top 10: [639, 716, 715]
+
+Query 185:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.5938
+Top 10 documents: [578, 856, 390, 997, 1269, 1152, 1008, 753, 857, 911]
+Relevant documents: [858, 859, 857, 1008, 856, 15, 285, 894, 766, 948]
+Relevant docs in top 10: [856, 1008, 857]
+
+Query 186:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [775, 610, 1181, 653, 1282, 88, 629, 1245, 33, 23]
+Relevant documents: [1309, 1378, 923, 161, 421, 1377, 924, 1062, 1074, 1379, 1380, 1075, 225, 1280, 1305, 1304, 1188]
+Relevant docs in top 10: []
+
+Query 187:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=0.6309
+Top 10 documents: [1070, 763, 1071, 897, 1068, 1145, 926, 890, 1126, 1352]
+Relevant documents: [838, 839, 840, 743, 842, 1045, 763]
+Relevant docs in top 10: [763]
+
+Query 188:
+Metrics: Precision=0.5000, Recall=0.4167, F-score=0.4545, nDCG=0.9520
+Top 10 documents: [725, 640, 909, 219, 722, 220, 137, 209, 727, 911]
+Relevant documents: [721, 722, 723, 75, 909, 724, 726, 725, 728, 729, 911, 640]
+Relevant docs in top 10: [725, 640, 909, 722, 911]
+
+Query 189:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.9010
+Top 10 documents: [767, 868, 1360, 640, 883, 980, 592, 762, 758, 395]
+Relevant documents: [395, 866, 869, 865, 868, 870, 867, 872, 873, 767]
+Relevant docs in top 10: [767, 868, 395]
+
+Query 190:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1078, 9, 1229, 668, 165, 1264, 1191, 689, 54, 417]
+Relevant documents: [15, 391, 285, 390, 864, 894]
+Relevant docs in top 10: []
+
+Query 191:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [844, 908, 728, 1066, 849, 911, 845, 1036, 846, 1244]
+Relevant documents: [914, 915, 285, 857, 858, 15, 391, 856, 390, 1008, 948, 864, 658, 894]
+Relevant docs in top 10: []
+
+Query 192:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.6934
+Top 10 documents: [875, 735, 733, 1088, 46, 895, 1111, 925, 1379, 822]
+Relevant documents: [733, 734, 735, 736, 641]
+Relevant docs in top 10: [735, 733]
+
+Query 193:
+Metrics: Precision=0.4000, Recall=0.4000, F-score=0.4000, nDCG=0.8388
+Top 10 documents: [730, 425, 641, 551, 644, 732, 733, 648, 264, 336]
+Relevant documents: [730, 422, 648, 731, 733, 734, 1392, 735, 736, 641]
+Relevant docs in top 10: [730, 641, 733, 648]
+
+Query 194:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.7777
+Top 10 documents: [642, 888, 1022, 1126, 1178, 741, 957, 1177, 744, 1017]
+Relevant documents: [739, 740, 742, 744, 741, 743, 642]
+Relevant docs in top 10: [642, 741, 744]
+
+Query 195:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=0.3010
+Top 10 documents: [831, 854, 641, 320, 627, 730, 777, 934, 642, 1392]
+Relevant documents: [739, 742, 743, 642]
+Relevant docs in top 10: [642]
+
+Query 196:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [26, 629, 494, 23, 306, 404, 672, 326, 385, 892]
+Relevant documents: [51, 185, 874, 878, 879, 880, 12, 875, 876, 202, 746, 13, 184]
+Relevant docs in top 10: []
+
+Query 197:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.9558
+Top 10 documents: [768, 884, 726, 881, 883, 767, 723, 1248, 1261, 923]
+Relevant documents: [881, 883, 884, 768]
+Relevant docs in top 10: [768, 884, 881, 883]
+
+Query 198:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.4144
+Top 10 documents: [886, 739, 897, 890, 889, 826, 1059, 1126, 1172, 843]
+Relevant documents: [887, 888, 889, 843, 769]
+Relevant docs in top 10: [889, 843]
+
+Query 199:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=0.5000
+Top 10 documents: [1070, 890, 1052, 886, 930, 828, 1071, 1360, 1068, 739]
+Relevant documents: [1052, 1053, 1054, 1055, 1056, 1060, 743, 744, 957]
+Relevant docs in top 10: [1052]
+
+Query 200:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [461, 923, 841, 1087, 1360, 470, 473, 122, 889, 1043]
+Relevant documents: [1134, 1137, 1138, 1071]
+Relevant docs in top 10: []
+
+Query 201:
+Metrics: Precision=0.3000, Recall=0.1765, F-score=0.2222, nDCG=0.7123
+Top 10 documents: [517, 1296, 552, 410, 401, 1315, 1157, 1364, 1299, 1319]
+Relevant documents: [552, 625, 1296, 93, 1151, 401, 110, 1391, 423, 541, 1295, 318, 1304, 160, 369, 482, 1140]
+Relevant docs in top 10: [1296, 552, 401]
+
+Query 202:
+Metrics: Precision=0.3000, Recall=0.2000, F-score=0.2400, nDCG=0.9134
+Top 10 documents: [1285, 232, 58, 680, 423, 1352, 1382, 605, 370, 514]
+Relevant documents: [1303, 1304, 1309, 1306, 1308, 605, 602, 603, 604, 1110, 1305, 1310, 48, 232, 1285]
+Relevant docs in top 10: [1285, 232, 605]
+
+Query 203:
+Metrics: Precision=0.1000, Recall=0.0667, F-score=0.0800, nDCG=0.6309
+Top 10 documents: [1133, 58, 370, 1248, 1382, 652, 38, 1261, 1262, 473]
+Relevant documents: [58, 1305, 1306, 602, 603, 604, 1307, 1310, 19, 232, 323, 688, 122, 1188, 1285]
+Relevant docs in top 10: [58]
+
+Query 204:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1352, 1382, 971, 671, 38, 57, 508, 370, 652, 636]
+Relevant documents: [572, 1311, 63, 540, 602, 603, 604, 1305, 1188, 307, 1213, 655, 1355, 68, 1285]
+Relevant docs in top 10: []
+
+Query 205:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.3869
+Top 10 documents: [133, 406, 1324, 1241, 1287, 629, 547, 1205, 337, 265]
+Relevant documents: [1321, 1322, 1287]
+Relevant docs in top 10: [1287]
+
+Query 206:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=1.0000
+Top 10 documents: [1290, 1121, 866, 204, 1336, 598, 96, 1196, 293, 1051]
+Relevant documents: [1338, 1341, 1340, 1290]
+Relevant docs in top 10: [1290]
+
+Query 207:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [577, 1241, 344, 365, 645, 84, 525, 1185, 480, 123]
+Relevant documents: [1338, 1339, 1340, 1341, 879, 1290]
+Relevant docs in top 10: []
+
+Query 208:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.9325
+Top 10 documents: [1291, 1344, 624, 1124, 44, 163, 749, 815, 279, 25]
+Relevant documents: [163, 1344, 1345, 164, 1347, 1346, 1291]
+Relevant docs in top 10: [1291, 1344, 163]
+
+Query 209:
+Metrics: Precision=0.2000, Recall=0.1538, F-score=0.1739, nDCG=0.4838
+Top 10 documents: [629, 310, 487, 4, 526, 775, 1275, 23, 1302, 1228]
+Relevant documents: [1351, 1356, 1350, 187, 487, 45, 55, 316, 1383, 1385, 1106, 1228, 1292]
+Relevant docs in top 10: [487, 1228]
+
+Query 210:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.5724
+Top 10 documents: [1070, 1071, 1172, 1145, 897, 763, 1126, 1068, 890, 1171]
+Relevant documents: [1171, 891, 1172, 1173, 1030, 1174, 1145]
+Relevant docs in top 10: [1172, 1145, 1171]
+
+Query 211:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.5317
+Top 10 documents: [1070, 1071, 897, 1145, 1068, 1171, 1133, 763, 890, 926]
+Relevant documents: [891, 1172, 1173, 1174, 763, 769, 1030, 1031, 1033, 1052, 1068, 1145]
+Relevant docs in top 10: [1145, 1068, 763]
+
+Query 212:
+Metrics: Precision=0.6000, Recall=0.4000, F-score=0.4800, nDCG=0.8896
+Top 10 documents: [885, 870, 1178, 1177, 1146, 31, 888, 954, 29, 1173]
+Relevant documents: [888, 889, 1178, 885, 887, 886, 841, 1176, 1177, 890, 769, 891, 1173, 843, 1146]
+Relevant docs in top 10: [885, 1178, 1177, 1146, 888, 1173]
+
+Query 213:
+Metrics: Precision=0.5000, Recall=0.4167, F-score=0.4545, nDCG=0.8442
+Top 10 documents: [885, 954, 870, 1173, 1177, 1178, 400, 888, 741, 763]
+Relevant documents: [888, 885, 887, 889, 1178, 769, 1173, 1177, 886, 890, 843, 1146]
+Relevant docs in top 10: [885, 1173, 1177, 1178, 888]
+
+Query 214:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.9197
+Top 10 documents: [1294, 756, 1362, 828, 47, 1360, 1043, 930, 46, 1070]
+Relevant documents: [833, 1361, 1362, 1363, 1294]
+Relevant docs in top 10: [1294, 1362]
+
+Query 215:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.3010
+Top 10 documents: [775, 1181, 18, 487, 386, 1245, 651, 385, 535, 310]
+Relevant documents: [37, 35, 535]
+Relevant docs in top 10: [535]
+
+Query 216:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [692, 612, 1166, 1319, 1356, 1156, 675, 693, 1382, 971]
+Relevant documents: [156, 506]
+Relevant docs in top 10: []
+
+Query 217:
+Metrics: Precision=0.1000, Recall=0.0625, F-score=0.0769, nDCG=0.3562
+Top 10 documents: [623, 983, 120, 21, 5, 559, 303, 145, 436, 554]
+Relevant documents: [666, 667, 1258, 1394, 668, 670, 1204, 1391, 1395, 1300, 37, 559, 630, 1107, 1213, 1191]
+Relevant docs in top 10: [559]
+
+Query 218:
+Metrics: Precision=0.1000, Recall=0.0625, F-score=0.0769, nDCG=0.3155
+Top 10 documents: [5, 623, 120, 396, 554, 21, 436, 559, 983, 145]
+Relevant documents: [24, 101, 666, 667, 93, 1258, 1393, 559, 630, 662, 1104, 1107, 1204, 1213, 1300, 1191]
+Relevant docs in top 10: [559]
+
+Query 219:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [88, 534, 1273, 657, 9, 690, 182, 53, 1082, 1221]
+Relevant documents: [1391, 666, 667, 1258, 1078, 1080, 1081, 1394, 1395, 1214, 1198, 1204, 1300, 559, 630, 662, 1107, 1213, 1191]
+Relevant docs in top 10: []
+
+Query 220:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [4, 385, 404, 1301, 1302, 1275, 266, 487, 2, 629]
+Relevant documents: [1383, 1385, 155, 241, 1382, 1370, 1386, 111, 1384, 150, 292, 458, 479, 977, 376, 459, 1365, 62, 1366, 1182]
+Relevant docs in top 10: []
+
+Query 221:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [388, 310, 1371, 385, 3, 491, 97, 574, 1198, 404]
+Relevant documents: [155, 1383, 1385, 1382, 62, 292, 241, 1370, 1384, 458, 459, 461, 1386, 1365, 1366, 111, 150, 479, 1182]
+Relevant docs in top 10: []
+
+Query 222:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.9325
+Top 10 documents: [400, 1400, 1358, 419, 412, 424, 736, 1130, 1398, 915]
+Relevant documents: [400, 419, 1387, 412, 1392, 1398, 1397, 1400, 1399, 1396]
+Relevant docs in top 10: [400, 1400, 419, 412, 1398]
+
+Query 223:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.7904
+Top 10 documents: [400, 1400, 419, 412, 393, 1358, 736, 424, 1399, 1396]
+Relevant documents: [400, 1387, 1392, 1398, 1396]
+Relevant docs in top 10: [400, 1396]
+
+Query 224:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [332, 1245, 574, 1391, 1010, 310, 236, 97, 1189, 575]
+Relevant documents: [656, 1313, 1317, 1316, 1318, 1319, 1157, 1274, 1286]
+Relevant docs in top 10: []
+
+Query 225:
+Metrics: Precision=0.2000, Recall=0.0800, F-score=0.1143, nDCG=0.8175
+Top 10 documents: [1188, 1338, 1341, 1292, 689, 1353, 1381, 793, 1351, 996]
+Relevant documents: [1379, 1305, 1304, 40, 293, 1309, 161, 421, 1377, 1378, 1381, 225, 1380, 448, 449, 1124, 1280, 433, 923, 924, 1062, 1074, 1075, 1213, 1188]
+Relevant docs in top 10: [1188, 1381]
+
+Mean metrics for ESA:
+Precision: mean=0.1649, std=0.1574
+Recall: mean=0.2478, std=0.2431
+F-score: mean=0.1836, std=0.1644
+nDCG: mean=0.5175, std=0.3836
+LSA index built with 300 components
+Explained variance ratio: 0.58
+
+Evaluating LSA model:
+Precision: mean=0.3049, std=0.2016
+Recall: mean=0.4366, std=0.2821
+F-score: mean=0.3330, std=0.1969
+nDCG: mean=0.7609, std=0.2838
+
+Evaluating LSA model:
+
+Analyzing document rankings:
+
+Query 1:
+Metrics: Precision=0.6000, Recall=0.2069, F-score=0.3077, nDCG=0.9877
+Top 10 documents: [184, 12, 486, 51, 13, 359, 327, 875, 792, 1268]
+Relevant documents: [184, 29, 31, 12, 51, 102, 13, 14, 15, 57, 378, 859, 185, 30, 37, 52, 142, 195, 875, 56, 66, 95, 462, 497, 858, 876, 879, 880, 486]
+Relevant docs in top 10: [184, 12, 486, 51, 13, 875]
+
+Query 2:
+Metrics: Precision=0.3000, Recall=0.1200, F-score=0.1714, nDCG=0.9675
+Top 10 documents: [12, 51, 1169, 746, 884, 792, 429, 1042, 253, 92]
+Relevant documents: [12, 15, 184, 858, 51, 102, 202, 14, 52, 380, 746, 859, 948, 285, 390, 391, 442, 497, 643, 856, 857, 877, 864, 658, 486]
+Relevant docs in top 10: [12, 51, 746]
+
+Query 3:
+Metrics: Precision=0.9000, Recall=1.0000, F-score=0.9474, nDCG=1.0000
+Top 10 documents: [181, 485, 5, 144, 399, 91, 90, 119, 6, 1073]
+Relevant documents: [5, 6, 90, 91, 119, 144, 181, 399, 485]
+Relevant docs in top 10: [181, 485, 5, 144, 399, 91, 90, 119, 6]
+
+Query 4:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.8855
+Top 10 documents: [166, 317, 236, 1286, 488, 167, 1312, 1296, 575, 574]
+Relevant documents: [236, 166, 488]
+Relevant docs in top 10: [166, 236, 488]
+
+Query 5:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.5508
+Top 10 documents: [1379, 746, 103, 1296, 552, 488, 1102, 537, 360, 368]
+Relevant documents: [552, 401, 1297, 1296, 488]
+Relevant docs in top 10: [1296, 552, 488]
+
+Query 6:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8278
+Top 10 documents: [491, 385, 386, 257, 1241, 558, 258, 271, 1281, 861]
+Relevant documents: [99, 115, 257, 258, 491]
+Relevant docs in top 10: [491, 257, 258]
+
+Query 7:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.7777
+Top 10 documents: [492, 1347, 947, 1231, 354, 56, 1040, 48, 57, 122]
+Relevant documents: [20, 56, 57, 58, 19, 492]
+Relevant docs in top 10: [492, 56, 57]
+
+Query 8:
+Metrics: Precision=0.4000, Recall=0.3333, F-score=0.3636, nDCG=0.8900
+Top 10 documents: [492, 122, 947, 1231, 1179, 1347, 48, 354, 443, 461]
+Relevant documents: [48, 122, 20, 58, 196, 354, 360, 197, 999, 1112, 1005, 492]
+Relevant docs in top 10: [492, 122, 48, 354]
+
+Query 9:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=1.0000
+Top 10 documents: [21, 550, 22, 571, 102, 1215, 306, 872, 303, 398]
+Relevant documents: [21, 22, 550, 534]
+Relevant docs in top 10: [21, 550, 22]
+
+Query 10:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.9325
+Top 10 documents: [302, 493, 1199, 691, 185, 405, 1286, 524, 1312, 1143]
+Relevant documents: [259, 405, 302, 436, 437, 438, 998, 1011, 493]
+Relevant docs in top 10: [302, 493, 405]
+
+Query 11:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=0.9325
+Top 10 documents: [495, 654, 1327, 1356, 556, 28, 304, 473, 273, 64]
+Relevant documents: [27, 28, 262, 160, 20, 263, 654, 495]
+Relevant docs in top 10: [495, 654, 28]
+
+Query 12:
+Metrics: Precision=0.5000, Recall=0.8333, F-score=0.6250, nDCG=0.8588
+Top 10 documents: [624, 1223, 650, 1209, 649, 86, 245, 631, 543, 652]
+Relevant documents: [86, 194, 650, 649, 652, 624]
+Relevant docs in top 10: [624, 650, 649, 86, 652]
+
+Query 13:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [496, 903, 503, 469, 643, 468, 199, 313, 879, 801]
+Relevant documents: [64, 265, 65, 311, 496]
+Relevant docs in top 10: [496]
+
+Query 14:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8772
+Top 10 documents: [64, 256, 170, 65, 1364, 190, 345, 439, 132, 1156]
+Relevant documents: [64, 65, 496]
+Relevant docs in top 10: [64, 65]
+
+Query 15:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=1.0000
+Top 10 documents: [463, 462, 1097, 1099, 1096, 553, 1100, 82, 405, 1279]
+Relevant documents: [463, 462, 497]
+Relevant docs in top 10: [463, 462]
+
+Query 16:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=1.0000
+Top 10 documents: [106, 498, 1301, 803, 1112, 410, 1255, 494, 360, 927]
+Relevant documents: [266, 106, 196, 498]
+Relevant docs in top 10: [106, 498]
+
+Query 17:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.4307
+Top 10 documents: [445, 1301, 700, 106, 1281, 987, 527, 410, 148, 1108]
+Relevant documents: [106, 196, 498]
+Relevant docs in top 10: [106]
+
+Query 18:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.6241
+Top 10 documents: [248, 498, 492, 56, 197, 1005, 231, 354, 234, 1114]
+Relevant documents: [196, 197, 198, 498]
+Relevant docs in top 10: [498, 197]
+
+Query 19:
+Metrics: Precision=0.1000, Recall=0.1000, F-score=0.1000, nDCG=0.3155
+Top 10 documents: [82, 1346, 554, 1219, 1348, 1279, 982, 164, 1217, 163]
+Relevant documents: [32, 67, 164, 639, 715, 716, 719, 1379, 717, 499]
+Relevant docs in top 10: [164]
+
+Query 20:
+Metrics: Precision=0.7000, Recall=0.7000, F-score=0.7000, nDCG=0.9447
+Top 10 documents: [500, 88, 268, 300, 966, 104, 270, 87, 407, 158]
+Relevant documents: [87, 88, 104, 267, 268, 269, 270, 407, 408, 500]
+Relevant docs in top 10: [500, 88, 268, 104, 270, 87, 407]
+
+Query 21:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8711
+Top 10 documents: [502, 68, 271, 302, 377, 16, 628, 538, 1007, 12]
+Relevant documents: [271, 16, 413, 414, 502]
+Relevant docs in top 10: [502, 271, 16]
+
+Query 22:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [413, 165, 125, 254, 348, 560, 140, 346, 861, 120]
+Relevant documents: [68, 502]
+Relevant docs in top 10: []
+
+Query 23:
+Metrics: Precision=0.6000, Recall=0.1818, F-score=0.2791, nDCG=0.9671
+Top 10 documents: [892, 1109, 899, 1259, 586, 718, 902, 530, 903, 185]
+Relevant documents: [900, 902, 200, 201, 601, 899, 903, 593, 199, 594, 901, 544, 597, 749, 917, 919, 1333, 634, 687, 698, 1290, 700, 704, 705, 1109, 1112, 1141, 1197, 1256, 1259, 1272, 1289, 892]
+Relevant docs in top 10: [892, 1109, 899, 1259, 902, 903]
+
+Query 24:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.9675
+Top 10 documents: [756, 46, 12, 47, 1317, 875, 51, 724, 883, 884]
+Relevant documents: [46, 47, 92, 756]
+Relevant docs in top 10: [756, 46, 47]
+
+Query 25:
+Metrics: Precision=0.6000, Recall=0.6000, F-score=0.6000, nDCG=0.8149
+Top 10 documents: [277, 989, 988, 990, 214, 216, 212, 511, 215, 345]
+Relevant documents: [213, 212, 214, 215, 216, 276, 277, 426, 427, 511]
+Relevant docs in top 10: [277, 214, 216, 212, 511, 215]
+
+Query 26:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.4401
+Top 10 documents: [4, 382, 3, 307, 1355, 135, 145, 376, 309, 611]
+Relevant documents: [145, 611, 376, 406, 565, 1076, 511]
+Relevant docs in top 10: [145, 376, 611]
+
+Query 27:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=0.3562
+Top 10 documents: [1176, 1031, 1178, 1133, 838, 512, 1129, 888, 1035, 1132]
+Relevant documents: [224, 278, 428, 512]
+Relevant docs in top 10: [512]
+
+Query 28:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [247, 678, 921, 250, 676, 674, 147, 451, 27, 1048]
+Relevant documents: [224, 279, 512]
+Relevant docs in top 10: []
+
+Query 29:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.9566
+Top 10 documents: [465, 612, 250, 420, 211, 464, 513, 901, 147, 900]
+Relevant documents: [250, 514, 609, 225, 793, 464, 465, 612, 466, 513]
+Relevant docs in top 10: [465, 612, 250, 464, 513]
+
+Query 30:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.5803
+Top 10 documents: [633, 513, 147, 247, 465, 921, 250, 464, 420, 678]
+Relevant documents: [225, 464, 514, 466, 609, 612, 793, 513]
+Relevant docs in top 10: [513, 464]
+
+Query 31:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=0.6309
+Top 10 documents: [918, 751, 247, 916, 749, 1341, 919, 454, 895, 551]
+Relevant documents: [776, 751]
+Relevant docs in top 10: [751]
+
+Query 32:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.9197
+Top 10 documents: [752, 921, 250, 432, 801, 289, 1112, 803, 877, 200]
+Relevant documents: [465, 249, 777, 778, 247, 250, 752]
+Relevant docs in top 10: [752, 250]
+
+Query 33:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.9829
+Top 10 documents: [516, 141, 431, 1153, 252, 808, 594, 795, 1155, 791]
+Relevant documents: [252, 431, 141, 516]
+Relevant docs in top 10: [516, 141, 431, 252]
+
+Query 34:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.7226
+Top 10 documents: [1153, 252, 516, 610, 799, 795, 431, 598, 1062, 1074]
+Relevant documents: [252, 431, 672, 714, 799, 800, 516]
+Relevant docs in top 10: [252, 516, 799, 431]
+
+Query 35:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1208, 64, 1276, 65, 1389, 75, 1244, 654, 1156, 151]
+Relevant documents: [166, 167, 132, 517]
+Relevant docs in top 10: []
+
+Query 36:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [623, 661, 550, 398, 546, 564, 353, 872, 962, 283]
+Relevant documents: [169, 168, 518]
+Relevant docs in top 10: []
+
+Query 37:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.6367
+Top 10 documents: [186, 176, 487, 189, 173, 188, 519, 979, 409, 179]
+Relevant documents: [173, 188, 172, 97, 121, 187, 242, 409, 487, 519]
+Relevant docs in top 10: [487, 173, 188, 519, 409]
+
+Query 38:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=0.8503
+Top 10 documents: [536, 976, 154, 446, 272, 1141, 1205, 979, 79, 1211]
+Relevant documents: [24, 283, 552, 272, 557, 558, 553, 554, 555, 556, 536]
+Relevant docs in top 10: [536, 272]
+
+Query 39:
+Metrics: Precision=0.2000, Recall=0.1429, F-score=0.1667, nDCG=0.5714
+Top 10 documents: [315, 272, 1154, 406, 959, 1205, 1264, 1278, 418, 1149]
+Relevant documents: [272, 555, 24, 283, 552, 79, 207, 418, 557, 554, 556, 505, 1257, 536]
+Relevant docs in top 10: [272, 418]
+
+Query 40:
+Metrics: Precision=0.2000, Recall=0.1538, F-score=0.1739, nDCG=0.6934
+Top 10 documents: [1205, 272, 536, 41, 1264, 79, 1278, 293, 418, 315]
+Relevant documents: [24, 283, 552, 272, 85, 976, 557, 558, 553, 554, 555, 556, 536]
+Relevant docs in top 10: [272, 536]
+
+Query 41:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=0.9675
+Top 10 documents: [289, 433, 927, 288, 1141, 1277, 1152, 432, 549, 1196]
+Relevant documents: [288, 289, 433, 520]
+Relevant docs in top 10: [289, 433, 288]
+
+Query 42:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.9060
+Top 10 documents: [521, 526, 468, 469, 503, 440, 496, 797, 439, 404]
+Relevant documents: [468, 467, 469, 470, 775, 521]
+Relevant docs in top 10: [521, 468, 469]
+
+Query 43:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9797
+Top 10 documents: [467, 469, 39, 468, 503, 496, 194, 404, 70, 521]
+Relevant documents: [467, 468, 39, 503, 775, 469, 521]
+Relevant docs in top 10: [467, 469, 39, 468, 503, 521]
+
+Query 44:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [27, 232, 1174, 593, 1048, 30, 469, 1014, 20, 1031]
+Relevant documents: [302, 436, 437, 524]
+Relevant docs in top 10: []
+
+Query 45:
+Metrics: Precision=0.3000, Recall=0.2308, F-score=0.2609, nDCG=0.9469
+Top 10 documents: [305, 525, 123, 353, 1185, 84, 540, 37, 26, 1200]
+Relevant documents: [305, 570, 308, 481, 338, 1226, 1355, 1185, 629, 663, 798, 572, 525]
+Relevant docs in top 10: [305, 525, 1185]
+
+Query 46:
+Metrics: Precision=0.6000, Recall=0.3750, F-score=0.4615, nDCG=0.9784
+Top 10 documents: [305, 525, 623, 1185, 37, 123, 353, 84, 983, 303]
+Relevant documents: [305, 338, 344, 481, 84, 123, 1185, 623, 570, 798, 1226, 629, 663, 572, 1355, 525]
+Relevant docs in top 10: [305, 525, 623, 1185, 123, 84]
+
+Query 47:
+Metrics: Precision=0.5000, Recall=0.3333, F-score=0.4000, nDCG=0.8365
+Top 10 documents: [305, 568, 327, 570, 525, 1200, 663, 310, 260, 540]
+Relevant documents: [304, 306, 307, 305, 629, 663, 308, 309, 310, 570, 798, 1185, 1355, 572, 525]
+Relevant docs in top 10: [305, 570, 525, 663, 310]
+
+Query 48:
+Metrics: Precision=0.4000, Recall=0.3333, F-score=0.3636, nDCG=0.9494
+Top 10 documents: [526, 797, 440, 334, 521, 707, 683, 26, 439, 902]
+Relevant documents: [439, 311, 316, 440, 187, 314, 315, 797, 798, 794, 265, 526]
+Relevant docs in top 10: [526, 797, 440, 439]
+
+Query 49:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.9066
+Top 10 documents: [527, 320, 322, 321, 479, 150, 1235, 476, 478, 366]
+Relevant documents: [320, 478, 527]
+Relevant docs in top 10: [527, 320, 478]
+
+Query 50:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1301, 146, 922, 248, 27, 498, 1149, 332, 1154, 192]
+Relevant documents: [326, 629, 21, 94, 22, 306, 528]
+Relevant docs in top 10: []
+
+Query 51:
+Metrics: Precision=0.6000, Recall=0.5455, F-score=0.5714, nDCG=0.9392
+Top 10 documents: [494, 326, 23, 1301, 498, 261, 146, 528, 94, 922]
+Relevant documents: [94, 23, 105, 381, 192, 326, 63, 494, 629, 261, 528]
+Relevant docs in top 10: [494, 326, 23, 261, 528, 94]
+
+Query 52:
+Metrics: Precision=0.5000, Recall=1.0000, F-score=0.6667, nDCG=0.7678
+Top 10 documents: [1215, 21, 326, 22, 306, 629, 550, 528, 4, 1142]
+Relevant documents: [21, 22, 306, 326, 528]
+Relevant docs in top 10: [21, 326, 22, 306, 528]
+
+Query 53:
+Metrics: Precision=0.2000, Recall=0.1818, F-score=0.1905, nDCG=1.0000
+Top 10 documents: [208, 531, 1236, 1273, 1255, 437, 1239, 167, 185, 61]
+Relevant documents: [296, 33, 446, 447, 448, 449, 208, 297, 298, 299, 531]
+Relevant docs in top 10: [208, 531]
+
+Query 54:
+Metrics: Precision=0.2000, Recall=0.2000, F-score=0.2000, nDCG=0.8772
+Top 10 documents: [123, 623, 1185, 84, 305, 554, 525, 564, 1307, 666]
+Relevant documents: [84, 24, 101, 294, 628, 661, 364, 365, 560, 123]
+Relevant docs in top 10: [123, 84]
+
+Query 55:
+Metrics: Precision=0.3000, Recall=0.2727, F-score=0.2857, nDCG=0.7921
+Top 10 documents: [460, 1154, 406, 1149, 376, 17, 959, 344, 16, 135]
+Relevant documents: [16, 375, 460, 378, 255, 271, 376, 377, 562, 502, 538]
+Relevant docs in top 10: [460, 376, 16]
+
+Query 56:
+Metrics: Precision=0.3000, Recall=0.2727, F-score=0.2857, nDCG=0.7921
+Top 10 documents: [753, 202, 878, 391, 1339, 1290, 52, 1111, 14, 441]
+Relevant documents: [380, 749, 1339, 14, 705, 779, 780, 379, 643, 686, 753]
+Relevant docs in top 10: [753, 1339, 14]
+
+Query 57:
+Metrics: Precision=0.3000, Recall=0.2000, F-score=0.2400, nDCG=0.8396
+Top 10 documents: [753, 1275, 380, 878, 202, 444, 1111, 1339, 747, 15]
+Relevant documents: [380, 593, 746, 914, 14, 379, 705, 779, 780, 704, 12, 15, 857, 859, 753]
+Relevant docs in top 10: [753, 380, 15]
+
+Query 58:
+Metrics: Precision=0.1000, Recall=0.1000, F-score=0.1000, nDCG=1.0000
+Top 10 documents: [754, 1159, 120, 1084, 872, 873, 1359, 398, 509, 524]
+Relevant documents: [788, 785, 786, 787, 23, 381, 382, 784, 789, 754]
+Relevant docs in top 10: [754]
+
+Query 59:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1359, 1084, 1176, 1116, 1055, 842, 839, 458, 1105, 671]
+Relevant documents: [788, 785, 786, 787, 754]
+Relevant docs in top 10: []
+
+Query 60:
+Metrics: Precision=0.5000, Recall=0.8333, F-score=0.6250, nDCG=0.9221
+Top 10 documents: [320, 527, 321, 322, 107, 476, 730, 1240, 478, 350]
+Relevant documents: [475, 476, 527, 320, 478, 322]
+Relevant docs in top 10: [320, 527, 322, 476, 478]
+
+Query 61:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=1.0000
+Top 10 documents: [564, 566, 539, 789, 435, 784, 1258, 283, 662, 1213]
+Relevant documents: [565, 566, 564, 1159, 661, 539]
+Relevant docs in top 10: [564, 566, 539]
+
+Query 62:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [785, 381, 105, 787, 789, 382, 116, 428, 459, 483]
+Relevant documents: [566, 567, 1084, 1078, 1081, 539]
+Relevant docs in top 10: []
+
+Query 63:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [839, 1116, 1045, 1359, 1046, 1051, 1121, 763, 843, 1118]
+Relevant documents: [567, 564, 566, 539]
+Relevant docs in top 10: []
+
+Query 64:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.4838
+Top 10 documents: [878, 202, 391, 15, 747, 1111, 719, 753, 856, 390]
+Relevant documents: [390, 391, 627]
+Relevant docs in top 10: [391, 390]
+
+Query 65:
+Metrics: Precision=0.7000, Recall=0.4375, F-score=0.5385, nDCG=1.0000
+Top 10 documents: [3, 388, 4, 393, 664, 180, 2, 569, 1386, 1355]
+Relevant documents: [2, 3, 128, 180, 323, 324, 418, 664, 629, 393, 394, 659, 4, 384, 1302, 388]
+Relevant docs in top 10: [3, 388, 4, 393, 664, 180, 2]
+
+Query 66:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.4592
+Top 10 documents: [2, 310, 128, 305, 1182, 659, 660, 4, 375, 664]
+Relevant documents: [664, 629, 180, 659, 660, 388]
+Relevant docs in top 10: [659, 660, 664]
+
+Query 67:
+Metrics: Precision=0.8000, Recall=0.5333, F-score=0.6400, nDCG=0.9933
+Top 10 documents: [3, 4, 393, 664, 180, 2, 388, 458, 309, 629]
+Relevant documents: [2, 3, 664, 629, 323, 324, 393, 128, 180, 394, 659, 389, 4, 1302, 388]
+Relevant docs in top 10: [3, 4, 393, 664, 180, 2, 388, 629]
+
+Query 68:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [628, 338, 337, 773, 397, 1237, 125, 974, 254, 344]
+Relevant documents: [662, 101, 460, 661, 62, 628]
+Relevant docs in top 10: [628]
+
+Query 69:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.5582
+Top 10 documents: [4, 300, 62, 1240, 1383, 540, 458, 3, 375, 24]
+Relevant documents: [458, 570, 977, 62, 336, 540]
+Relevant docs in top 10: [62, 540, 458]
+
+Query 70:
+Metrics: Precision=0.3000, Recall=0.2727, F-score=0.2857, nDCG=0.7614
+Top 10 documents: [540, 327, 300, 180, 349, 4, 62, 1240, 3, 570]
+Relevant documents: [333, 568, 570, 62, 101, 283, 565, 24, 977, 307, 540]
+Relevant docs in top 10: [540, 62, 570]
+
+Query 71:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.7904
+Top 10 documents: [540, 305, 63, 573, 26, 525, 570, 310, 537, 572]
+Relevant documents: [569, 571, 1355, 101, 655, 1213, 798, 572, 540]
+Relevant docs in top 10: [540, 572]
+
+Query 72:
+Metrics: Precision=0.1000, Recall=0.0556, F-score=0.0714, nDCG=0.3562
+Top 10 documents: [1078, 139, 504, 668, 9, 663, 1229, 1082, 53, 1381]
+Relevant documents: [21, 324, 630, 94, 664, 304, 128, 323, 663, 570, 494, 305, 309, 571, 655, 388, 62, 629]
+Relevant docs in top 10: [663]
+
+Query 73:
+Metrics: Precision=0.6000, Recall=0.2857, F-score=0.3871, nDCG=0.9833
+Top 10 documents: [332, 541, 574, 577, 573, 488, 1310, 1296, 625, 373]
+Relevant documents: [332, 572, 578, 573, 574, 421, 25, 317, 577, 401, 625, 160, 1213, 1304, 1198, 655, 1355, 68, 571, 1252, 541]
+Relevant docs in top 10: [332, 541, 574, 577, 573, 625]
+
+Query 74:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1153, 1158, 372, 625, 516, 876, 1155, 280, 431, 1142]
+Relevant documents: [576, 656, 575, 317, 574, 578, 541]
+Relevant docs in top 10: []
+
+Query 75:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.7977
+Top 10 documents: [324, 323, 1393, 1395, 629, 559, 55, 283, 630, 1161]
+Relevant documents: [667, 324, 378, 666, 670, 630]
+Relevant docs in top 10: [324, 630]
+
+Query 76:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.9109
+Top 10 documents: [667, 630, 1394, 50, 329, 1078, 668, 666, 565, 171]
+Relevant documents: [378, 667, 324, 666, 670, 1391, 329, 630]
+Relevant docs in top 10: [667, 630, 329, 666]
+
+Query 77:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.9447
+Top 10 documents: [329, 667, 668, 1394, 1264, 1395, 345, 1364, 170, 630]
+Relevant documents: [668, 666, 667, 670, 329, 1391, 630]
+Relevant docs in top 10: [329, 667, 668, 630]
+
+Query 78:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=1.0000
+Top 10 documents: [543, 589, 590, 588, 237, 591, 216, 578, 576, 138]
+Relevant documents: [588, 589, 590, 543]
+Relevant docs in top 10: [543, 589, 590, 588]
+
+Query 79:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.5438
+Top 10 documents: [748, 199, 544, 600, 597, 567, 1066, 251, 599, 755]
+Relevant documents: [597, 598, 688, 708, 713, 544]
+Relevant docs in top 10: [544, 597]
+
+Query 80:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.3978
+Top 10 documents: [600, 251, 599, 748, 790, 199, 544, 597, 545, 1066]
+Relevant documents: [594, 597, 596, 598, 544]
+Relevant docs in top 10: [544, 597]
+
+Query 81:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.5000
+Top 10 documents: [714, 1153, 631, 795, 598, 516, 594, 876, 652, 430]
+Relevant documents: [672, 799, 631]
+Relevant docs in top 10: [631]
+
+Query 82:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.7737
+Top 10 documents: [678, 1334, 1332, 699, 1339, 465, 676, 632, 779, 674]
+Relevant documents: [676, 677, 678, 679, 205, 632]
+Relevant docs in top 10: [678, 676, 632]
+
+Query 83:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.8066
+Top 10 documents: [633, 898, 1275, 428, 753, 19, 657, 680, 224, 1059]
+Relevant documents: [680, 681, 682, 683, 633]
+Relevant docs in top 10: [633, 680]
+
+Query 84:
+Metrics: Precision=0.4000, Recall=0.3333, F-score=0.3636, nDCG=0.6845
+Top 10 documents: [398, 142, 294, 283, 1263, 872, 873, 554, 135, 522]
+Relevant documents: [606, 406, 608, 142, 294, 354, 522, 962, 1192, 1213, 873, 546]
+Relevant docs in top 10: [142, 294, 873, 522]
+
+Query 85:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [315, 418, 795, 272, 1155, 1287, 876, 1264, 1153, 714]
+Relevant documents: [608, 406, 606, 710, 546]
+Relevant docs in top 10: []
+
+Query 86:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [755, 594, 790, 600, 251, 599, 1153, 199, 545, 516]
+Relevant documents: [594, 790, 755]
+Relevant docs in top 10: [755, 594, 790]
+
+Query 87:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [334, 439, 1228, 26, 797, 569, 655, 526, 1198, 572]
+Relevant documents: [606, 611, 562, 50, 236, 609, 612, 406, 547]
+Relevant docs in top 10: []
+
+Query 88:
+Metrics: Precision=0.7000, Recall=1.0000, F-score=0.8235, nDCG=0.9644
+Top 10 documents: [617, 616, 548, 622, 615, 613, 614, 510, 618, 1150]
+Relevant documents: [613, 614, 615, 616, 617, 618, 548]
+Relevant docs in top 10: [617, 616, 548, 615, 613, 614, 618]
+
+Query 89:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.4844
+Top 10 documents: [200, 752, 1340, 924, 797, 794, 803, 222, 432, 757]
+Relevant documents: [793, 794, 797, 795, 796, 420, 757]
+Relevant docs in top 10: [797, 794, 757]
+
+Query 90:
+Metrics: Precision=0.5000, Recall=0.3571, F-score=0.4167, nDCG=0.6337
+Top 10 documents: [265, 358, 1364, 1187, 71, 457, 291, 311, 1228, 798]
+Relevant documents: [794, 797, 798, 793, 796, 291, 800, 1187, 256, 311, 335, 1364, 1367, 757]
+Relevant docs in top 10: [1364, 1187, 291, 311, 798]
+
+Query 91:
+Metrics: Precision=0.2000, Recall=0.2000, F-score=0.2000, nDCG=0.9197
+Top 10 documents: [252, 610, 799, 503, 1153, 526, 440, 879, 1075, 795]
+Relevant documents: [252, 801, 797, 799, 800, 793, 794, 1154, 672, 757]
+Relevant docs in top 10: [252, 799]
+
+Query 92:
+Metrics: Precision=1.0000, Recall=0.7143, F-score=0.8333, nDCG=1.0000
+Top 10 documents: [758, 1247, 810, 808, 804, 809, 806, 811, 1243, 807]
+Relevant documents: [802, 803, 808, 809, 811, 804, 805, 806, 253, 1247, 807, 810, 1243, 758]
+Relevant docs in top 10: [758, 1247, 810, 808, 804, 809, 806, 811, 1243, 807]
+
+Query 93:
+Metrics: Precision=0.2000, Recall=1.0000, F-score=0.3333, nDCG=1.0000
+Top 10 documents: [635, 691, 68, 355, 302, 1143, 413, 1161, 1353, 1157]
+Relevant documents: [691, 635]
+Relevant docs in top 10: [635, 691]
+
+Query 94:
+Metrics: Precision=0.5000, Recall=0.3846, F-score=0.4348, nDCG=0.9818
+Top 10 documents: [1393, 559, 283, 1161, 983, 1394, 101, 662, 438, 35]
+Relevant documents: [24, 283, 294, 559, 689, 690, 101, 1393, 354, 1104, 1161, 1395, 635]
+Relevant docs in top 10: [1393, 559, 283, 1161, 101]
+
+Query 95:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8772
+Top 10 documents: [662, 564, 872, 283, 398, 566, 1258, 1395, 623, 1393]
+Relevant documents: [283, 662, 635]
+Relevant docs in top 10: [662, 283]
+
+Query 96:
+Metrics: Precision=0.7000, Recall=0.5000, F-score=0.5833, nDCG=0.9530
+Top 10 documents: [699, 779, 637, 698, 1334, 1332, 465, 1339, 700, 701]
+Relevant documents: [703, 704, 705, 698, 699, 700, 1289, 779, 701, 702, 706, 792, 1339, 637]
+Relevant docs in top 10: [699, 779, 637, 698, 1339, 700, 701]
+
+Query 97:
+Metrics: Precision=0.1000, Recall=0.0909, F-score=0.0952, nDCG=0.3333
+Top 10 documents: [1331, 781, 286, 251, 1270, 1166, 779, 882, 1214, 906]
+Relevant documents: [699, 700, 701, 698, 1289, 702, 703, 779, 1339, 681, 637]
+Relevant docs in top 10: [779]
+
+Query 98:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.6509
+Top 10 documents: [673, 638, 1343, 712, 797, 288, 902, 311, 675, 526]
+Relevant documents: [713, 708, 709, 711, 712, 638]
+Relevant docs in top 10: [638, 712]
+
+Query 99:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.7904
+Top 10 documents: [639, 716, 715, 958, 77, 164, 32, 67, 1345, 717]
+Relevant documents: [717, 719, 1001, 1379, 639]
+Relevant docs in top 10: [639, 717]
+
+Query 100:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=1.0000
+Top 10 documents: [1122, 760, 822, 1126, 741, 739, 897, 1067, 743, 1013]
+Relevant documents: [821, 822, 824, 820, 823, 825, 1122, 1051, 1121, 760]
+Relevant docs in top 10: [1122, 760, 822]
+
+Query 101:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9671
+Top 10 documents: [820, 817, 819, 818, 823, 837, 825, 1119, 760, 1121]
+Relevant documents: [817, 818, 819, 820, 825, 824, 760]
+Relevant docs in top 10: [820, 817, 819, 818, 825, 760]
+
+Query 102:
+Metrics: Precision=0.4000, Recall=0.8000, F-score=0.5333, nDCG=0.8843
+Top 10 documents: [910, 728, 516, 713, 998, 1001, 729, 1007, 913, 286]
+Relevant documents: [728, 913, 910, 911, 729]
+Relevant docs in top 10: [910, 728, 729, 913]
+
+Query 103:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [761, 956, 1050, 1127, 1048, 770, 1369, 1049, 720, 669]
+Relevant documents: [826, 828, 761]
+Relevant docs in top 10: [761]
+
+Query 104:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.8396
+Top 10 documents: [762, 462, 835, 29, 744, 1055, 644, 821, 1024, 837]
+Relevant documents: [833, 834, 835, 836, 837, 762]
+Relevant docs in top 10: [762, 835, 837]
+
+Query 105:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=0.9447
+Top 10 documents: [764, 848, 847, 890, 740, 1129, 1071, 1019, 1018, 846]
+Relevant documents: [848, 844, 845, 846, 847, 764]
+Relevant docs in top 10: [764, 848, 847, 846]
+
+Query 106:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.6462
+Top 10 documents: [890, 764, 848, 847, 908, 1129, 886, 844, 740, 1071]
+Relevant documents: [847, 846, 849, 844, 845, 764]
+Relevant docs in top 10: [764, 847, 844]
+
+Query 107:
+Metrics: Precision=0.3000, Recall=0.3750, F-score=0.3333, nDCG=1.0000
+Top 10 documents: [640, 725, 909, 209, 113, 100, 811, 137, 220, 415]
+Relevant documents: [725, 728, 729, 911, 720, 75, 909, 640]
+Relevant docs in top 10: [640, 725, 909]
+
+Query 108:
+Metrics: Precision=0.5000, Recall=0.6250, F-score=0.5556, nDCG=0.8629
+Top 10 documents: [75, 768, 726, 883, 727, 720, 881, 884, 724, 866]
+Relevant documents: [724, 726, 727, 75, 909, 720, 723, 640]
+Relevant docs in top 10: [75, 726, 727, 720, 724]
+
+Query 109:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1008, 711, 859, 864, 856, 709, 857, 158, 51, 31]
+Relevant documents: [860, 861, 606, 980, 12, 766]
+Relevant docs in top 10: []
+
+Query 110:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.5000
+Top 10 documents: [1131, 957, 1174, 1013, 400, 739, 642, 827, 888, 897]
+Relevant documents: [862, 863, 31, 1174, 766]
+Relevant docs in top 10: [1174]
+
+Query 111:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.8262
+Top 10 documents: [894, 948, 391, 858, 766, 856, 859, 658, 627, 857]
+Relevant documents: [15, 391, 864, 914, 392, 627, 658, 894]
+Relevant docs in top 10: [894, 391, 658, 627]
+
+Query 112:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=1.0000
+Top 10 documents: [641, 730, 733, 735, 734, 736, 840, 422, 955, 647]
+Relevant documents: [731, 730, 641]
+Relevant docs in top 10: [641, 730]
+
+Query 113:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.8175
+Top 10 documents: [748, 708, 312, 503, 368, 638, 265, 347, 801, 780]
+Relevant documents: [746, 748, 749, 265, 643]
+Relevant docs in top 10: [748, 265]
+
+Query 114:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.9060
+Top 10 documents: [895, 918, 919, 916, 780, 440, 503, 200, 685, 712]
+Relevant documents: [919, 916, 920, 921, 895]
+Relevant docs in top 10: [895, 919, 916]
+
+Query 115:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [184, 540, 327, 494, 57, 486, 13, 1186, 349, 577]
+Relevant documents: [51, 185, 878, 874, 184]
+Relevant docs in top 10: [184]
+
+Query 116:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [605, 384, 48, 1038, 1303, 1308, 522, 1110, 423, 1218]
+Relevant documents: [922, 360, 605, 927, 492, 896]
+Relevant docs in top 10: [605]
+
+Query 117:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [229, 230, 782, 924, 60, 520, 1285, 433, 1255, 927]
+Relevant documents: [360, 605, 896]
+Relevant docs in top 10: []
+
+Query 118:
+Metrics: Precision=0.1000, Recall=0.2500, F-score=0.1429, nDCG=1.0000
+Top 10 documents: [923, 1243, 1239, 803, 1062, 1112, 360, 1380, 1075, 698]
+Relevant documents: [923, 924, 925, 896]
+Relevant docs in top 10: [923]
+
+Query 119:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=0.5000
+Top 10 documents: [744, 928, 926, 827, 1177, 739, 1055, 533, 1116, 763]
+Relevant documents: [926, 897]
+Relevant docs in top 10: [926]
+
+Query 120:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.9416
+Top 10 documents: [887, 885, 769, 897, 1174, 1146, 741, 739, 1052, 886]
+Relevant documents: [829, 887, 890, 885, 886, 888, 889, 1146, 891, 769]
+Relevant docs in top 10: [887, 885, 769, 1146, 886]
+
+Query 121:
+Metrics: Precision=0.5000, Recall=0.6250, F-score=0.5556, nDCG=0.9668
+Top 10 documents: [1146, 887, 885, 888, 31, 1174, 1178, 957, 1131, 769]
+Relevant documents: [885, 886, 1146, 887, 888, 890, 891, 769]
+Relevant docs in top 10: [1146, 887, 885, 888, 769]
+
+Query 122:
+Metrics: Precision=0.5000, Recall=0.5000, F-score=0.5000, nDCG=0.9068
+Top 10 documents: [898, 1070, 931, 938, 935, 934, 930, 633, 743, 1052]
+Relevant documents: [931, 932, 934, 935, 936, 937, 938, 957, 1131, 898]
+Relevant docs in top 10: [898, 931, 938, 935, 934]
+
+Query 123:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.6241
+Top 10 documents: [389, 941, 775, 376, 967, 305, 34, 1083, 404, 310]
+Relevant documents: [966, 967, 941]
+Relevant docs in top 10: [941, 967]
+
+Query 124:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [941, 898, 1070, 633, 938, 934, 1153, 516, 657, 930]
+Relevant documents: [967, 968, 964, 965, 941]
+Relevant docs in top 10: [941]
+
+Query 125:
+Metrics: Precision=0.2000, Recall=0.1111, F-score=0.1429, nDCG=0.7904
+Top 10 documents: [997, 1195, 993, 695, 610, 1350, 1352, 1349, 991, 176]
+Relevant documents: [969, 970, 971, 187, 973, 173, 974, 177, 972, 174, 997, 176, 409, 946, 992, 994, 995, 942]
+Relevant docs in top 10: [997, 176]
+
+Query 126:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=1.0000
+Top 10 documents: [974, 1326, 397, 1095, 1288, 773, 628, 1237, 338, 1265]
+Relevant documents: [974, 1326, 187, 969, 970, 971, 972, 973, 942]
+Relevant docs in top 10: [974, 1326]
+
+Query 127:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [981, 5, 1073, 399, 6, 585, 872, 485, 1207, 395]
+Relevant documents: [101, 164, 981, 982, 983, 944]
+Relevant docs in top 10: [981]
+
+Query 128:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8066
+Top 10 documents: [945, 429, 92, 1063, 745, 111, 12, 985, 986, 1246]
+Relevant documents: [985, 990, 945]
+Relevant docs in top 10: [945, 985]
+
+Query 129:
+Metrics: Precision=0.7000, Recall=0.8750, F-score=0.7778, nDCG=0.9447
+Top 10 documents: [987, 945, 988, 527, 1281, 989, 985, 990, 984, 507]
+Relevant documents: [985, 987, 984, 988, 989, 986, 990, 945]
+Relevant docs in top 10: [987, 945, 988, 989, 985, 990, 984]
+
+Query 130:
+Metrics: Precision=0.5000, Recall=0.8333, F-score=0.6250, nDCG=0.9609
+Top 10 documents: [859, 1008, 766, 856, 858, 391, 864, 948, 857, 390]
+Relevant documents: [766, 858, 859, 1008, 12, 948]
+Relevant docs in top 10: [859, 1008, 766, 858, 948]
+
+Query 131:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.7977
+Top 10 documents: [950, 1021, 1026, 952, 1023, 1028, 1015, 1029, 1020, 871]
+Relevant documents: [1014, 1020, 1013, 1016, 1017, 1012, 1018, 1019, 950]
+Relevant docs in top 10: [950, 1020]
+
+Query 132:
+Metrics: Precision=0.7000, Recall=0.4375, F-score=0.5385, nDCG=0.9595
+Top 10 documents: [1026, 1013, 1023, 1021, 1015, 1020, 1028, 951, 1014, 871]
+Relevant documents: [1014, 1013, 1015, 1016, 1012, 1018, 1019, 1017, 951, 1023, 1020, 952, 1024, 1025, 1026, 950]
+Relevant docs in top 10: [1026, 1013, 1023, 1015, 1020, 951, 1014]
+
+Query 133:
+Metrics: Precision=0.1000, Recall=0.1250, F-score=0.1111, nDCG=0.3869
+Top 10 documents: [1026, 1013, 1023, 1015, 1020, 1028, 951, 1014, 1021, 1029]
+Relevant documents: [1020, 1018, 1019, 1024, 1012, 1016, 1022, 950]
+Relevant docs in top 10: [1020]
+
+Query 134:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.8066
+Top 10 documents: [951, 1015, 1013, 1026, 1014, 1012, 1023, 1028, 1020, 1021]
+Relevant documents: [1027, 1028, 951]
+Relevant docs in top 10: [951, 1028]
+
+Query 135:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.8603
+Top 10 documents: [1026, 1013, 1023, 1020, 1015, 1029, 951, 1014, 1021, 1028]
+Relevant documents: [1018, 1017, 1023, 1024, 1025, 1026, 950, 1016, 951]
+Relevant docs in top 10: [1026, 1023, 951]
+
+Query 136:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.8772
+Top 10 documents: [951, 1013, 1026, 1021, 1015, 1020, 1023, 1028, 1014, 871]
+Relevant documents: [1021, 1022, 1034, 951]
+Relevant docs in top 10: [951, 1021]
+
+Query 137:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8194
+Top 10 documents: [952, 1026, 1023, 1021, 1015, 871, 1028, 1029, 1024, 1020]
+Relevant documents: [1029, 1034, 951, 1021, 952]
+Relevant docs in top 10: [952, 1021, 1029]
+
+Query 138:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=0.5000
+Top 10 documents: [844, 897, 953, 889, 743, 1068, 841, 769, 887, 851]
+Relevant documents: [846, 1036, 953]
+Relevant docs in top 10: [953]
+
+Query 139:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=0.5000
+Top 10 documents: [844, 897, 953, 1068, 743, 826, 841, 1038, 887, 846]
+Relevant documents: [1031, 1032, 1035, 1037, 953]
+Relevant docs in top 10: [953]
+
+Query 140:
+Metrics: Precision=0.2000, Recall=0.2857, F-score=0.2353, nDCG=0.7904
+Top 10 documents: [954, 1045, 870, 955, 885, 839, 497, 1051, 195, 1039]
+Relevant documents: [1038, 1039, 1041, 1042, 1043, 1044, 954]
+Relevant docs in top 10: [954, 1039]
+
+Query 141:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.5848
+Top 10 documents: [889, 843, 1043, 1044, 743, 1135, 930, 954, 935, 851]
+Relevant documents: [1038, 1041, 1043, 1044, 1039, 1042, 954]
+Relevant docs in top 10: [1043, 1044, 954]
+
+Query 142:
+Metrics: Precision=0.1000, Recall=0.5000, F-score=0.1667, nDCG=0.5000
+Top 10 documents: [885, 765, 954, 769, 852, 889, 870, 890, 1068, 1125]
+Relevant documents: [1042, 954]
+Relevant docs in top 10: [954]
+
+Query 143:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.8385
+Top 10 documents: [1043, 889, 955, 954, 1052, 1044, 843, 930, 839, 743]
+Relevant documents: [1043, 1044, 954]
+Relevant docs in top 10: [1043, 954, 1044]
+
+Query 144:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.9740
+Top 10 documents: [1045, 839, 955, 763, 1046, 838, 1176, 1051, 840, 1359]
+Relevant documents: [840, 1045, 763, 838, 839, 841, 955]
+Relevant docs in top 10: [1045, 839, 955, 763, 838, 840]
+
+Query 145:
+Metrics: Precision=0.5000, Recall=0.6250, F-score=0.5556, nDCG=0.9331
+Top 10 documents: [1045, 839, 1051, 763, 1046, 955, 838, 1176, 928, 1118]
+Relevant documents: [763, 838, 839, 1045, 743, 852, 841, 955]
+Relevant docs in top 10: [1045, 839, 763, 955, 838]
+
+Query 146:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [1045, 955, 840, 839, 641, 763, 1175, 1046, 730, 838]
+Relevant documents: [840, 1045, 955]
+Relevant docs in top 10: [1045, 955, 840]
+
+Query 147:
+Metrics: Precision=0.4000, Recall=0.3636, F-score=0.3810, nDCG=0.9494
+Top 10 documents: [956, 1050, 1049, 1128, 1127, 1358, 191, 1172, 1048, 1357]
+Relevant documents: [889, 1046, 1048, 1047, 1049, 1051, 1050, 843, 926, 822, 956]
+Relevant docs in top 10: [956, 1050, 1049, 1048]
+
+Query 148:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=1.0000
+Top 10 documents: [1048, 956, 1050, 1126, 761, 827, 1146, 720, 1127, 1174]
+Relevant documents: [889, 1048, 1050, 1046, 1049, 843, 956]
+Relevant docs in top 10: [1048, 956, 1050]
+
+Query 149:
+Metrics: Precision=0.7000, Recall=0.5833, F-score=0.6364, nDCG=0.8401
+Top 10 documents: [930, 1070, 898, 1058, 1059, 935, 1052, 937, 931, 934]
+Relevant documents: [1057, 1058, 1059, 1052, 930, 931, 934, 936, 937, 938, 1131, 957]
+Relevant docs in top 10: [930, 1058, 1059, 1052, 937, 931, 934]
+
+Query 150:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [1062, 1074, 1075, 1239, 1243, 923, 803, 924, 610, 432]
+Relevant documents: [1074, 1075, 1062]
+Relevant docs in top 10: [1062, 1074, 1075]
+
+Query 151:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.3707
+Top 10 documents: [1246, 432, 1340, 783, 222, 924, 794, 1062, 923, 1075]
+Relevant documents: [687, 1076, 1074, 1075, 1077, 1062]
+Relevant docs in top 10: [1062, 1075]
+
+Query 152:
+Metrics: Precision=0.1000, Recall=0.1429, F-score=0.1176, nDCG=0.2891
+Top 10 documents: [671, 1225, 4, 794, 333, 696, 547, 3, 1382, 1076]
+Relevant documents: [1076, 1077, 569, 572, 687, 655, 1062]
+Relevant docs in top 10: [1076]
+
+Query 153:
+Metrics: Precision=0.4000, Recall=0.5000, F-score=0.4444, nDCG=0.9709
+Top 10 documents: [1063, 1085, 1081, 149, 394, 1082, 128, 1088, 228, 393]
+Relevant documents: [1078, 1083, 1084, 1080, 1081, 1082, 1085, 1063]
+Relevant docs in top 10: [1063, 1085, 1081, 1082]
+
+Query 154:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.8855
+Top 10 documents: [1088, 1054, 1087, 1055, 1063, 1086, 111, 1262, 832, 777]
+Relevant documents: [1087, 1088, 1063]
+Relevant docs in top 10: [1088, 1087, 1063]
+
+Query 155:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.9709
+Top 10 documents: [1101, 1065, 1099, 1097, 553, 1100, 1096, 1098, 274, 804]
+Relevant documents: [1103, 1100, 983, 1101, 1104, 1099, 1065]
+Relevant docs in top 10: [1101, 1065, 1099, 1100]
+
+Query 156:
+Metrics: Precision=0.9000, Recall=0.6000, F-score=0.7200, nDCG=0.9972
+Top 10 documents: [1097, 1099, 1096, 553, 1100, 1101, 1065, 1098, 1279, 274]
+Relevant documents: [983, 1102, 1097, 1100, 274, 1096, 1098, 1099, 1103, 982, 1104, 553, 1101, 82, 1065]
+Relevant docs in top 10: [1097, 1099, 1096, 553, 1100, 1101, 1065, 1098, 274]
+
+Query 157:
+Metrics: Precision=0.8000, Recall=0.2000, F-score=0.3200, nDCG=0.9497
+Top 10 documents: [1006, 372, 498, 318, 456, 25, 369, 160, 161, 1377]
+Relevant documents: [273, 1105, 1106, 93, 161, 302, 122, 666, 1107, 556, 25, 1011, 19, 35, 1355, 372, 410, 456, 36, 44, 215, 626, 1151, 354, 369, 370, 421, 557, 605, 655, 657, 689, 1307, 318, 423, 1304, 160, 482, 572, 1006]
+Relevant docs in top 10: [1006, 372, 318, 456, 25, 369, 160, 161]
+
+Query 158:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.7977
+Top 10 documents: [302, 691, 463, 405, 949, 462, 259, 1199, 552, 481]
+Relevant documents: [302, 1011, 552, 998, 1009, 1010, 273, 556, 1006]
+Relevant docs in top 10: [302, 552]
+
+Query 159:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.9197
+Top 10 documents: [1066, 1197, 1112, 723, 908, 1259, 844, 801, 895, 716]
+Relevant documents: [234, 1108, 1110, 1114, 1115, 1111, 1112, 231, 1066]
+Relevant docs in top 10: [1066, 1112]
+
+Query 160:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=0.6309
+Top 10 documents: [890, 1071, 885, 739, 887, 769, 740, 886, 1172, 764]
+Relevant documents: [1134, 1137, 1138, 1135, 1136, 1071]
+Relevant docs in top 10: [1071]
+
+Query 161:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.5257
+Top 10 documents: [460, 1185, 1192, 1386, 435, 54, 55, 539, 145, 1366]
+Relevant documents: [54, 1386, 562, 336, 55, 996, 489]
+Relevant docs in top 10: [1386, 54, 55]
+
+Query 162:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.8278
+Top 10 documents: [460, 55, 559, 489, 135, 959, 461, 62, 145, 376]
+Relevant documents: [111, 155, 460, 461, 54, 562, 458, 459, 489]
+Relevant docs in top 10: [460, 489, 461]
+
+Query 163:
+Metrics: Precision=0.3000, Recall=0.7500, F-score=0.4286, nDCG=1.0000
+Top 10 documents: [492, 57, 56, 1231, 373, 232, 354, 327, 1186, 1311]
+Relevant documents: [20, 56, 57, 492]
+Relevant docs in top 10: [492, 57, 56]
+
+Query 164:
+Metrics: Precision=0.3000, Recall=0.3333, F-score=0.3158, nDCG=0.5724
+Top 10 documents: [358, 265, 1364, 311, 457, 291, 1187, 71, 757, 335]
+Relevant documents: [311, 415, 416, 798, 316, 335, 1364, 1367, 503]
+Relevant docs in top 10: [1364, 311, 335]
+
+Query 165:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.9675
+Top 10 documents: [72, 71, 376, 504, 256, 326, 309, 64, 671, 17]
+Relevant documents: [71, 72, 504]
+Relevant docs in top 10: [72, 71, 504]
+
+Query 166:
+Metrics: Precision=0.1000, Recall=0.1111, F-score=0.1053, nDCG=1.0000
+Top 10 documents: [504, 256, 72, 376, 71, 55, 17, 326, 1220, 64]
+Relevant documents: [40, 41, 74, 207, 272, 418, 170, 1264, 504]
+Relevant docs in top 10: [504]
+
+Query 167:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.5706
+Top 10 documents: [553, 1279, 274, 82, 84, 1299, 1157, 537, 1379, 28]
+Relevant documents: [274, 82, 509]
+Relevant docs in top 10: [274, 82]
+
+Query 168:
+Metrics: Precision=0.2000, Recall=0.6667, F-score=0.3077, nDCG=0.6934
+Top 10 documents: [118, 750, 217, 965, 1187, 341, 136, 404, 157, 127]
+Relevant documents: [217, 774, 750]
+Relevant docs in top 10: [750, 217]
+
+Query 169:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=0.8855
+Top 10 documents: [750, 217, 118, 965, 157, 1187, 341, 136, 127, 970]
+Relevant documents: [118, 157, 774, 775, 750]
+Relevant docs in top 10: [750, 118, 157]
+
+Query 170:
+Metrics: Precision=0.6000, Recall=0.8571, F-score=0.7059, nDCG=0.7885
+Top 10 documents: [905, 893, 238, 139, 904, 239, 175, 1082, 906, 1004]
+Relevant documents: [139, 238, 239, 904, 906, 672, 893]
+Relevant docs in top 10: [893, 238, 139, 904, 239, 906]
+
+Query 171:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.9829
+Top 10 documents: [516, 431, 141, 1153, 252, 1155, 594, 808, 795, 714]
+Relevant documents: [252, 431, 141, 516]
+Relevant docs in top 10: [516, 431, 141, 252]
+
+Query 172:
+Metrics: Precision=0.5000, Recall=1.0000, F-score=0.6667, nDCG=0.9896
+Top 10 documents: [320, 527, 322, 321, 478, 476, 1370, 734, 1235, 1281]
+Relevant documents: [320, 321, 322, 476, 527]
+Relevant docs in top 10: [320, 527, 322, 321, 476]
+
+Query 173:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=1.0000
+Top 10 documents: [451, 532, 367, 931, 1240, 777, 1054, 1119, 1192, 1086]
+Relevant documents: [367, 451, 532]
+Relevant docs in top 10: [451, 532, 367]
+
+Query 174:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.5000
+Top 10 documents: [483, 501, 533, 1274, 1319, 1140, 35, 411, 1151, 1157]
+Relevant documents: [58, 411, 36, 423, 482, 533]
+Relevant docs in top 10: [533, 411]
+
+Query 175:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.8066
+Top 10 documents: [941, 139, 238, 1078, 1256, 491, 1191, 351, 9, 666]
+Relevant documents: [351, 966, 967, 964, 965, 941]
+Relevant docs in top 10: [941, 351]
+
+Query 176:
+Metrics: Precision=0.2000, Recall=0.2500, F-score=0.2222, nDCG=0.8503
+Top 10 documents: [542, 963, 1073, 5, 586, 181, 587, 981, 1207, 707]
+Relevant documents: [582, 583, 584, 585, 978, 586, 982, 542]
+Relevant docs in top 10: [542, 586]
+
+Query 177:
+Metrics: Precision=0.4000, Recall=0.6667, F-score=0.5000, nDCG=1.0000
+Top 10 documents: [543, 590, 589, 588, 237, 216, 576, 138, 578, 426]
+Relevant documents: [588, 589, 592, 772, 590, 543]
+Relevant docs in top 10: [543, 590, 589, 588]
+
+Query 178:
+Metrics: Precision=0.5000, Recall=1.0000, F-score=0.6667, nDCG=0.9379
+Top 10 documents: [591, 589, 543, 237, 138, 426, 590, 216, 588, 214]
+Relevant documents: [591, 590, 588, 589, 543]
+Relevant docs in top 10: [591, 589, 543, 590, 588]
+
+Query 179:
+Metrics: Precision=0.3000, Recall=0.6000, F-score=0.4000, nDCG=1.0000
+Top 10 documents: [633, 680, 682, 224, 428, 512, 19, 232, 97, 930]
+Relevant documents: [680, 681, 682, 683, 633]
+Relevant docs in top 10: [633, 680, 682]
+
+Query 180:
+Metrics: Precision=0.5000, Recall=0.6250, F-score=0.5556, nDCG=0.9668
+Top 10 documents: [616, 548, 622, 617, 613, 614, 615, 314, 1324, 1150]
+Relevant documents: [622, 619, 620, 621, 617, 616, 1150, 548]
+Relevant docs in top 10: [616, 548, 622, 617, 1150]
+
+Query 181:
+Metrics: Precision=0.1000, Recall=0.1667, F-score=0.1250, nDCG=1.0000
+Top 10 documents: [997, 1195, 993, 695, 610, 1350, 1352, 1349, 991, 992]
+Relevant documents: [973, 974, 409, 997, 1061, 942]
+Relevant docs in top 10: [997]
+
+Query 182:
+Metrics: Precision=0.3000, Recall=1.0000, F-score=0.4615, nDCG=0.9675
+Top 10 documents: [634, 685, 593, 686, 797, 440, 1300, 655, 1338, 878]
+Relevant documents: [685, 686, 634]
+Relevant docs in top 10: [634, 685, 686]
+
+Query 183:
+Metrics: Precision=0.9000, Recall=0.6429, F-score=0.7500, nDCG=1.0000
+Top 10 documents: [758, 1247, 809, 804, 808, 810, 1243, 811, 806, 39]
+Relevant documents: [803, 808, 802, 807, 811, 253, 804, 805, 806, 809, 810, 1243, 1247, 758]
+Relevant docs in top 10: [758, 1247, 809, 804, 808, 810, 1243, 811, 806]
+
+Query 184:
+Metrics: Precision=0.1000, Recall=0.1250, F-score=0.1111, nDCG=0.2891
+Top 10 documents: [554, 82, 1348, 509, 164, 1219, 982, 1217, 1345, 716]
+Relevant documents: [32, 67, 715, 717, 716, 499, 1379, 639]
+Relevant docs in top 10: [716]
+
+Query 185:
+Metrics: Precision=0.7000, Recall=0.7000, F-score=0.7000, nDCG=0.9804
+Top 10 documents: [858, 856, 766, 948, 391, 859, 857, 1008, 658, 627]
+Relevant documents: [858, 859, 857, 1008, 856, 15, 285, 894, 766, 948]
+Relevant docs in top 10: [858, 856, 766, 948, 859, 857, 1008]
+
+Query 186:
+Metrics: Precision=0.4000, Recall=0.2353, F-score=0.2963, nDCG=0.8036
+Top 10 documents: [1062, 1243, 1239, 803, 1075, 923, 610, 924, 432, 252]
+Relevant documents: [1309, 1378, 923, 161, 421, 1377, 924, 1062, 1074, 1379, 1380, 1075, 225, 1280, 1305, 1304, 1188]
+Relevant docs in top 10: [1062, 1075, 923, 924]
+
+Query 187:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.7614
+Top 10 documents: [763, 841, 1068, 897, 1126, 887, 743, 936, 1052, 839]
+Relevant documents: [838, 839, 840, 743, 842, 1045, 763]
+Relevant docs in top 10: [763, 743, 839]
+
+Query 188:
+Metrics: Precision=0.5000, Recall=0.4167, F-score=0.4545, nDCG=0.8954
+Top 10 documents: [725, 640, 220, 209, 909, 113, 722, 137, 219, 729]
+Relevant documents: [721, 722, 723, 75, 909, 724, 726, 725, 728, 729, 911, 640]
+Relevant docs in top 10: [725, 640, 909, 722, 729]
+
+Query 189:
+Metrics: Precision=0.3000, Recall=0.3000, F-score=0.3000, nDCG=0.7123
+Top 10 documents: [768, 767, 865, 883, 870, 640, 726, 881, 884, 75]
+Relevant documents: [395, 866, 869, 865, 868, 870, 867, 872, 873, 767]
+Relevant docs in top 10: [767, 865, 870]
+
+Query 190:
+Metrics: Precision=0.3000, Recall=0.5000, F-score=0.3750, nDCG=0.9066
+Top 10 documents: [390, 391, 856, 627, 948, 1008, 766, 858, 15, 1111]
+Relevant documents: [15, 391, 285, 390, 864, 894]
+Relevant docs in top 10: [390, 391, 15]
+
+Query 191:
+Metrics: Precision=0.7000, Recall=0.5000, F-score=0.5833, nDCG=0.9522
+Top 10 documents: [856, 658, 858, 766, 948, 391, 859, 627, 857, 1008]
+Relevant documents: [914, 915, 285, 857, 858, 15, 391, 856, 390, 1008, 948, 864, 658, 894]
+Relevant docs in top 10: [856, 658, 858, 948, 391, 857, 1008]
+
+Query 192:
+Metrics: Precision=0.4000, Recall=0.8000, F-score=0.5333, nDCG=0.9047
+Top 10 documents: [735, 647, 641, 734, 733, 875, 648, 730, 46, 386]
+Relevant documents: [733, 734, 735, 736, 641]
+Relevant docs in top 10: [735, 641, 734, 733]
+
+Query 193:
+Metrics: Precision=0.7000, Recall=0.7000, F-score=0.7000, nDCG=1.0000
+Top 10 documents: [733, 641, 735, 730, 422, 736, 648, 647, 644, 425]
+Relevant documents: [730, 422, 648, 731, 733, 734, 1392, 735, 736, 641]
+Relevant docs in top 10: [733, 641, 735, 730, 422, 736, 648]
+
+Query 194:
+Metrics: Precision=0.4000, Recall=0.5714, F-score=0.4706, nDCG=0.7889
+Top 10 documents: [642, 932, 888, 741, 957, 1131, 760, 1126, 744, 739]
+Relevant documents: [739, 740, 742, 744, 741, 743, 642]
+Relevant docs in top 10: [642, 741, 744, 739]
+
+Query 195:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.8316
+Top 10 documents: [642, 932, 1055, 1359, 744, 739, 741, 1116, 1067, 1126]
+Relevant documents: [739, 742, 743, 642]
+Relevant docs in top 10: [642, 739]
+
+Query 196:
+Metrics: Precision=0.1000, Recall=0.0769, F-score=0.0870, nDCG=1.0000
+Top 10 documents: [184, 57, 486, 327, 494, 577, 1311, 349, 158, 540]
+Relevant documents: [51, 185, 874, 878, 879, 880, 12, 875, 876, 202, 746, 13, 184]
+Relevant docs in top 10: [184]
+
+Query 197:
+Metrics: Precision=0.4000, Recall=1.0000, F-score=0.5714, nDCG=0.9829
+Top 10 documents: [768, 884, 881, 726, 883, 75, 723, 865, 909, 767]
+Relevant documents: [881, 883, 884, 768]
+Relevant docs in top 10: [768, 884, 881, 883]
+
+Query 198:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=0.4416
+Top 10 documents: [1052, 743, 1174, 897, 889, 741, 887, 1068, 739, 1126]
+Relevant documents: [887, 888, 889, 843, 769]
+Relevant docs in top 10: [889, 887]
+
+Query 199:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [1058, 1294, 1059, 930, 739, 764, 931, 890, 848, 777]
+Relevant documents: [1052, 1053, 1054, 1055, 1056, 1060, 743, 744, 957]
+Relevant docs in top 10: []
+
+Query 200:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.5706
+Top 10 documents: [1052, 885, 1134, 1071, 957, 1174, 935, 887, 461, 400]
+Relevant documents: [1134, 1137, 1138, 1071]
+Relevant docs in top 10: [1134, 1071]
+
+Query 201:
+Metrics: Precision=0.3000, Recall=0.1765, F-score=0.2222, nDCG=0.8072
+Top 10 documents: [625, 1345, 1217, 82, 1296, 1379, 401, 274, 1297, 554]
+Relevant documents: [552, 625, 1296, 93, 1151, 401, 110, 1391, 423, 541, 1295, 318, 1304, 160, 369, 482, 1140]
+Relevant docs in top 10: [625, 1296, 401]
+
+Query 202:
+Metrics: Precision=0.3000, Recall=0.2000, F-score=0.2400, nDCG=0.9010
+Top 10 documents: [1285, 1310, 225, 359, 514, 371, 58, 1378, 19, 1306]
+Relevant documents: [1303, 1304, 1309, 1306, 1308, 605, 602, 603, 604, 1110, 1305, 1310, 48, 232, 1285]
+Relevant docs in top 10: [1285, 1310, 1306]
+
+Query 203:
+Metrics: Precision=0.4000, Recall=0.2667, F-score=0.3200, nDCG=0.9550
+Top 10 documents: [1306, 58, 1285, 225, 411, 482, 359, 122, 423, 932]
+Relevant documents: [58, 1305, 1306, 602, 603, 604, 1307, 1310, 19, 232, 323, 688, 122, 1188, 1285]
+Relevant docs in top 10: [1306, 58, 1285, 122]
+
+Query 204:
+Metrics: Precision=0.1000, Recall=0.0667, F-score=0.0800, nDCG=0.6309
+Top 10 documents: [971, 1311, 310, 1080, 573, 147, 57, 444, 305, 514]
+Relevant documents: [572, 1311, 63, 540, 602, 603, 604, 1305, 1188, 307, 1213, 655, 1355, 68, 1285]
+Relevant docs in top 10: [1311]
+
+Query 205:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [133, 135, 4, 336, 1323, 1260, 72, 1383, 899, 1355]
+Relevant documents: [1321, 1322, 1287]
+Relevant docs in top 10: []
+
+Query 206:
+Metrics: Precision=0.2000, Recall=0.5000, F-score=0.2857, nDCG=0.8316
+Top 10 documents: [1290, 879, 468, 503, 876, 1338, 469, 440, 312, 878]
+Relevant documents: [1338, 1341, 1340, 1290]
+Relevant docs in top 10: [1290, 1338]
+
+Query 207:
+Metrics: Precision=0.2000, Recall=0.3333, F-score=0.2500, nDCG=0.8316
+Top 10 documents: [1341, 1111, 878, 747, 202, 1290, 749, 391, 593, 859]
+Relevant documents: [1338, 1339, 1340, 1341, 879, 1290]
+Relevant docs in top 10: [1341, 1290]
+
+Query 208:
+Metrics: Precision=0.7000, Recall=1.0000, F-score=0.8235, nDCG=0.9848
+Top 10 documents: [1291, 1344, 163, 1346, 1345, 1217, 1347, 1348, 164, 1219]
+Relevant documents: [163, 1344, 1345, 164, 1347, 1346, 1291]
+Relevant docs in top 10: [1291, 1344, 163, 1346, 1345, 1347, 164]
+
+Query 209:
+Metrics: Precision=0.2000, Recall=0.1538, F-score=0.1739, nDCG=0.5013
+Top 10 documents: [959, 651, 89, 187, 45, 455, 240, 358, 135, 53]
+Relevant documents: [1351, 1356, 1350, 187, 487, 45, 55, 316, 1383, 1385, 1106, 1228, 1292]
+Relevant docs in top 10: [187, 45]
+
+Query 210:
+Metrics: Precision=0.3000, Recall=0.4286, F-score=0.3529, nDCG=0.9325
+Top 10 documents: [1172, 1145, 1126, 739, 1068, 1171, 897, 743, 938, 1052]
+Relevant documents: [1171, 891, 1172, 1173, 1030, 1174, 1145]
+Relevant docs in top 10: [1172, 1145, 1171]
+
+Query 211:
+Metrics: Precision=0.3000, Recall=0.2500, F-score=0.2727, nDCG=0.6653
+Top 10 documents: [739, 1052, 897, 1068, 743, 1174, 887, 741, 885, 760]
+Relevant documents: [891, 1172, 1173, 1174, 763, 769, 1030, 1031, 1033, 1052, 1068, 1145]
+Relevant docs in top 10: [1052, 1068, 1174]
+
+Query 212:
+Metrics: Precision=0.6000, Recall=0.4000, F-score=0.4800, nDCG=0.9877
+Top 10 documents: [1178, 1176, 1177, 888, 1146, 1359, 838, 885, 1130, 1293]
+Relevant documents: [888, 889, 1178, 885, 887, 886, 841, 1176, 1177, 890, 769, 891, 1173, 843, 1146]
+Relevant docs in top 10: [1178, 1176, 1177, 888, 1146, 885]
+
+Query 213:
+Metrics: Precision=0.6000, Recall=0.5000, F-score=0.5455, nDCG=0.9013
+Top 10 documents: [888, 885, 741, 642, 887, 1173, 1131, 769, 1126, 1146]
+Relevant documents: [888, 885, 887, 889, 1178, 769, 1173, 1177, 886, 890, 843, 1146]
+Relevant docs in top 10: [888, 885, 887, 1173, 769, 1146]
+
+Query 214:
+Metrics: Precision=0.2000, Recall=0.4000, F-score=0.2667, nDCG=1.0000
+Top 10 documents: [1294, 1362, 828, 848, 739, 764, 890, 1055, 47, 777]
+Relevant documents: [833, 1361, 1362, 1363, 1294]
+Relevant docs in top 10: [1294, 1362]
+
+Query 215:
+Metrics: Precision=0.1000, Recall=0.3333, F-score=0.1538, nDCG=1.0000
+Top 10 documents: [535, 1253, 25, 666, 669, 357, 1198, 401, 984, 1373]
+Relevant documents: [37, 35, 535]
+Relevant docs in top 10: [535]
+
+Query 216:
+Metrics: Precision=0.0000, Recall=0.0000, F-score=0.0000, nDCG=0.0000
+Top 10 documents: [904, 905, 175, 64, 893, 65, 1156, 239, 39, 1382]
+Relevant documents: [156, 506]
+Relevant docs in top 10: []
+
+Query 217:
+Metrics: Precision=0.3000, Recall=0.1875, F-score=0.2308, nDCG=0.5574
+Top 10 documents: [324, 323, 1395, 1393, 666, 983, 629, 369, 1394, 1161]
+Relevant documents: [666, 667, 1258, 1394, 668, 670, 1204, 1391, 1395, 1300, 37, 559, 630, 1107, 1213, 1191]
+Relevant docs in top 10: [1395, 666, 1394]
+
+Query 218:
+Metrics: Precision=0.3000, Recall=0.1875, F-score=0.2308, nDCG=0.7921
+Top 10 documents: [1393, 1395, 323, 324, 666, 983, 629, 1394, 662, 623]
+Relevant documents: [24, 101, 666, 667, 93, 1258, 1393, 559, 630, 662, 1104, 1107, 1204, 1213, 1300, 1191]
+Relevant docs in top 10: [1393, 666, 662]
+
+Query 219:
+Metrics: Precision=0.1000, Recall=0.0526, F-score=0.0690, nDCG=0.6309
+Top 10 documents: [668, 1078, 1082, 139, 197, 530, 53, 268, 342, 1229]
+Relevant documents: [1391, 666, 667, 1258, 1078, 1080, 1081, 1394, 1395, 1214, 1198, 1204, 1300, 559, 630, 662, 1107, 1213, 1191]
+Relevant docs in top 10: [1078]
+
+Query 220:
+Metrics: Precision=0.4000, Recall=0.2000, F-score=0.2667, nDCG=0.7226
+Top 10 documents: [4, 292, 376, 899, 1182, 3, 458, 336, 461, 135]
+Relevant documents: [1383, 1385, 155, 241, 1382, 1370, 1386, 111, 1384, 150, 292, 458, 479, 977, 376, 459, 1365, 62, 1366, 1182]
+Relevant docs in top 10: [292, 376, 1182, 458]
+
+Query 221:
+Metrics: Precision=0.3000, Recall=0.1579, F-score=0.2069, nDCG=0.9010
+Top 10 documents: [1386, 1366, 3, 388, 404, 54, 55, 489, 94, 1182]
+Relevant documents: [155, 1383, 1385, 1382, 62, 292, 241, 1370, 1384, 458, 459, 461, 1386, 1365, 1366, 111, 150, 479, 1182]
+Relevant docs in top 10: [1386, 1366, 1182]
+
+Query 222:
+Metrics: Precision=0.4000, Recall=0.4000, F-score=0.4000, nDCG=0.7606
+Top 10 documents: [1130, 419, 400, 1399, 1400, 1178, 1050, 1176, 888, 1121]
+Relevant documents: [400, 419, 1387, 412, 1392, 1398, 1397, 1400, 1399, 1396]
+Relevant docs in top 10: [419, 400, 1399, 1400]
+
+Query 223:
+Metrics: Precision=0.1000, Recall=0.2000, F-score=0.1333, nDCG=1.0000
+Top 10 documents: [400, 1400, 419, 1399, 388, 109, 659, 1121, 484, 393]
+Relevant documents: [400, 1387, 1392, 1398, 1396]
+Relevant docs in top 10: [400]
+
+Query 224:
+Metrics: Precision=0.2000, Recall=0.2222, F-score=0.2105, nDCG=0.4413
+Top 10 documents: [1312, 1315, 317, 1286, 236, 1252, 110, 1139, 259, 656]
+Relevant documents: [656, 1313, 1317, 1316, 1318, 1319, 1157, 1274, 1286]
+Relevant docs in top 10: [1286, 656]
+
+Query 225:
+Metrics: Precision=0.3000, Recall=0.1200, F-score=0.1714, nDCG=0.9675
+Top 10 documents: [1188, 1380, 1256, 1124, 638, 1291, 748, 368, 701, 279]
+Relevant documents: [1379, 1305, 1304, 40, 293, 1309, 161, 421, 1377, 1378, 1381, 225, 1380, 448, 449, 1124, 1280, 433, 923, 924, 1062, 1074, 1075, 1213, 1188]
+Relevant docs in top 10: [1188, 1380, 1124]
+
+Mean metrics for LSA:
+Precision: mean=0.3049, std=0.2016
+Recall: mean=0.4366, std=0.2821
+F-score: mean=0.3330, std=0.1969
+nDCG: mean=0.7609, std=0.2838
+
+Comparing VSM vs ESA:
+
+Comparing VSM vs ESA:
+
+Precision:
+t-statistic: 7.8434
+p-value (one-tailed): 0.0000
+Significant difference! VSM performs better than ESA.
+Mean Precision: VSM=0.2924, ESA=0.1649
+
+Recall:
+t-statistic: 7.2759
+p-value (one-tailed): 0.0000
+Significant difference! VSM performs better than ESA.
+Mean Recall: VSM=0.4235, ESA=0.2478
+
+F-score:
+t-statistic: 8.3611
+p-value (one-tailed): 0.0000
+Significant difference! VSM performs better than ESA.
+Mean F-score: VSM=0.3204, ESA=0.1836
+
+nDCG:
+t-statistic: 8.5657
+p-value (one-tailed): 0.0000
+Significant difference! VSM performs better than ESA.
+Mean nDCG: VSM=0.7813, ESA=0.5175
+
+Comparing VSM vs LSA:
+
+Comparing VSM vs LSA:
+
+Precision:
+t-statistic: -0.6796
+p-value (one-tailed): 0.7514
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean Precision: VSM=0.2924, LSA=0.3049
+
+Recall:
+t-statistic: -0.5054
+p-value (one-tailed): 0.6932
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean Recall: VSM=0.4235, LSA=0.4366
+
+F-score:
+t-statistic: -0.7018
+p-value (one-tailed): 0.7584
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean F-score: VSM=0.3204, LSA=0.3330
+
+nDCG:
+t-statistic: 0.8023
+p-value (one-tailed): 0.2114
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean nDCG: VSM=0.7813, LSA=0.7609
+
+Comparing ESA vs LSA:
+
+Comparing ESA vs LSA:
+
+Precision:
+t-statistic: -8.1928
+p-value (one-tailed): 1.0000
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean Precision: ESA=0.1649, LSA=0.3049
+
+Recall:
+t-statistic: -7.5861
+p-value (one-tailed): 1.0000
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean Recall: ESA=0.2478, LSA=0.4366
+
+F-score:
+t-statistic: -8.7164
+p-value (one-tailed): 1.0000
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean F-score: ESA=0.1836, LSA=0.3330
+
+nDCG:
+t-statistic: -7.6351
+p-value (one-tailed): 1.0000
+No significant difference in performance (cannot conclude model1 is better than model2).
+Mean nDCG: ESA=0.5175, LSA=0.7609
+
+Saved results to model_comparison_results.json
