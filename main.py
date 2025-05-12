@@ -10,6 +10,7 @@ import argparse
 import json
 import matplotlib.pyplot as plt
 import seaborn as sns
+import time
 
 # Input compatibility for Python 2 and Python 3
 if version_info.major == 3:
@@ -145,14 +146,14 @@ class SearchEngine:
 		"""
 
 		# Read queries
-		queries_json = json.load(open(args.dataset + "cran_queries.json", 'r'))[:]
+		queries_json = json.load(open(self.args.dataset + "cran_queries.json", 'r'))[:]
 		query_ids, queries = [item["query number"] for item in queries_json], \
 								[item["query"] for item in queries_json]
 		# Process queries 
 		processedQueries = self.preprocessQueries(queries)
 
 		# Read documents
-		docs_json = json.load(open(args.dataset + "cran_docs.json", 'r'))[:]
+		docs_json = json.load(open(self.args.dataset + "cran_docs.json", 'r'))[:]
 		doc_ids, docs = [item["id"] for item in docs_json], \
 								[item["body"] for item in docs_json]
 		# Process documents
@@ -164,7 +165,7 @@ class SearchEngine:
 		doc_IDs_ordered = self.informationRetriever.rank(processedQueries)
 
 		# Read relevance judements
-		qrels = json.load(open(args.dataset + "cran_qrels.json", 'r'))[:]
+		qrels = json.load(open(self.args.dataset + "cran_qrels.json", 'r'))[:]
 
 		# Calculate precision, recall, f-score, MAP and nDCG for k = 1 to 10
 		precisions, recalls, fscores, MAPs, nDCGs = [], [], [], [], []
@@ -201,7 +202,7 @@ class SearchEngine:
 		plt.legend()
 		plt.title("Evaluation Metrics - Cranfield Dataset")
 		plt.xlabel("k")
-		plt.savefig(args.out_folder + "eval_plot.png")
+		plt.savefig(self.args.out_folder + "eval_plot.png")
 
 		
 	def handleCustomQuery(self):
@@ -216,7 +217,7 @@ class SearchEngine:
 		processedQuery = self.preprocessQueries([query])[0]
 
 		# Read documents
-		docs_json = json.load(open(args.dataset + "cran_docs.json", 'r'))[:]
+		docs_json = json.load(open(self.args.dataset + "cran_docs.json", 'r'))[:]
 		doc_ids, docs = [item["id"] for item in docs_json], \
 							[item["body"] for item in docs_json]
 		# Process documents
@@ -233,9 +234,7 @@ class SearchEngine:
 			print(id_)
 
 
-
-if __name__ == "__main__":
-
+def parseArgs():
 	# Create an argument parser
 	parser = argparse.ArgumentParser(description='main.py')
 
@@ -245,20 +244,33 @@ if __name__ == "__main__":
 	parser.add_argument('-out_folder', default = "output/", 
 						help = "Path to output folder")
 	parser.add_argument('-segmenter', default = "punkt",
-	                    help = "Sentence Segmenter Type [naive|punkt]")
+						help = "Sentence Segmenter Type [naive|punkt]")
 	parser.add_argument('-tokenizer',  default = "ptb",
-	                    help = "Tokenizer Type [naive|ptb]")
+						help = "Tokenizer Type [naive|ptb]")
 	parser.add_argument('-custom', action = "store_true", 
 						help = "Take custom query as input")
-	
+
 	# Parse the input arguments
-	args = parser.parse_args()
+	return parser.parse_args()
 
-	# Create an instance of the Search Engine
+def main():
+	start_time = time.time()
+	
+	# Parse arguments
+	args = parseArgs()
+	
+	# Initialize search engine
 	searchEngine = SearchEngine(args)
-
+	
 	# Either handle query from user or evaluate on the complete dataset 
 	if args.custom:
 		searchEngine.handleCustomQuery()
 	else:
 		searchEngine.evaluateDataset()
+	
+	end_time = time.time()
+	total_time = end_time - start_time
+	print(f"\nTotal execution time: {total_time:.2f} seconds ({total_time/60:.2f} minutes)")
+
+if __name__ == "__main__":
+	main()
