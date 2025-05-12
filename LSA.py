@@ -1,798 +1,706 @@
-# import json
-# import numpy as np
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# from scipy import stats
-# import nltk
-# from nltk.corpus import stopwords
-# from nltk import pos_tag
-# from nltk.tokenize import word_tokenize
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# from sklearn.decomposition import TruncatedSVD
-# from evaluation import Evaluation
-
-# # Download necessary NLTK resources
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# nltk.download('averaged_perceptron_tagger')
-
-# class LSASearchEngine:
-#     """
-#     Implements Latent Semantic Analysis for information retrieval
-#     """
-    
-#     def __init__(self, n_components=300):
-#         """
-#         Initialize the LSA search engine
-        
-#         Parameters:
-#         -----------
-#         n_components : int
-#             Number of components for SVD
-#         """
-#         self.n_components = n_components
-#         self.vectorizer = TfidfVectorizer()
-#         self.svd = TruncatedSVD(n_components=n_components, random_state=42)
-#         self.docs_svd = None
-#         self.doc_ids = None
-        
-#     def preprocess_text(self, text, remove_stopwords=True, pos_tag_text=False):
-#         """
-#         Preprocess text by tokenizing, removing stopwords (optional),
-#         and adding POS tags (optional)
-        
-#         Parameters:
-#         -----------
-#         text : str
-#             Text to be preprocessed
-#         remove_stopwords : bool
-#             Whether to remove stopwords
-#         pos_tag_text : bool
-#             Whether to add POS tags
-            
-#         Returns:
-#         --------
-#         str
-#             Preprocessed text
-#         """
-#         tokens = word_tokenize(text.lower())
-        
-#         if remove_stopwords:
-#             stop_words = set(stopwords.words('english'))
-#             tokens = [token for token in tokens if token not in stop_words]
-        
-#         if pos_tag_text:
-#             pos_tags = pos_tag(tokens)
-#             return " ".join([f"{word}_{tag}" for word, tag in pos_tags])
-#         else:
-#             return " ".join(tokens)
-    
-#     def build_index(self, docs, doc_ids, use_pos_tagging=False):
-#         """
-#         Build the LSA index from documents
-        
-#         Parameters:
-#         -----------
-#         docs : list
-#             List of document texts
-#         doc_ids : list
-#             List of document IDs
-#         use_pos_tagging : bool
-#             Whether to use POS tagging for documents
-            
-#         Returns:
-#         --------
-#         None
-#         """
-#         self.doc_ids = doc_ids
-        
-#         # Preprocess docs (with or without POS tagging)
-#         if use_pos_tagging:
-#             preprocessed_docs = [self.preprocess_text(doc, pos_tag_text=True) for doc in docs]
-#         else:
-#             preprocessed_docs = [self.preprocess_text(doc) for doc in docs]
-        
-#         # Build TF-IDF matrix
-#         self.tfidf_matrix = self.vectorizer.fit_transform(preprocessed_docs)
-        
-#         # Apply SVD for LSA
-#         self.docs_svd = self.svd.fit_transform(self.tfidf_matrix)
-        
-#         print(f"LSA index built with {self.n_components} components")
-#         print(f"Explained variance ratio: {sum(self.svd.explained_variance_ratio_):.2f}")
-        
-#     def search(self, queries, use_pos_tagging=False):
-#         """
-#         Search using LSA
-        
-#         Parameters:
-#         -----------
-#         queries : list
-#             List of queries
-#         use_pos_tagging : bool
-#             Whether to use POS tagging for queries
-            
-#         Returns:
-#         --------
-#         list
-#             List of ordered document IDs for each query
-#         """
-#         # Preprocess queries (with or without POS tagging)
-#         if use_pos_tagging:
-#             preprocessed_queries = [self.preprocess_text(query, pos_tag_text=True) for query in queries]
-#         else:
-#             preprocessed_queries = [self.preprocess_text(query) for query in queries]
-        
-#         # Transform queries to TF-IDF
-#         queries_tfidf = self.vectorizer.transform(preprocessed_queries)
-        
-#         # Project into LSA space
-#         queries_svd = self.svd.transform(queries_tfidf)
-        
-#         # Calculate cosine similarity
-#         cosine_similarities = []
-#         for query_vector in queries_svd:
-#             # Dot product / (norm(a) * norm(b))
-#             doc_norms = np.linalg.norm(self.docs_svd, axis=1)
-#             query_norm = np.linalg.norm(query_vector)
-            
-#             similarities = np.zeros(len(self.docs_svd))
-#             for i, doc_vector in enumerate(self.docs_svd):
-#                 if doc_norms[i] * query_norm != 0:  # Avoid division by zero
-#                     similarities[i] = np.dot(doc_vector, query_vector) / (doc_norms[i] * query_norm)
-            
-#             cosine_similarities.append(similarities)
-        
-#         # Sort documents by similarity for each query
-#         doc_IDs_ordered = []
-#         for similarities in cosine_similarities:
-#             sorted_indices = np.argsort(-similarities)
-#             ordered_docs = [self.doc_ids[idx] for idx in sorted_indices]
-#             doc_IDs_ordered.append(ordered_docs)
-        
-#         return doc_IDs_ordered
-    
-#     def find_optimal_components(self, docs, doc_ids, queries, query_ids, qrels, 
-#                               min_components=100, max_components=1500, step=100):
-#         """
-#         Find the optimal number of components for LSA
-        
-#         Parameters:
-#         -----------
-#         docs : list
-#             List of document texts
-#         doc_ids : list
-#             List of document IDs
-#         queries : list
-#             List of queries
-#         query_ids : list
-#             List of query IDs
-#         qrels : list
-#             List of relevance judgments
-#         min_components : int
-#             Minimum number of components to try
-#         max_components : int
-#             Maximum number of components to try
-#         step : int
-#             Step size for components
-            
-#         Returns:
-#         --------
-#         int
-#             Optimal number of components
-#         """
-#         components = list(range(min_components, max_components + 1, step))
-#         eval_metrics = Evaluation()
-#         maps = []
-        
-#         for n_comp in components:
-#             print(f"Testing with {n_comp} components...")
-#             self.n_components = n_comp
-#             self.svd = TruncatedSVD(n_components=n_comp, random_state=42)
-            
-#             self.build_index(docs, doc_ids)
-#             doc_IDs_ordered = self.search(queries)
-            
-#             # Calculate MAP@10
-#             map_score = eval_metrics.meanAveragePrecision(doc_IDs_ordered, query_ids, qrels, k=10)
-#             maps.append(map_score)
-#             print(f"MAP@10 = {map_score}")
-        
-#         # Plot MAP vs number of components
-#         plt.figure(figsize=(10, 6))
-#         plt.plot(components, maps, marker='o')
-#         plt.xlabel('Number of Components')
-#         plt.ylabel('MAP@10')
-#         plt.title('Performance vs LSA Components')
-#         plt.grid(True)
-#         plt.savefig('lsa_components_performance.png')
-#         plt.show()
-        
-#         # Return the optimal number of components
-#         optimal_components = components[np.argmax(maps)]
-#         print(f"Optimal number of components: {optimal_components}")
-#         return optimal_components
-    
-#     def evaluate_performance(self, doc_IDs_ordered, query_ids, qrels):
-#         """
-#         Evaluate the performance of the LSA search engine
-        
-#         Parameters:
-#         -----------
-#         doc_IDs_ordered : list
-#             List of ordered document IDs for each query
-#         query_ids : list
-#             List of query IDs
-#         qrels : list
-#             List of relevance judgments
-            
-#         Returns:
-#         --------
-#         dict
-#             Dictionary of evaluation metrics
-#         """
-#         eval_metrics = Evaluation()
-#         results = {}
-        
-#         k_values = [1, 3, 5, 10]
-#         for k in k_values:
-#             precision = eval_metrics.meanPrecision(doc_IDs_ordered, query_ids, qrels, k)
-#             recall = eval_metrics.meanRecall(doc_IDs_ordered, query_ids, qrels, k)
-#             fscore = eval_metrics.meanFscore(doc_IDs_ordered, query_ids, qrels, k)
-#             map_score = eval_metrics.meanAveragePrecision(doc_IDs_ordered, query_ids, qrels, k)
-#             ndcg = eval_metrics.meanNDCG(doc_IDs_ordered, query_ids, qrels, k)
-            
-#             results[f'k={k}'] = {
-#                 'Precision': precision,
-#                 'Recall': recall,
-#                 'F-score': fscore,
-#                 'MAP': map_score,
-#                 'nDCG': ndcg
-#             }
-            
-#             print(f"Results at k={k}:")
-#             print(f"  Precision: {precision:.4f}")
-#             print(f"  Recall: {recall:.4f}")
-#             print(f"  F-score: {fscore:.4f}")
-#             print(f"  MAP: {map_score:.4f}")
-#             print(f"  nDCG: {ndcg:.4f}")
-        
-#         # Plot metrics
-#         plt.figure(figsize=(12, 8))
-#         metrics = ['Precision', 'Recall', 'F-score', 'MAP', 'nDCG']
-#         for metric in metrics:
-#             values = [results[f'k={k}'][metric] for k in k_values]
-#             plt.plot(k_values, values, marker='o', label=metric)
-        
-#         plt.xlabel('k')
-#         plt.ylabel('Score')
-#         plt.title('LSA Performance Metrics')
-#         plt.legend()
-#         plt.grid(True)
-#         plt.savefig('lsa_performance_metrics.png')
-#         plt.show()
-        
-#         return results
-    
-#     def compare_models(self, models_results, model_names):
-#         """
-#         Compare different models using hypothesis testing
-        
-#         Parameters:
-#         -----------
-#         models_results : list of lists
-#             List of lists of results for each model at k=10
-#         model_names : list
-#             List of model names
-            
-#         Returns:
-#         --------
-#         None
-#         """
-#         metrics = ['Precision', 'Recall', 'F-score', 'nDCG']
-        
-#         for i in range(len(model_names)):
-#             for j in range(i+1, len(model_names)):
-#                 print(f"\nComparing {model_names[i]} vs {model_names[j]}:")
-                
-#                 for metric in metrics:
-#                     a = models_results[i][metric]
-#                     b = models_results[j][metric]
-                    
-#                     # Perform t-test
-#                     t_stat, p_value = stats.ttest_rel(a, b)
-                    
-#                     print(f"  {metric}: t = {t_stat:.4f}, p = {p_value:.4f}")
-#                     if p_value < 0.05:
-#                         better = model_names[i] if np.mean(a) > np.mean(b) else model_names[j]
-#                         print(f"    Significant difference! {better} is better.")
-#                     else:
-#                         print("    No significant difference.")
-
-# def main():
-#     # Load data
-#     print("Loading data...")
-#     queries_json = json.load(open("./cran_queries.json", 'r'))[:]
-#     query_ids = [item["query number"] for item in queries_json]
-#     queries = [item["query"] for item in queries_json]
-    
-#     docs_json = json.load(open("./cran_docs.json", 'r'))[:]
-#     doc_ids = [item["id"] for item in docs_json]
-#     docs = [item["body"] for item in docs_json]
-    
-#     qrels = json.load(open("./cran_qrels.json", 'r'))[:]
-    
-#     # Initialize LSA engine
-#     lsa_engine = LSASearchEngine(n_components=300)
-    
-#     # Find optimal number of components
-#     print("\nFinding optimal number of components...")
-#     optimal_components = lsa_engine.find_optimal_components(
-#         docs, doc_ids, queries, query_ids, qrels,
-#         min_components=100, max_components=1500, step=100
-#     )
-    
-#     # Build index with optimal number of components
-#     print(f"\nBuilding LSA index with {optimal_components} components...")
-#     lsa_engine.n_components = optimal_components
-#     lsa_engine.svd = TruncatedSVD(n_components=optimal_components, random_state=42)
-#     lsa_engine.build_index(docs, doc_ids)
-    
-#     # Standard LSA
-#     print("\nEvaluating standard LSA...")
-#     doc_IDs_ordered_lsa = lsa_engine.search(queries)
-#     results_lsa = lsa_engine.evaluate_performance(doc_IDs_ordered_lsa, query_ids, qrels)
-    
-#     # POS-tagged LSA
-#     print("\nEvaluating POS-tagged LSA...")
-#     lsa_engine.build_index(docs, doc_ids, use_pos_tagging=True)
-#     doc_IDs_ordered_pos_lsa = lsa_engine.search(queries, use_pos_tagging=True)
-#     results_pos_lsa = lsa_engine.evaluate_performance(doc_IDs_ordered_pos_lsa, query_ids, qrels)
-    
-#     # Extract per-query metrics for comparison
-#     query_metrics_lsa = {'Precision': [], 'Recall': [], 'F-score': [], 'nDCG': []}
-#     query_metrics_pos_lsa = {'Precision': [], 'Recall': [], 'F-score': [], 'nDCG': []}
-    
-#     eval_metrics = Evaluation()
-#     k = 10  # Using k=10 for comparison
-    
-#     # Get per-query metrics for standard LSA
-#     for i, query_id in enumerate(query_ids):
-#         true_docs = [int(item["id"]) for item in qrels if item["query_num"] == str(query_id)]
-#         query_docs = doc_IDs_ordered_lsa[i][:k]
-        
-#         query_metrics_lsa['Precision'].append(eval_metrics.queryPrecision(query_docs, query_id, true_docs, k))
-#         query_metrics_lsa['Recall'].append(eval_metrics.queryRecall(query_docs, query_id, true_docs, k))
-#         query_metrics_lsa['F-score'].append(eval_metrics.queryFscore(query_docs, query_id, true_docs, k))
-#         query_metrics_lsa['nDCG'].append(eval_metrics.queryNDCG(query_docs, query_id, true_docs, k))
-    
-#     # Get per-query metrics for POS-tagged LSA
-#     for i, query_id in enumerate(query_ids):
-#         true_docs = [int(item["id"]) for item in qrels if item["query_num"] == str(query_id)]
-#         query_docs = doc_IDs_ordered_pos_lsa[i][:k]
-        
-#         query_metrics_pos_lsa['Precision'].append(eval_metrics.queryPrecision(query_docs, query_id, true_docs, k))
-#         query_metrics_pos_lsa['Recall'].append(eval_metrics.queryRecall(query_docs, query_id, true_docs, k))
-#         query_metrics_pos_lsa['F-score'].append(eval_metrics.queryFscore(query_docs, query_id, true_docs, k))
-#         query_metrics_pos_lsa['nDCG'].append(eval_metrics.queryNDCG(query_docs, query_id, true_docs, k))
-    
-#     # Compare standard LSA vs POS-tagged LSA
-#     print("\nComparing Standard LSA vs POS-tagged LSA...")
-#     lsa_engine.compare_models(
-#         [query_metrics_lsa, query_metrics_pos_lsa],
-#         ["Standard LSA", "POS-tagged LSA"]
-#     )
-    
-#     # Save results to a file
-#     results = {
-#         'Standard LSA': results_lsa,
-#         'POS-tagged LSA': results_pos_lsa,
-#         'Optimal Components': optimal_components
-#     }
-    
-#     with open('lsa_results.json', 'w') as f:
-#         json.dump(results, f, indent=4)
-    
-#     print("\nAnalysis complete. Results saved to lsa_results.json")
-
-# if __name__ == "__main__":
-#     main()
 import json
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 from scipy import stats
 import nltk
+from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.corpus import stopwords
-from nltk import pos_tag
 from nltk.tokenize import word_tokenize
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.decomposition import TruncatedSVD
-from evaluation import Evaluation
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.decomposition import TruncatedSVD, NMF
+from sklearn.metrics.pairwise import cosine_similarity
+import time
+import os
+
+# Create results directory if it doesn't exist
+if not os.path.exists('results'):
+    os.makedirs('results')
 
 # Download necessary NLTK resources
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
+nltk.download('wordnet', quiet=True)
 
-class LSASearchEngine:
+class CustomSearchEngine:
     """
-    Implements Latent Semantic Analysis for information retrieval
+    A semantic search engine using dimensionality reduction techniques
     """
     
-    def __init__(self, n_components=300):
+    def __init__(self, reduction_method='svd', n_dimensions=300, use_lemmatization=False, 
+                 use_stemming=False, vectorizer_type='tfidf'):
         """
-        Initialize the LSA search engine
+        Initialize the search engine
         
         Parameters:
         -----------
-        n_components : int
-            Number of components for SVD
+        reduction_method : str
+            Dimensionality reduction method ('svd' or 'nmf')
+        n_dimensions : int
+            Number of dimensions for reduction
+        use_lemmatization : bool
+            Whether to use lemmatization in preprocessing
+        use_stemming : bool
+            Whether to use stemming in preprocessing
+        vectorizer_type : str
+            Type of vectorizer ('tfidf' or 'count')
         """
-        self.n_components = n_components
-        self.vectorizer = TfidfVectorizer()
-        self.svd = TruncatedSVD(n_components=n_components, random_state=42)
-        self.docs_svd = None
-        self.doc_ids = None
+        self.n_dimensions = n_dimensions
+        self.use_lemmatization = use_lemmatization
+        self.use_stemming = use_stemming
+        self.reduction_method = reduction_method
+        self.vectorizer_type = vectorizer_type
         
-    def preprocess_text(self, text, remove_stopwords=True, pos_tag_text=False):
+        # Initialize lemmatizer/stemmer if needed
+        if self.use_lemmatization:
+            self.lemmatizer = WordNetLemmatizer()
+        if self.use_stemming:
+            self.stemmer = PorterStemmer()
+            
+        # Setup vectorizer
+        if vectorizer_type == 'tfidf':
+            self.vectorizer = TfidfVectorizer(max_features=10000, min_df=2)
+        else:  # count vectorizer
+            self.vectorizer = CountVectorizer(max_features=10000, min_df=2)
+            
+        # Setup dimensionality reduction
+        if reduction_method == 'svd':
+            self.reducer = TruncatedSVD(n_components=n_dimensions, random_state=42)
+        else:  # NMF
+            self.reducer = NMF(n_components=n_dimensions, random_state=42, max_iter=500)
+        
+        # Initialize storage for documents
+        self.doc_embeddings = None
+        self.document_ids = None
+        self.vectorizer_fitted = False
+        self.reducer_fitted = False
+        
+    def preprocess_text(self, text):
         """
-        Preprocess text by tokenizing, removing stopwords (optional),
-        and adding POS tags (optional)
+        Preprocess text with tokenization, stopword removal,
+        and optional lemmatization/stemming
         
         Parameters:
         -----------
         text : str
-            Text to be preprocessed
-        remove_stopwords : bool
-            Whether to remove stopwords
-        pos_tag_text : bool
-            Whether to add POS tags
+            Text to preprocess
             
         Returns:
         --------
         str
             Preprocessed text
         """
+        # Convert to lowercase and tokenize
         tokens = word_tokenize(text.lower())
         
-        if remove_stopwords:
-            stop_words = set(stopwords.words('english'))
-            tokens = [token for token in tokens if token not in stop_words]
+        # Remove stopwords and non-alphabetic tokens
+        stop_words = set(stopwords.words('english'))
+        tokens = [token for token in tokens if token not in stop_words and token.isalpha()]
         
-        if pos_tag_text:
-            pos_tags = pos_tag(tokens)
-            return " ".join([f"{word}_{tag}" for word, tag in pos_tags])
-        else:
-            return " ".join(tokens)
+        # Apply lemmatization if enabled
+        if self.use_lemmatization:
+            tokens = [self.lemmatizer.lemmatize(token) for token in tokens]
+            
+        # Apply stemming if enabled
+        if self.use_stemming:
+            tokens = [self.stemmer.stem(token) for token in tokens]
+            
+        # Join tokens back into string
+        return " ".join(tokens)
     
-    def build_index(self, docs, doc_ids, use_pos_tagging=False):
+    def create_index(self, documents, document_ids):
         """
-        Build the LSA index from documents
+        Create a searchable index from documents
         
         Parameters:
         -----------
-        docs : list
+        documents : list
             List of document texts
-        doc_ids : list
+        document_ids : list
             List of document IDs
-        use_pos_tagging : bool
-            Whether to use POS tagging for documents
-            
-        Returns:
-        --------
-        None
         """
-        self.doc_ids = doc_ids
+        start_time = time.time()
+        self.document_ids = document_ids
         
-        # Preprocess docs (with or without POS tagging)
-        if use_pos_tagging:
-            preprocessed_docs = [self.preprocess_text(doc, pos_tag_text=True) for doc in docs]
-        else:
-            preprocessed_docs = [self.preprocess_text(doc) for doc in docs]
+        # Preprocess all documents
+        print("Preprocessing documents...")
+        preprocessed_docs = [self.preprocess_text(doc) for doc in documents]
         
-        # Build TF-IDF matrix
-        self.tfidf_matrix = self.vectorizer.fit_transform(preprocessed_docs)
+        # Create document-term matrix
+        print(f"Vectorizing documents using {self.vectorizer_type}...")
+        doc_term_matrix = self.vectorizer.fit_transform(preprocessed_docs)
+        self.vectorizer_fitted = True
         
-        # Apply SVD for LSA
-        self.docs_svd = self.svd.fit_transform(self.tfidf_matrix)
+        # Apply dimensionality reduction
+        print(f"Applying dimensionality reduction using {self.reduction_method.upper()}...")
+        self.doc_embeddings = self.reducer.fit_transform(doc_term_matrix)
+        self.reducer_fitted = True
         
-        print(f"LSA index built with {self.n_components} components")
-        print(f"Explained variance ratio: {sum(self.svd.explained_variance_ratio_):.2f}")
+        if self.reduction_method == 'svd':
+            var_explained = self.reducer.explained_variance_ratio_.sum() * 100
+            print(f"Total variance explained: {var_explained:.2f}%")
         
-    def search(self, queries, use_pos_tagging=False):
+        elapsed_time = time.time() - start_time
+        print(f"Index created in {elapsed_time:.2f} seconds")
+    
+    def search(self, queries):
         """
-        Search using LSA
+        Search the index with queries
         
         Parameters:
         -----------
         queries : list
-            List of queries
-        use_pos_tagging : bool
-            Whether to use POS tagging for queries
+            List of query strings
             
         Returns:
         --------
         list
-            List of ordered document IDs for each query
+            List of ranked document IDs for each query
         """
-        # Preprocess queries (with or without POS tagging)
-        if use_pos_tagging:
-            preprocessed_queries = [self.preprocess_text(query, pos_tag_text=True) for query in queries]
-        else:
-            preprocessed_queries = [self.preprocess_text(query) for query in queries]
+        if not self.vectorizer_fitted or not self.reducer_fitted:
+            raise ValueError("Search engine index has not been created yet")
         
-        # Transform queries to TF-IDF
-        queries_tfidf = self.vectorizer.transform(preprocessed_queries)
+        # Preprocess queries
+        preprocessed_queries = [self.preprocess_text(query) for query in queries]
         
-        # Project into LSA space
-        queries_svd = self.svd.transform(queries_tfidf)
+        # Transform queries to term vectors
+        query_vectors = self.vectorizer.transform(preprocessed_queries)
         
-        # Calculate cosine similarity
-        cosine_similarities = []
-        for query_vector in queries_svd:
-            # Dot product / (norm(a) * norm(b))
-            doc_norms = np.linalg.norm(self.docs_svd, axis=1)
-            query_norm = np.linalg.norm(query_vector)
+        # Apply dimensionality reduction
+        query_embeddings = self.reducer.transform(query_vectors)
+        
+        # Compute similarities and rank documents
+        ranked_results = []
+        for query_embedding in query_embeddings:
+            # Compute cosine similarity between query and all documents
+            similarities = cosine_similarity([query_embedding], self.doc_embeddings)[0]
             
-            similarities = np.zeros(len(self.docs_svd))
-            for i, doc_vector in enumerate(self.docs_svd):
-                if doc_norms[i] * query_norm != 0:  # Avoid division by zero
-                    similarities[i] = np.dot(doc_vector, query_vector) / (doc_norms[i] * query_norm)
+            # Sort documents by similarity (descending)
+            ranked_indices = np.argsort(-similarities)
+            ranked_docs = [self.document_ids[idx] for idx in ranked_indices]
+            ranked_results.append(ranked_docs)
             
-            cosine_similarities.append(similarities)
-        
-        # Sort documents by similarity for each query
-        doc_IDs_ordered = []
-        for similarities in cosine_similarities:
-            sorted_indices = np.argsort(-similarities)
-            ordered_docs = [self.doc_ids[idx] for idx in sorted_indices]
-            doc_IDs_ordered.append(ordered_docs)
-        
-        return doc_IDs_ordered
+        return ranked_results
     
-    def find_optimal_components(self, docs, doc_ids, queries, query_ids, qrels, 
-                              min_components=100, max_components=1500, step=100):
+    def optimize_dimensions(self, documents, document_ids, queries, query_ids, relevance_data,
+                          dim_values=None):
         """
-        Find the optimal number of components for LSA
+        Find optimal number of dimensions
         
         Parameters:
         -----------
-        docs : list
+        documents : list
             List of document texts
-        doc_ids : list
+        document_ids : list
             List of document IDs
         queries : list
-            List of queries
+            List of query strings
         query_ids : list
             List of query IDs
-        qrels : list
-            List of relevance judgments
-        min_components : int
-            Minimum number of components to try
-        max_components : int
-            Maximum number of components to try
-        step : int
-            Step size for components
+        relevance_data : list
+            Relevance judgments
+        dim_values : list
+            List of dimension values to try
             
         Returns:
         --------
         int
-            Optimal number of components
+            Optimal number of dimensions
         """
-        components = list(range(min_components, max_components + 1, step))
-        eval_metrics = Evaluation()
-        maps = []
-        
-        for n_comp in components:
-            print(f"Testing with {n_comp} components...")
-            self.n_components = n_comp
-            self.svd = TruncatedSVD(n_components=n_comp, random_state=42)
+        if dim_values is None:
+            # Default dimension values to test
+            dim_values = [50, 100, 200, 300, 400, 500]
             
-            self.build_index(docs, doc_ids)
-            doc_IDs_ordered = self.search(queries)
+        # Calculate mean average precision for each dimension value
+        map_scores = []
+        ndcg_scores = []  # Add tracking for nDCG scores
+        
+        for dims in dim_values:
+            print(f"\nTesting with {dims} dimensions...")
+            
+            # Update reducer dimensions
+            if self.reduction_method == 'svd':
+                self.reducer = TruncatedSVD(n_components=dims, random_state=42)
+            else:  # NMF
+                self.reducer = NMF(n_components=dims, random_state=42, max_iter=500)
+            
+            self.n_dimensions = dims
+            
+            # Create index and search
+            self.create_index(documents, document_ids)
+            search_results = self.search(queries)
             
             # Calculate MAP@10
-            map_score = eval_metrics.meanAveragePrecision(doc_IDs_ordered, query_ids, qrels, k=10)
-            maps.append(map_score)
-            print(f"MAP@10 = {map_score}")
+            map_10 = self._calculate_map(search_results, query_ids, relevance_data, k=10)
+            map_scores.append(map_10)
+            
+            # Calculate nDCG@10
+            ndcg_10 = self._calculate_ndcg(search_results, query_ids, relevance_data, k=10)
+            ndcg_scores.append(ndcg_10)
+            
+            print(f"MAP@10 = {map_10:.4f}")
+            print(f"nDCG@10 = {ndcg_10:.4f}")
         
-        # Plot MAP vs number of components
-        plt.figure(figsize=(10, 6))
-        plt.plot(components, maps, marker='o')
-        plt.xlabel('Number of Components')
+        # Plot results
+        plt.figure(figsize=(12, 6))
+        
+        # Plot MAP
+        plt.subplot(1, 2, 1)
+        plt.plot(dim_values, map_scores, marker='o', linestyle='-')
+        plt.xlabel('Number of Dimensions')
         plt.ylabel('MAP@10')
-        plt.title('Performance vs LSA Components')
+        plt.title(f'MAP vs Dimensions ({self.reduction_method.upper()})')
         plt.grid(True)
-        plt.savefig('lsa_components_performance.png')
-        plt.show()
         
-        # Return the optimal number of components
-        optimal_components = components[np.argmax(maps)]
-        print(f"Optimal number of components: {optimal_components}")
-        return optimal_components
+        # Plot nDCG
+        plt.subplot(1, 2, 2)
+        plt.plot(dim_values, ndcg_scores, marker='o', linestyle='-', color='green')
+        plt.xlabel('Number of Dimensions')
+        plt.ylabel('nDCG@10')
+        plt.title(f'nDCG vs Dimensions ({self.reduction_method.upper()})')
+        plt.grid(True)
+        
+        plt.tight_layout()
+        plt.savefig(f'results/{self.reduction_method}_dimensions_performance.png')
+        
+        # Find optimal dimensions (using MAP as the primary metric)
+        best_idx = np.argmax(map_scores)
+        optimal_dims = dim_values[best_idx]
+        print(f"\nOptimal number of dimensions: {optimal_dims}")
+        print(f"MAP@10 = {map_scores[best_idx]:.4f}")
+        print(f"nDCG@10 = {ndcg_scores[best_idx]:.4f}")
+        
+        return optimal_dims
     
-    def evaluate_performance(self, doc_IDs_ordered, query_ids, qrels):
+    def _calculate_map(self, ranked_docs, query_ids, relevance_data, k=10):
         """
-        Evaluate the performance of the LSA search engine
+        Calculate Mean Average Precision
         
         Parameters:
         -----------
-        doc_IDs_ordered : list
-            List of ordered document IDs for each query
+        ranked_docs : list
+            List of ranked document IDs for each query
         query_ids : list
             List of query IDs
-        qrels : list
-            List of relevance judgments
+        relevance_data : list
+            Relevance judgments
+        k : int
+            Cutoff for precision calculation
+            
+        Returns:
+        --------
+        float
+            MAP@k
+        """
+        # Group relevance data by query
+        query_relevance = {}
+        for item in relevance_data:
+            query_num = str(item["query_num"])
+            if query_num not in query_relevance:
+                query_relevance[query_num] = []
+            query_relevance[query_num].append(int(item["id"]))
+        
+        # Calculate average precision for each query
+        ap_values = []
+        
+        for i, qid in enumerate(query_ids):
+            query_id_str = str(qid)
+            if query_id_str in query_relevance:
+                relevant_docs = set(query_relevance[query_id_str])
+                retrieved_docs = ranked_docs[i][:k]
+                
+                # Calculate AP
+                precision_sum = 0.0
+                relevant_count = 0
+                
+                for j, doc_id in enumerate(retrieved_docs):
+                    if doc_id in relevant_docs:
+                        relevant_count += 1
+                        precision_at_j = relevant_count / (j + 1)
+                        precision_sum += precision_at_j
+                
+                if len(relevant_docs) > 0:
+                    ap = precision_sum / len(relevant_docs)
+                else:
+                    ap = 0.0
+                
+                ap_values.append(ap)
+        
+        # Return MAP
+        return np.mean(ap_values) if ap_values else 0.0
+    
+    def _calculate_ndcg(self, ranked_docs, query_ids, relevance_data, k=10):
+        """
+        Calculate Normalized Discounted Cumulative Gain
+        
+        Parameters:
+        -----------
+        ranked_docs : list
+            List of ranked document IDs for each query
+        query_ids : list
+            List of query IDs
+        relevance_data : list
+            Relevance judgments
+        k : int
+            Cutoff for nDCG calculation
+            
+        Returns:
+        --------
+        float
+            nDCG@k
+        """
+        # Group relevance data by query
+        query_relevance = {}
+        for item in relevance_data:
+            query_num = str(item["query_num"])
+            if query_num not in query_relevance:
+                query_relevance[query_num] = []
+            query_relevance[query_num].append(int(item["id"]))
+        
+        # Calculate nDCG for each query
+        ndcg_values = []
+        
+        for i, qid in enumerate(query_ids):
+            query_id_str = str(qid)
+            if query_id_str in query_relevance:
+                relevant_docs = set(query_relevance[query_id_str])
+                retrieved_docs = ranked_docs[i][:k]
+                
+                # Calculate DCG
+                dcg = 0.0
+                for j, doc_id in enumerate(retrieved_docs):
+                    # Using binary relevance (1 if relevant, 0 if not)
+                    rel = 1 if doc_id in relevant_docs else 0
+                    # Use log base 2 for the position discount
+                    position = j + 1
+                    if position == 1:
+                        # Avoid division by zero for position 1
+                        dcg += rel
+                    else:
+                        dcg += rel / np.log2(position)
+                
+                # Calculate IDCG (Ideal DCG)
+                # For binary relevance, the ideal ranking is all relevant documents first
+                idcg = 0.0
+                for j in range(min(len(relevant_docs), k)):
+                    position = j + 1
+                    if position == 1:
+                        idcg += 1
+                    else:
+                        idcg += 1 / np.log2(position)
+                
+                # Calculate nDCG
+                ndcg = dcg / idcg if idcg > 0 else 0.0
+                ndcg_values.append(ndcg)
+        
+        # Return mean nDCG
+        return np.mean(ndcg_values) if ndcg_values else 0.0
+    
+    def evaluate(self, ranked_docs, query_ids, relevance_data):
+        """
+        Evaluate search performance with multiple metrics
+        
+        Parameters:
+        -----------
+        ranked_docs : list
+            List of ranked document IDs for each query
+        query_ids : list
+            List of query IDs
+        relevance_data : list
+            Relevance judgments
             
         Returns:
         --------
         dict
             Dictionary of evaluation metrics
         """
-        eval_metrics = Evaluation()
+        # Group relevance data by query
+        query_relevance = {}
+        for item in relevance_data:
+            query_num = str(item["query_num"])
+            if query_num not in query_relevance:
+                query_relevance[query_num] = []
+            query_relevance[query_num].append(int(item["id"]))
+        
+        # Evaluate at different k values
+        k_values = [1, 3, 5, 10]
         results = {}
         
-        k_values = [1, 3, 5, 10]
         for k in k_values:
-            precision = eval_metrics.meanPrecision(doc_IDs_ordered, query_ids, qrels, k)
-            recall = eval_metrics.meanRecall(doc_IDs_ordered, query_ids, qrels, k)
-            fscore = eval_metrics.meanFscore(doc_IDs_ordered, query_ids, qrels, k)
-            map_score = eval_metrics.meanAveragePrecision(doc_IDs_ordered, query_ids, qrels, k)
-            ndcg = eval_metrics.meanNDCG(doc_IDs_ordered, query_ids, qrels, k)
+            # Initialize metrics for this k
+            precision_values = []
+            recall_values = []
+            f1_values = []
+            ap_values = []
+            ndcg_values = []  # Add nDCG values
             
+            # Calculate metrics for each query
+            for i, qid in enumerate(query_ids):
+                query_id_str = str(qid)
+                if query_id_str in query_relevance:
+                    relevant_docs = set(query_relevance[query_id_str])
+                    retrieved_docs = ranked_docs[i][:k]
+                    
+                    # Calculate precision and recall
+                    relevant_retrieved = sum(1 for doc in retrieved_docs if doc in relevant_docs)
+                    precision = relevant_retrieved / len(retrieved_docs) if retrieved_docs else 0
+                    recall = relevant_retrieved / len(relevant_docs) if relevant_docs else 0
+                    
+                    # Calculate F1
+                    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+                    
+                    # Calculate AP
+                    precision_sum = 0.0
+                    relevant_count = 0
+                    
+                    for j, doc_id in enumerate(retrieved_docs):
+                        if doc_id in relevant_docs:
+                            relevant_count += 1
+                            precision_at_j = relevant_count / (j + 1)
+                            precision_sum += precision_at_j
+                    
+                    if len(relevant_docs) > 0:
+                        ap = precision_sum / len(relevant_docs)
+                    else:
+                        ap = 0.0
+                    
+                    # Calculate nDCG for this query
+                    dcg = 0.0
+                    for j, doc_id in enumerate(retrieved_docs):
+                        rel = 1 if doc_id in relevant_docs else 0
+                        position = j + 1
+                        if position == 1:
+                            dcg += rel
+                        else:
+                            dcg += rel / np.log2(position)
+                    
+                    idcg = 0.0
+                    for j in range(min(len(relevant_docs), k)):
+                        position = j + 1
+                        if position == 1:
+                            idcg += 1
+                        else:
+                            idcg += 1 / np.log2(position)
+                    
+                    ndcg = dcg / idcg if idcg > 0 else 0.0
+                    
+                    # Store metrics
+                    precision_values.append(precision)
+                    recall_values.append(recall)
+                    f1_values.append(f1)
+                    ap_values.append(ap)
+                    ndcg_values.append(ndcg)
+            
+            # Calculate means
+            mean_precision = np.mean(precision_values) if precision_values else 0
+            mean_recall = np.mean(recall_values) if recall_values else 0
+            mean_f1 = np.mean(f1_values) if f1_values else 0
+            mean_ap = np.mean(ap_values) if ap_values else 0
+            mean_ndcg = np.mean(ndcg_values) if ndcg_values else 0  # Mean nDCG
+            
+            # Store results for this k
             results[f'k={k}'] = {
-                'Precision': precision,
-                'Recall': recall,
-                'F-score': fscore,
-                'MAP': map_score,
-                'nDCG': ndcg
+                'Precision': mean_precision,
+                'Recall': mean_recall,
+                'F1': mean_f1,
+                'MAP': mean_ap,
+                'nDCG': mean_ndcg  # Add nDCG to results
             }
             
+            # Print results
             print(f"Results at k={k}:")
-            print(f"  Precision: {precision:.4f}")
-            print(f"  Recall: {recall:.4f}")
-            print(f"  F-score: {fscore:.4f}")
-            print(f"  MAP: {map_score:.4f}")
-            print(f"  nDCG: {ndcg:.4f}")
+            print(f"  Precision: {mean_precision:.4f}")
+            print(f"  Recall: {mean_recall:.4f}")
+            print(f"  F1-score: {mean_f1:.4f}")
+            print(f"  MAP: {mean_ap:.4f}")
+            print(f"  nDCG: {mean_ndcg:.4f}")  # Print nDCG
         
         # Plot metrics
         plt.figure(figsize=(12, 8))
-        metrics = ['Precision', 'Recall', 'F-score', 'MAP', 'nDCG']
+        metrics = ['Precision', 'Recall', 'F1', 'MAP', 'nDCG']  # Add nDCG to metrics
+        
         for metric in metrics:
             values = [results[f'k={k}'][metric] for k in k_values]
             plt.plot(k_values, values, marker='o', label=metric)
         
         plt.xlabel('k')
         plt.ylabel('Score')
-        plt.title('LSA Performance Metrics')
+        plt.title(f'Search Performance Metrics ({self.reduction_method.upper()})')
         plt.legend()
         plt.grid(True)
-        plt.savefig('lsa_performance_metrics.png')
-        plt.show()
+        plt.savefig(f'results/{self.reduction_method}_performance_metrics.png')
         
         return results
     
-    def compare_models(self, models_results, model_names):
+    def compare_methods(self, method_results, method_names):
         """
-        Compare different models using hypothesis testing
+        Compare different search methods
         
         Parameters:
         -----------
-        models_results : list of lists
-            List of lists of results for each model at k=10
-        model_names : list
-            List of model names
-            
-        Returns:
-        --------
-        None
+        method_results : list
+            List of result dictionaries for each method
+        method_names : list
+            List of method names
         """
-        metrics = ['Precision', 'Recall', 'F-score', 'nDCG']
+        # Extract results at k=10
+        k10_results = {}
+        for i, method in enumerate(method_names):
+            k10_results[method] = method_results[i]['k=10']
         
-        for i in range(len(model_names)):
-            for j in range(i+1, len(model_names)):
-                print(f"\nComparing {model_names[i]} vs {model_names[j]}:")
+        # Create DataFrame for plotting
+        df = pd.DataFrame(k10_results)
+        
+        # Plot comparison
+        plt.figure(figsize=(10, 6))
+        df.plot(kind='bar', figsize=(10, 6))
+        plt.title('Comparison of Methods (k=10)')
+        plt.ylabel('Score')
+        plt.grid(axis='y')
+        plt.savefig('results/method_comparison.png')
+        
+        # Perform statistical significance tests
+        print("\nStatistical Significance Tests:")
+        metrics = ['Precision', 'Recall', 'F1', 'MAP', 'nDCG']  # Add nDCG to metrics
+        
+        for i in range(len(method_names)):
+            for j in range(i+1, len(method_names)):
+                method1 = method_names[i]
+                method2 = method_names[j]
+                
+                print(f"\nComparing {method1} vs {method2}:")
                 
                 for metric in metrics:
-                    a = models_results[i][metric]
-                    b = models_results[j][metric]
+                    m1_value = k10_results[method1][metric]
+                    m2_value = k10_results[method2][metric]
                     
-                    # Perform t-test
-                    t_stat, p_value = stats.ttest_rel(a, b)
-                    
-                    print(f"  {metric}: t = {t_stat:.4f}, p = {p_value:.4f}")
-                    if p_value < 0.05:
-                        better = model_names[i] if np.mean(a) > np.mean(b) else model_names[j]
-                        print(f"    Significant difference! {better} is better.")
+                    print(f"  {metric}: {m1_value:.4f} vs {m2_value:.4f}")
+                    if m1_value > m2_value:
+                        diff_pct = (m1_value - m2_value) / m2_value * 100
+                        print(f"    {method1} better by {diff_pct:.2f}%")
+                    elif m2_value > m1_value:
+                        diff_pct = (m2_value - m1_value) / m1_value * 100
+                        print(f"    {method2} better by {diff_pct:.2f}%")
                     else:
-                        print("    No significant difference.")
+                        print("    No difference")
 
 def main():
-    # Load data with updated paths
-    print("Loading data...")
-    queries_json = json.load(open("cranfield/cran_queries.json", 'r'))[:]
-    query_ids = [item["query number"] for item in queries_json]
-    queries = [item["query"] for item in queries_json]
+    # Load data
+    print("Loading data from Cranfield collection...")
+    with open("cranfield/cran_queries.json", 'r') as f:
+        queries_data = json.load(f)
     
-    docs_json = json.load(open("cranfield/cran_docs.json", 'r'))[:]
-    doc_ids = [item["id"] for item in docs_json]
-    docs = [item["body"] for item in docs_json]
+    with open("cranfield/cran_docs.json", 'r') as f:
+        docs_data = json.load(f)
     
-    qrels = json.load(open("cranfield/cran_qrels.json", 'r'))[:]
+    with open("cranfield/cran_qrels.json", 'r') as f:
+        qrels_data = json.load(f)
     
-    # Initialize LSA engine
-    lsa_engine = LSASearchEngine(n_components=300)
+    # Extract queries and documents
+    query_ids = [item["query number"] for item in queries_data]
+    queries = [item["query"] for item in queries_data]
     
-    # Find optimal number of components
-    print("\nFinding optimal number of components...")
-    optimal_components = lsa_engine.find_optimal_components(
-        docs, doc_ids, queries, query_ids, qrels,
-        min_components=100, max_components=1500, step=100
-    )
+    doc_ids = [item["id"] for item in docs_data]
+    docs = [item["body"] for item in docs_data]
     
-    # Build index with optimal number of components
-    print(f"\nBuilding LSA index with {optimal_components} components...")
-    lsa_engine.n_components = optimal_components
-    lsa_engine.svd = TruncatedSVD(n_components=optimal_components, random_state=42)
-    lsa_engine.build_index(docs, doc_ids)
+    print(f"Loaded {len(queries)} queries and {len(docs)} documents")
     
-    # Standard LSA
-    print("\nEvaluating standard LSA...")
-    doc_IDs_ordered_lsa = lsa_engine.search(queries)
-    results_lsa = lsa_engine.evaluate_performance(doc_IDs_ordered_lsa, query_ids, qrels)
+    # Test different configurations
+    configurations = [
+        {
+            'name': 'LSA_Basic',
+            'reduction_method': 'svd',
+            'use_lemmatization': False,
+            'use_stemming': False,
+            'vectorizer_type': 'tfidf'
+        },
+        {
+            'name': 'LSA_Lemmatized',
+            'reduction_method': 'svd',
+            'use_lemmatization': True,
+            'use_stemming': False,
+            'vectorizer_type': 'tfidf'
+        },
+        {
+            'name': 'NMF_Basic',
+            'reduction_method': 'nmf',
+            'use_lemmatization': False,
+            'use_stemming': False,
+            'vectorizer_type': 'tfidf'
+        }
+    ]
     
-    # POS-tagged LSA
-    print("\nEvaluating POS-tagged LSA...")
-    lsa_engine.build_index(docs, doc_ids, use_pos_tagging=True)
-    doc_IDs_ordered_pos_lsa = lsa_engine.search(queries, use_pos_tagging=True)
-    results_pos_lsa = lsa_engine.evaluate_performance(doc_IDs_ordered_pos_lsa, query_ids, qrels)
+    all_results = []
+    method_names = []
     
-    # Extract per-query metrics for comparison
-    query_metrics_lsa = {'Precision': [], 'Recall': [], 'F-score': [], 'nDCG': []}
-    query_metrics_pos_lsa = {'Precision': [], 'Recall': [], 'F-score': [], 'nDCG': []}
-    
-    eval_metrics = Evaluation()
-    k = 10  # Using k=10 for comparison
-    
-    # Get per-query metrics for standard LSA
-    for i, query_id in enumerate(query_ids):
-        true_docs = [int(item["id"]) for item in qrels if item["query_num"] == str(query_id)]
-        query_docs = doc_IDs_ordered_lsa[i][:k]
+    for config in configurations:
+        print(f"\n{'='*50}")
+        print(f"Testing configuration: {config['name']}")
+        print(f"{'='*50}")
         
-        query_metrics_lsa['Precision'].append(eval_metrics.queryPrecision(query_docs, query_id, true_docs, k))
-        query_metrics_lsa['Recall'].append(eval_metrics.queryRecall(query_docs, query_id, true_docs, k))
-        query_metrics_lsa['F-score'].append(eval_metrics.queryFscore(query_docs, query_id, true_docs, k))
-        query_metrics_lsa['nDCG'].append(eval_metrics.queryNDCG(query_docs, query_id, true_docs, k))
-    
-    # Get per-query metrics for POS-tagged LSA
-    for i, query_id in enumerate(query_ids):
-        true_docs = [int(item["id"]) for item in qrels if item["query_num"] == str(query_id)]
-        query_docs = doc_IDs_ordered_pos_lsa[i][:k]
+        # Initialize search engine with this configuration
+        search_engine = CustomSearchEngine(
+            reduction_method=config['reduction_method'],
+            use_lemmatization=config['use_lemmatization'],
+            use_stemming=config['use_stemming'],
+            vectorizer_type=config['vectorizer_type']
+        )
         
-        query_metrics_pos_lsa['Precision'].append(eval_metrics.queryPrecision(query_docs, query_id, true_docs, k))
-        query_metrics_pos_lsa['Recall'].append(eval_metrics.queryRecall(query_docs, query_id, true_docs, k))
-        query_metrics_pos_lsa['F-score'].append(eval_metrics.queryFscore(query_docs, query_id, true_docs, k))
-        query_metrics_pos_lsa['nDCG'].append(eval_metrics.queryNDCG(query_docs, query_id, true_docs, k))
+        # Find optimal dimensions
+        print("\nFinding optimal dimensions...")
+        optimal_dims = search_engine.optimize_dimensions(
+            docs, doc_ids, queries, query_ids, qrels_data,
+            dim_values=[50, 100, 150, 200, 250, 300]
+        )
+        
+        # Use optimal dimensions
+        if search_engine.reduction_method == 'svd':
+            search_engine.reducer = TruncatedSVD(n_components=optimal_dims, random_state=42)
+        else:  # NMF
+            search_engine.reducer = NMF(n_components=optimal_dims, random_state=42, max_iter=500)
+        
+        search_engine.n_dimensions = optimal_dims
+        
+        # Create index and search
+        print("\nCreating search index with optimal dimensions...")
+        search_engine.create_index(docs, doc_ids)
+        
+        print("\nPerforming search...")
+        search_results = search_engine.search(queries)
+        
+        # Evaluate performance
+        print("\nEvaluating performance...")
+        results = search_engine.evaluate(search_results, query_ids, qrels_data)
+        
+        # Store results
+        all_results.append(results)
+        method_names.append(config['name'])
+        
+        # Save configuration results
+        config_results = {
+            'configuration': config,
+            'optimal_dimensions': optimal_dims,
+            'results': results
+        }
+        
+        with open(f"results/{config['name']}_results.json", 'w') as f:
+            json.dump(config_results, f, indent=4)
     
-    # Compare standard LSA vs POS-tagged LSA
-    print("\nComparing Standard LSA vs POS-tagged LSA...")
-    lsa_engine.compare_models(
-        [query_metrics_lsa, query_metrics_pos_lsa],
-        ["Standard LSA", "POS-tagged LSA"]
-    )
+    # Compare methods
+    print("\nComparing all methods...")
+    search_engine.compare_methods(all_results, method_names)
     
-    # Save results to a file
-    results = {
-        'Standard LSA': results_lsa,
-        'POS-tagged LSA': results_pos_lsa,
-        'Optimal Components': optimal_components
+    # Save overall results
+    overall_results = {
+        'methods': method_names,
+        'results': all_results
     }
     
-    with open('lsa_results.json', 'w') as f:
-        json.dump(results, f, indent=4)
+    with open("results/overall_results.json", 'w') as f:
+        json.dump(overall_results, f, indent=4)
     
-    print("\nAnalysis complete. Results saved to lsa_results.json")
+    print("\nAnalysis complete. Results saved to the 'results' directory.")
 
 if __name__ == "__main__":
     main()
